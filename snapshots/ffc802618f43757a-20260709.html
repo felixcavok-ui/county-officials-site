@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E6%AD%A6%E7%BB%A7%E7%83%88/8931550" target="_blank" rel="noopener">https://baike.baidu.com/item/%E6%AD%A6%E7%BB%A7%E7%83%88/8931550</a><br>
+  存档日期：2026-07-09 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E6%AD%A6%E7%BB%A7%E7%83%88/8931550" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源页: https://baike.baidu.com/item/%E6%AD%A6%E7%BB%A7%E7%83%88/8931550
+抓取日期: 2026-07-09
+信源: 百度百科
+
+��ժҪ��
+武继烈，男，汉族，1946年2月出生，江苏句容人，1979年1月入党，1964年2月参加工作，江苏省农业技术学校畜牧专业毕业，中专学历。
+曾任江苏省政协副主席。 [1]
+
+��������Ϣ��
+中文名
+武继烈
+民    族
+汉族
+籍    贯
+江苏句容
+出生日期
+1946年2月
+
+人物履历
+1960．09—1964．02 江苏省农业技术学校畜牧专业学习（今江苏农林职业技术学院）
+1964．02—1964．10 江苏省句容县东昌区兽医站工作
+1964．10—1970．08 新疆维吾尔自治区畜牧厅工作
+1970．08—1979．09 西藏自治区革吉县工作
+1979．09—1980．01 西藏自治区阿里地区科委工作
+1980．01—1987．04 西藏自治区阿里地区财政局科长、副局长
+1987．04—1990．09 西藏自治区阿里地区行署秘书长
+1990．09—1991．06 西藏自治区阿里地区行署副专员、地委委员
+1991．06—1992．11 西藏自治区阿里地区行署副专员、地委委员、地委政法委副书记
+1992．11—1993．12 西藏自治区拉萨市委常委、副市长
+1993．12—1995．06 西藏自治区拉萨市委副书记、副市长（正地级）
+1995．06—1998．05 西藏自治区交通厅党委副书记、厅长
+1998．05—2001．05 西藏自治区山南地委书记、地区人大工委主任
+2001．05—2001．07 西藏自治区副主席，山南地委书记、地区人大工委主任
+2001．07—2007．01 西藏自治区副主席
+2006．01—2007．01 西藏自治区人大常委会副主任
+2007．01— 2008 江苏省政协副主席</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

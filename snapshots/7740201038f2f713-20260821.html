@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 县委书记任涛、县长杨烁督导检查城区防汛工作</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：县委书记任涛、县长杨烁督导检查城区防汛工作<br>
+  原页：<a href="https://www.wenan.gov.cn/GOV1/Item/42077.aspx" target="_blank" rel="noopener">https://www.wenan.gov.cn/GOV1/Item/42077.aspx</a><br>
+  存档日期：2026-08-21 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.wenan.gov.cn/GOV1/Item/42077.aspx" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">县委书记任涛、县长杨烁督导检查城区防汛工作-文安县人民政府
+.subheading {
+font-size: 25px;
+font-family: 楷体;
+}
+function searchkey()
+{
+var key=document.getElementById(&quot;keyword&quot;).value;
+if(key==&quot;&quot;||key==&quot;请输入关键词&quot;){
+alert(&quot;搜索关键字不能为空&quot;);
+return false;
+}
+window.open(&#x27;/GOV1/search.aspx?keyword=&#x27;+escape(key),&quot;_blank&quot;);
+}
+网站首页
+文安概况
+文安简介
+自然地理
+历史沿革
+行政区划
+经济概况
+历史文安
+水韵文安
+现代文安
+影像文安
+政务公开
+政府领导
+政务会议
+政务动态
+政府文件
+政府机构
+人事任免
+政策解读
+政府公报
+政务服务
+互动交流
+民生通道
+(function () {
+var navST;
+var navST1;
+var name = &#x27;mainNav&#x27;;
+var t = 200;
+var type = 1;
+var removeOn = &#x27;False&#x27;;
+var effect = &#x27;fade&#x27;;
+var appendItem = &#x27;#&#x27;;
+var li = &quot;#&quot; + name + &quot; li&quot;;
+var index = 0;
+if (!$(&quot;#&quot; + name + &quot; .li1&quot;).hasClass(&quot;on1&quot;)) {
+$(&quot;#&quot; + name + &quot; .li1&quot;).first().addClass(&quot;on1&quot;);
+} //默认第一个加.on1类
+index = $(&quot;#&quot; + name + &quot; .li1&quot;).index($(&quot;#&quot; + name + &quot; .on1&quot;));
+//鼠标离开导航后，回复默认.on1类位置
+$(&quot;#&quot; + name)
+.hover(
+function () {
+if (navST1 != null) {
+clearTimeout(navST1);
+}
+},
+function () {
+navST1 = setTimeout(function () {
+$(&quot;#&quot; + name + &quot; .li1&quot;).removeClass(&quot;on1&quot;).eq(index).addClass(&quot;on1&quot;);
+},
+500);
+}
+);
+if (type == &#x27;1&#x27;) {
+li = &quot;#&quot; + name + &quot; .li1&quot;;
+}
+if (appendItem != &#x27;#&#x27;) { //插入内容
+var appendHtml = $(appendItem).html();
+$(li).first().append(appendHtml);
+$(appendItem).remove();
+}
+if (type == &#x27;3&#x27;) {
+$(&quot;#&quot; + name + &quot; .on1&quot;).find(&quot;ul&quot;).first().show();
+}
+$(li)
+.hover(function () {
+var curItem = $(this);
+var onNum = (curItem.attr(&quot;class&quot;).split(&quot; &quot;))[0].replace(&quot;li&quot;, &quot;&quot;);
+$(li).removeClass(&quot;on&quot; + onNum);
+curItem.addClass(&quot;on&quot; + onNum);
+navST = setTimeout(function () { //延时触发
+if ($(&quot;ul:first&quot;, curItem).css(&quot;display&quot;) != &quot;block&quot;) {
+$(li + &quot; .ul&quot; + onNum).hide();
+if (effect == &#x27;fade&#x27;) {
+$(&quot;ul:first&quot;, curItem).fadeIn(t);
+} else {
+$(&quot;ul:first&quot;, curItem).slideDown(t);
+}
+};
+navST = null;
+},
+t);
+},
+function () {
+if (navST != null) {
+clearTimeout(navST);
+}
+if (type == &#x27;1&#x27; || type == &#x27;2&#x27;) {
+if (effect == &#x27;fade&#x27;) {
+$(this).find(&quot;ul&quot;).first().fadeOut(t);
+} else {
+$(this).find(&quot;ul&quot;).first().slideUp(t);
+}
+}
+if (removeOn == &#x27;True&#x27;) {
+$(this).removeClass(&quot;on1&quot;);
+}
+},
+t); //end hover
+})()
+//手机版显示二维码
+hover($(&quot;.topBar dl&quot;), &quot;on&quot;);
+您的位置：
+首页
+&gt;&gt;
+今日文安
+今日文安
+if (jQuery(&quot;#sideMenu .bd li&quot;).size() === 0) {
+jQuery(&quot;#sideMenu&quot;).hide();
+}
+县委书记任涛、县长杨烁督导检查城区防汛工作
+作者：田朔鑫
+来源：县电视台
+发布时间：2025年06月06日
+浏览次数：
+次
+6月5日上午，县委书记任涛、县长杨烁率队深入城区重点部位，实地督导检查防汛备汛工作落实情况，确保安全度汛。
+任涛、杨烁一行先后前往相公庄泵站、丰利北路环城水系交叉口北堤口泵站及其排水管道、老虎庄泵站及新泵站建设工地、中央公馆西侧迎宾大道易积水点、兴文东道环城水系交叉口明珠超市易积水点以及丰利南路环城水系交叉口城南排水点等重点区域。每到一处，任涛一行都仔细询问防汛预案制定、物资储备、应急队伍组织及排水设施运行情况，听取相关负责同志汇报，并针对发现的问题和薄弱环节，现场提出整改要求。
+任涛在检查中强调，防汛工作是一项保安全、保民生、保发展的大事要事。各相关部门要压实责任，加强对堤防、泵站及城区易内涝部位等关键点位的巡查防护，对症施策、查漏补缺，全力推动各项防汛措施落实落细落到位。要做好抢险准备，进一步完善应急处置预案，提前备足防汛物资，配强抗洪抢险队伍，组织开展应急实战演练，切实增强科学抢险救灾的能力水平。要加强应急值守，严格执行24小时值班和领导带班制度，畅通信息渠道，强化信息报送，落实好各项防范应对措施，确保汛期不出现任何问题。
+关于我们
+|
+网站声明
+|
+网站地图
+|
+联系我们
+版权所有:文安县人民政府主办 文安县人民政府办公室承办
+冀公网安备
+13102602000311号
+冀ICP备12007192号
+网站标识码：1310260009
+违法和不良信息举报电话：0316-5231644
+违法和不良信息举报邮箱：wenanxinxiban@126.com
+网络内容从业人员违法违规行为举报邮箱：waxwwxb@163.com</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

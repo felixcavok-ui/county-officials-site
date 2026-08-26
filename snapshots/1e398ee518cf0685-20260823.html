@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/朱建强/56064" target="_blank" rel="noopener">https://baike.baidu.com/item/朱建强/56064</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/朱建强/56064" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body"># 朱建强（中共大城县委书记）_百度百科
+# 来源: https://baike.baidu.com/item/朱建强/56064
+# 摘要: 朱建强，男，汉族，1963年6月出生，河北霸州市人，1984年7月参加工作，1990年8月入党，研究生学历。
+# 词条定位: 中共大城县委书记
+
+中文名：朱建强
+国 籍：中国
+民 族：汉族
+出生日期：1963年6月
+出生地：河北霸州市
+学位/学历：研究生
+
+朱建强，男，汉族，1963年6月出生，河北霸州市人，1984年7月参加工作，1990年8月入党，研究生学历。
+
+## 简介
+大城县委书记
+
+## 人物生平
+1981.08--1984.07 张家口市农专农学专业学习；
+1984.07--1985.11 霸县煎茶铺农专教师；
+1985.11--1986.05 霸县农林局技术中心；
+1986.05--1989.04 霸县档案馆干部；
+1989.04--1991.11 霸县政府办公室综合科秘书；
+1991.11--1992.02 霸州市政府办公室综合科科长；
+1992.02--1994.04 霸州市王庄子乡党委副书记、政法委书记；
+1994.04--1995.11 霸州市王庄子乡党委副书记、纪检书记；
+1995.11--1998.02 霸州市政府副秘书长；
+1998.02--2001.02 霸州市胜芳镇党委正科级副书记；
+2001.02--2003.01 霸州市信安镇党委书记、镇长；
+2003.01--2004.08 霸州市政协副主席、信安镇党委书记、镇长（其间, 2001.09--2004.07在省委党校经济管理专业在职研究生班学习）；
+2004.08--2006.03 霸州市政协副主席、胜芳镇党委书记、镇长 ；
+2006.03--2006.05 大城县委副书记、县政府副县长、代县长；
+2006.05--2013.05 大城县人民政府县长；
+2013.05至今 大城县委书记。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

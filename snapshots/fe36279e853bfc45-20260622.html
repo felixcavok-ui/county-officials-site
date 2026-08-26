@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 王予波 _ 搜狗百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：王予波 _ 搜狗百科<br>
+  原页：<a href="https://baike.sogou.com/v49658547.htm" target="_blank" rel="noopener">https://baike.sogou.com/v49658547.htm</a><br>
+  存档日期：2026-06-30 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v49658547.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body"> 王予波 _ 百科 登录 1 . 摘要 2 . 基本信息 3 . 人物履历 4 . 参考资料 王予波 中共第二十届中央委员，云南省委副书记，省人民政府省长，省委科技委主任 王予波，男，汉族，1963年1月生，河南镇平人，1979年11月参加工作，1984年6月加入中国共产党，中央党校研究生学历，副研究员。 现任中共第二十届中央委员 1 ，云南省委副书记，省人民政府省长、党组书记 2 3 ，省委科技委主任 4 。 基本信息 中文名 王予波 国籍 中国 民族 汉族 出生日期 1963年1月 籍贯 河南镇平 教育背景 中央党校 人物履历 1979.11—1980.09 青海省果洛州大武中学教师 1980.09—1984.07 青海师范大学中文系中国语言文学专业学习 1984.07—1985.11 青海省班玛县多贡麻乡团委书记 1985.11—1989.01 青海省果洛州委党校教师、教育科副科长 1989.01—1992.02 青海省政府办公厅四处干部、副主任科员、主任科员 1992.02—1993.04 青海省政府办公厅四处副处级秘书 1993.04—1995.09 青海省政府办公厅四处副处长 1995.09—2000.01 青海省政府办公厅社会二处处长 2000.01—2000.04 青海省科学技术委员会副主任 2000.04—2003.06 青海省科学技术厅副厅长（其间：1999.09—2002.07中央党校在职研究生班经济管理专业学习） 2003.06—2007.01 青海省政府副秘书长 2007.01—2008.02 青海省政府副秘书长、办公厅主任、厅党组副书记 2008.02—2012.02 青海省教育厅厅长、党组书记，省委教育工委书记（其间：2011.03—2011.07中央党校中青年干部培训班学习） 2012.02—2015.04 青海省西宁市委副书记、市长、市政府党组书记 2015.04—2015.05 青海省委常委 2015.05—2017.03 青海省委常委、秘书长 2017.03—2017.07 青海省委常委、秘书长、副省长，青海省行政学院院长，黄河（青海段）河长，省红十字会会长 2017.07—2019.05 青海省委常委、副省长，青海省行政学院院长，黄河（青海段）河长，省红十字会会长 </pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 履历-惠新安</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：履历-惠新安<br>
+  原页：<a href="https://news.qq.com/rain/a/20251016A07G7G00?id=20251016A07G7G00&amp;path=a&amp;app=news&amp;suid=&amp;redirect_pc=1" target="_blank" rel="noopener">https://news.qq.com/rain/a/20251016A07G7G00?id=20251016A07G7G00&amp;path=a&amp;app=news&amp;suid=&amp;redirect_pc=1</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://news.qq.com/rain/a/20251016A07G7G00?id=20251016A07G7G00&amp;path=a&amp;app=news&amp;suid=&amp;redirect_pc=1" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">标题：山东一正厅级干部任上被查！曾任潍坊市委书记、青岛市委副书记
+来源URL：https://news.qq.com/rain/a/20251016A07G7G00?id=20251016A07G7G00&amp;path=a&amp;app=news&amp;suid=&amp;redirect_pc=1
+
+潇湘晨报
+2025-10-16 19:16发布于湖南潇湘晨报官方账号
+据山东省纪委监委10月16日消息：山东省人大常委会委员惠新安涉嫌严重违纪违法，目前正接受山东省纪委监委纪律审查和监察调查。
+公开信息显示，惠新安，男，汉族，1963年6月生，籍贯山东日照，出生地山东青岛，大学学历，高级管理人员工商管理硕士学位，中共党员。惠新安历任：山东省青岛市委组织部常务副部长，青岛市市北区委书记，青岛市委常委、宣传部部长，山东省委组织部常务副部长，潍坊市委书记，青岛市委副书记等职。2022年1月，惠新安任山东省人大常委会秘书长。
+据界面新闻，获任潍坊市委书记时，惠新安在潍坊全市领导干部会议上公开表态称，“作为市委书记，我也向大家郑重承诺，我一定坚持一切出于公心、一切为了事业、一切按规矩办事，带头严格执行廉洁自律各项规定，凡是要求大家做到的，我坚决做到；不准别人做的，自己坚决不做，也请大家对我进行监督。”
+来源：山东省纪委监委、界面新闻
+报料、维权通道：应用市场下载“晨视频”客户端，搜索“报料”一键直达；或拨打热线0731-85571188。如需内容合作，请拨打政企服务专席19176699651。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

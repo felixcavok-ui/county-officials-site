@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 罗凉清_百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：罗凉清_百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E7%BD%97%E5%87%89%E6%B8%85" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%BD%97%E5%87%89%E6%B8%85</a><br>
+  存档日期：2026-07-16 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E7%BD%97%E5%87%89%E6%B8%85" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">罗凉清，男，彝族，1959年10月生，四川冕宁人。大学学历（西南民族学院中文系汉语言文学专业，文学学士），1977年8月参加工作，1985年9月加入中国共产党。曾任四川省凉山州委副书记、州长，四川省市场监督管理局党组书记。
+
+人物履历
+1977.08—1978.03 凉山州美姑县新桥公社知青
+1978.03—1982.02 西南民族学院（现西南民族大学）学习
+1982.02—1984.03 凉山日报社记者
+1984.03—1985.09 凉山州政府办公室秘书科秘书
+1985.09—1988.10 凉山州普格县洛乌沟区副区长、书记
+1988.10—1992.11 凉山州物资局副局长
+1992.11—2001.02 凉山州物资局党组书记、局长（其间：1998.06—1999.08 省外经贸委挂职任主任助理）
+2001.02—2005.08 凉山州人民政府副州长
+2005.08—2007.01 凉山州委常委、州委政法委书记
+2007.01—2011.11 凉山州委常委、州人民政府副州长、州委政法委书记
+2011.11—2012.02 凉山州委副书记、代理州长
+2012.02—2016.11 凉山州委副书记、州长
+2016.11—2018.11 四川省质量技术监督局党组书记、局长
+2018.11—2019.11 四川省市场监督管理局党组书记
+2019.11—2023.02 四川省市场监督管理局正厅级干部
+2023.02 退休
+
+担任职务
+中共四川省第十次代表大会代表、十次党代会代表资格审查委员会委员，中共四川省第十届委员会委员，中国共产党四川省第十一届委员会候补委员、委员。
+
+来源：百度百科 https://baike.baidu.com/item/%E7%BD%97%E5%87%89%E6%B8%85</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

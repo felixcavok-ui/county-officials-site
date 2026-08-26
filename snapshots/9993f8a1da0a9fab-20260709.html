@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E6%96%BD%E6%B0%B8%E5%BA%B7/2891819" target="_blank" rel="noopener">https://baike.baidu.com/item/%E6%96%BD%E6%B0%B8%E5%BA%B7/2891819</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E6%96%BD%E6%B0%B8%E5%BA%B7/2891819" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">施永康播报编辑讨论上传视频创建人物关系福建省泉州市委原书记展开2个同名词条施永康，男，汉族，1945年1月生，福建晋江人，1968年9月参军，1975年9月加入中国共产党，大学学历，厦门大学经济系毕业，经济师。曾任福建省泉州市委书记。中文名施永康国 籍中国出生地福建晋江出生日期1945年1月毕业院校厦门大学相关视频查看全部目录1人物履历2担任职务人物履历播报编辑1963.09-1968.09厦门大学经济系学生；1968.09-1970.01江西生产建设兵团九团办事员；1970.01-1970.08江西水电三团工人；1970.08-1972.12江西新拓村电站一分部4营15连文书；1972.12-1975.04江西水利水电机械工程大队干部；1975.04-1978.02江西水电工程局秘书；1978.02-1982.07江西水电工程局办公室副主任；1982.07-1983.11晋江县委组织部干事；1983.11-1984.11晋江县委党校副校长、副书记；1984.11-1987.09晋江县副县长；1987.09-1990.08晋江县委副书记、县长；1990.08-1991.01晋江县委书记、县长；1991.01-1992.12晋江县(市)委书记、人大常委会主任；1992.12-1993.03泉州市委常委，晋江市委书记、人大常委会主任；1993.03-1995.02泉州市委常委、晋江市委书记；1995.02-1996.01泉州市委副书记、晋江市委书记；1996.01-1998.03泉州市委副书记(1997.03-1997.07为中央党校地厅级干部培训班学员)；1998.03-2002.05泉州市委副书记、市长；2002.05-2002.06泉州市委书记、市长；2002.06-2005.03泉州市委书记。 [1-2]担任职务播报编辑党的十四大代表，五届中共福建省委候补委员，六届中共福建省委委员，福建社会科学院特约研究员，中国人民大学兼职教授。 [3]词条图册更多图册1施永康参考资料1施永康卸任郑道溪主持泉州市委工作．福建之窗 [引用日期2014-08-1]2施永康同志个人简历(图)．闽南网 [引用日期2014-08-1]3施永康(1945．闽南文化生态保护区 [引用日期2026-03-04]施永康的概述图（1张）
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

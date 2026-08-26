@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.tja.gov.cn/content/column/6788979?liId=526" target="_blank" rel="noopener">https://www.tja.gov.cn/content/column/6788979?liId=526</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.tja.gov.cn/content/column/6788979?liId=526" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_淮南市田家庵区人民政府 简体 繁体 加入收藏 智能 搜索 首 页 走进田家庵 政府信息公开 政务服务 互动交流 数据发布 您当前所在的位置： 首页 &gt; 政府信息公开 &gt; 领导之窗 区委领导 区政府领导 朱 光 区委书记 魏颖颖 区委副书记、区长，区政府党组书记 房鲲鹏 区委副书记、区委党校校长 王庆祝 区委常委、区委政法委书记、区委社会工作部部长 郑克玉 区委常委、纪委书记、监委副主任、代理主任 姚文海 区委常委、常务副区长 刘庆武 区委常委、副区长 黄峰峻 区委常委、区委组织部部长 潘冬波 区委常委、区人武部上校部长 戴宜娜 区委常委、统战部部长 李云 区委常委、宣传部部长 魏颖颖 区委副书记、区长，区政府党组书记 姚文海 区委常委、常务副区长 刘庆武 区委常委、副区长 夏多明 副区长 吴杰敏 副区长 徐永锋 副区长 曹 震 副区长 缪国鹏 副区长 毛汉霖 副区长 郑克玉 区委常委、纪委书记、监委副主任、代理主任 分管工作 负责纪检监察工作和区委巡察工作。 个人简历 郑克玉，男，汉族，1983年2月生，本科学历，公共管理硕士，中共党员，现任田家庵区委常委、纪委书记、监委副主任、代理主任、四级高级监察官。 曾任淮南市委组织部干部监督科副主任科员、副科长，农村组织科科长，市纪委监委组织部部长。 领导活动 更多 网站导航 省直部门网站 市政府部门网站 区县政府网站 其他网站 主办单位：淮南市田家庵区人民政府办公室 承办单位：淮南市田家庵区信息中心 本站已支持IPV6访问 皖ICP备2022007914号-1 网站标识码：3404030012 皖公网安备34040302000086 为了获得更好的浏览效果，建议使用1920*1080分辨率及IE11以上版本浏览器。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

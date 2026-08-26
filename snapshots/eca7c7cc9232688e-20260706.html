@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 张志银简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：张志银简历<br>
+  原页：<a href="http://news.sina.com.cn/c/2004-12-31/00495380848.shtml" target="_blank" rel="noopener">http://news.sina.com.cn/c/2004-12-31/00495380848.shtml</a><br>
+  存档日期：2026-07-06 · 信源分级：B · <a href="https://web.archive.org/web/*/http://news.sina.com.cn/c/2004-12-31/00495380848.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body"># 兰州市人大常委会批准张志银辞去兰州市长职务_新闻中心_新浪网
+来源：http://news.sina.com.cn/c/2004-12-31/00495380848.shtml
+
+本报讯(记者刘凤宇 朱婕 实习生唐婧)12月30日，兰州市第十三届人大常委会第十九次会议在兰州市人大培训中心召开，会议通过了张志银同志辞去兰州市人民政府市长职务的决定。
+
+张志银，男，汉族，生于1957年3月，安徽舒城人，硕士研究生，中共党员。
+
+1981年3月至1982年12月，任总参警卫局正排职参谋；1982年12月至1986年4月，任总参警卫局副连、正连职参谋；1986年4月至1987年4月，任中央警卫团一大队副政治教导员；1987年4月至1995年3月，任总参警卫局副营、正营、副团、正团职参谋；1995年3月至2000年8月，任中办秘书局正处、副局、正局级秘书；2000年8月至2002年1月，任中共兰州市委副书记(正地级)；2002年1月至2002年3月，任兰州市政府代市长、党组书记；2002年3月至2004年12月，任兰州市政府市长、党组书记。 本报记者刘凤宇 实习生唐婧
+
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E4%BD%99%E6%96%8C/1993272" target="_blank" rel="noopener">https://baike.baidu.com/item/%E4%BD%99%E6%96%8C/1993272</a><br>
+  存档日期：2026-07-16 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E4%BD%99%E6%96%8C/1993272" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">余斌（原四川省眉山市市委书记）_百度百科
+
+余斌（1948年12月-2022年7月3日），男，1964年10月参加工作，1973年12月加入中国共产党，兰州大学金属物理专业毕业，大专文化。
+2022年7月3日5时43分，在眉山逝世，享年74岁。
+
+中文名：余斌
+性别：男
+国籍：中国
+民族：汉族
+出生地：四川宣汉
+出生日期：1948年12月
+毕业院校：兰州大学
+政治面貌：中共党员
+逝世日期：2022年7月3日
+
+人物履历
+1964.10-1974.09 四川省宣汉县河坝公社教书
+1974.09-1977.09 兰州大学读书
+1977.09-1983.12 四川省乐山冶金机械轧辊厂技术员、宣教干事、党办副主任
+1983.12-1988.08 四川省乐山冶金机械轧辊厂党委副书记、纪委书记、副厂长、经济师
+1988.08-1990.01 四川省乐山计经委副主任、政治部主任
+1990.01-1992.12 四川省乐山市五通桥区委书记、区政协主席
+1992.12-1995.03 四川省乐山市委常委、宣传部部长
+1995.03-1997.08 四川省乐山市委常委、组织部部长
+1997.08-2000.07 四川省乐山市委副书记（其间：1998.03-1998.07 在中央党校进修班学习；1998.09-2000.07 参加四川大学国民经济学专业研究生课程班在职学习）
+2000.08-2000.11 四川省眉山地委副书记、地区行署专员
+2000.12-2003.09 四川省眉山市委副书记、市长
+2003.09-2005.07 四川省眉山市委书记
+
+人物逝世
+2022年7月3日，中国共产党党员、退休干部，中共四川省眉山市委原书记，四川省纪委、省监察厅原正厅级纪检员、监察专员，四川省人大常委会法制委员会原副主任委员余斌同志，因病医治无效在眉山逝世，享年74岁。
+
+人物评价
+余斌同志，是新组建的四川省眉山地委副书记、地区行署专员和眉山首任市长，是建区设市的亲历者、推动者和建设者。他对党忠诚、担当作为，作风正派、清简务实，受到广大党员干部群众的敬重。无论在岗还是退休，他都始终情系眉山，为眉山发展倾注心血与力量。余斌同志为眉山作出的贡献，我们将永远铭记。
+
+参考资料
+1. 余斌同志不再担任眉山市委书记、常委、委员职务，另有任用
+2. 中共眉山市委原书记 余斌同志因病逝世．眉山日报数字报 [引用日期2022-07-06]
+
+URL: https://baike.baidu.com/item/%E4%BD%99%E6%96%8C/1993272
+访问日期: 2026-07-16
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

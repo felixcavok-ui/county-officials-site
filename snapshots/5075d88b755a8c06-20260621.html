@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 周政坤_百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：周政坤_百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%91%A8%E6%94%BF%E5%9D%A4" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%91%A8%E6%94%BF%E5%9D%A4</a><br>
+  存档日期：2026-06-21 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%91%A8%E6%94%BF%E5%9D%A4" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">周政坤 - 百度百科
+
+周政坤，男，汉族，湖南沅江人，1953年7月生，大学文化，中共党员。郴州市人民政府原市长。
+
+人物履历
+历任湖南省劳动人事厅科长、花垣县副县长、湖南省劳动人事厅政研室主任、《湖南劳动》杂志总编辑、中共郴州市委常委、组织部长、中共郴州市委副书记，2002年4月起任郴州市人民政府市长。2004年3月至2006年5月任省国有资产管理委员会党委书记。
+
+相关案件
+法院经审理查明：被告人周政坤利用担任省郴州市委常委、组织部长、市委副书记、郴州市人民政府市长的职务之便为他人谋取利益，单独收受贿赂135.7万元，伙同弟弟周政文收受干股分得红利598万元，感谢费76万元，伙同弟弟周政权采取名借实受的方式收受贿赂370万元，伙同妻子刘阳春收受贿赂100万元。
+
+2008年11月20日，益阳市中级人民法院一审判处原省国有资产监督委员会党委书记周政坤无期徒刑，剥夺政治权利终身，并处没收财产200万元，与同案周政文、周政权犯罪所得及其孳息3027.25万元追缴国库。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

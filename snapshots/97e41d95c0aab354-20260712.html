@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 杨宁接替梁志敏任大理州委书记 杨健提名州长</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：杨宁接替梁志敏任大理州委书记 杨健提名州长<br>
+  原页：<a href="https://news.ifeng.com/a/20160226/47601883_0.shtml" target="_blank" rel="noopener">https://news.ifeng.com/a/20160226/47601883_0.shtml</a><br>
+  存档日期：2026-07-14 · 信源分级：B · <a href="https://web.archive.org/web/*/https://news.ifeng.com/a/20160226/47601883_0.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">杨宁接替梁志敏任大理州委书记 杨健提名州长 李雄提名州政协主席
+中国经济网 2016年02月26日 16:18:00
+
+据云南大理电视台《大理新闻》栏目官方微博消息，经云南省委研究决定：梁志敏免去中共大理州委书记；杨宁任中共大理州委书记；李雄免去中共大理州委副书记、提名为大理州政协主席候选人；杨健任中共大理州委副书记、提名大理州州长候选人。
+
+26日，云南省十二届人大常委会第二十五次会议任命梁志敏为省人大常委会环境与资源保护工作委员会副主任（正厅级）。
+
+杨宁，女，1963年12月生，白族，云南大理人，1985年7月加入中国共产党，1984年7月参加工作，中央党校研究生学历。曾任云南省体育局局长、党组书记，2015年2月起任大理州委副书记、代州长，州长。
+
+2016.02 大理州委书记。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

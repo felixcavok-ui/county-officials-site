@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 省市委决定 徐立毅任温州市委书记</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：省市委决定 徐立毅任温州市委书记<br>
+  原页：<a href="https://news.66wz.com/system/2016/01/20/104700508.shtml" target="_blank" rel="noopener">https://news.66wz.com/system/2016/01/20/104700508.shtml</a><br>
+  存档日期：2026-07-12 · 信源分级：B · <a href="https://web.archive.org/web/*/https://news.66wz.com/system/2016/01/20/104700508.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">省市委决定 徐立毅任温州市委书记
+
+温州日报 2016-01-20
+
+昨日下午，市委召开全市领导干部会议，宣布省委关于市委、市人大、市政府主要领导变动的决定。
+
+省委常委、组织部长廖国勋出席会议并讲话。省委组织部副部长姚志文宣布省委干部任免决定。廖国勋宣读省委关于徐立毅同志任中共温州市委书记的决定。徐立毅在会上作表态发言。
+
+廖国勋指出，这次市委、市人大、市政府主要领导的变动，是省委从全省大局和领导班子建设的实际出发，根据工作需要，从长远发展通盘考虑、慎重研究决定的。
+
+徐立毅说，当前温州发展正处在一个新的历史起点。能够投身温州的发展，成为为之奋斗的一员，感到十分荣幸。他表示将虚心学习、专心干事、齐心共事、清正廉洁，始终把温州发展作为第一要务。
+
+会议还宣布了张耕同志被推荐为温州市市长候选人，葛益平同志被推荐为温州市人大常委会主任候选人。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

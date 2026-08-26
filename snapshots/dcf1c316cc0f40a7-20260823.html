@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · wapbaike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：wapbaike.baidu.com<br>
+  原页：<a href="https://wapbaike.baidu.com/item/%E5%BD%AD%E6%95%AC%E6%8D%B7" target="_blank" rel="noopener">https://wapbaike.baidu.com/item/%E5%BD%AD%E6%95%AC%E6%8D%B7</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://wapbaike.baidu.com/item/%E5%BD%AD%E6%95%AC%E6%8D%B7" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">彭敬捷_百度百科（wap 服务端渲染版；与 PC 版同一词条，lemmaId=7219662）
+来源URL：https://wapbaike.baidu.com/item/%E5%BD%AD%E6%95%AC%E6%8D%B7
+（PC 版 baike.baidu.com/item/彭敬捷 为 JS 动态渲染壳页且对脚本抓取有 WAF 拦截，wap 版为服务端渲染的同源内容）
+
+彭敬捷
+河北省司法厅党委委员、副厅长，省律师行业党委书记
+
+彭敬捷，女，汉族，1967年5月生，河北晋州人，1987年9月参加工作，1993年1月加入中国共产党，河北大学法律系法学专业毕业，法学学士学位。
+现任河北省司法厅党委委员、副厅长，省律师行业党委书记。
+
+【词条信息卡】
+国籍/籍贯：中国，河北晋州
+性别/民族：女，汉族
+出生日期：1967年5月
+政治面貌：中共党员
+教育信息：毕业院校 河北大学；学位 学士
+
+人物履历
+历任河北省石家庄市司法局律师管理处副处长，石家庄市司法局律师工作指导处处长，灵寿县政府副县长，井陉矿区区委常委、副区长，高邑县委常委、常务副县长，高邑县委副书记、县长，高邑县委书记，永清县委书记、高新区党工委书记、一级调研员，河北省司法厅党委委员、副厅长、省律师行业党委书记。
+
+参考资料
+[1] 我县召开全县领导干部会议 永清县人民政府 [引用日期2019-12-11]
+[2] 河北最新任免！县委书记、县长…… 知河北河北广播电视台融媒体新闻中心权威发布 [引用日期2021-06-04]
+[3] 彭敬捷简历 河北省司法厅网 [引用日期2021-11-02]
+[4] 省司法厅召开全省律师工作座谈会 保定市司法局
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

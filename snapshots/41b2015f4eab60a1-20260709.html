@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="https://baike.sogou.com/v64334063.htm?fromTitle=%E5%B9%B3%E6%8E%AA" target="_blank" rel="noopener">https://baike.sogou.com/v64334063.htm?fromTitle=%E5%B9%B3%E6%8E%AA</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v64334063.htm?fromTitle=%E5%B9%B3%E6%8E%AA" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">平措 _ 百科编辑词条登录1.摘要2.基本信息3.履历4.成就平措4政协西藏自治区第八届委员会副主席平措，男，藏族，1942年12月生，西藏江孜人，高小文化，1972年9月加入中国共产党，1964年8月参加工作。政协西藏自治区第八届委员会副主席（退休）。基本信息中文名平措外文名Ping Cuo国籍中国民族藏族出生日期1942年12月出生地西藏日喀则地区江孜县职业政府官员履历男，藏族，1942年12月生，西藏江孜人。高小文化。1972年9月加入中国共产党。1964年8月参加工作。1964年8月至1965年7月，任西藏江孜县年堆区副区长。1965年7月至1966年12月，在西藏民族学院干训班学习。1966年12月至1969年4月，任西藏自治区江孜县年堆区副区长。1969年4月至1973年10月，任西藏自治区江孜县年堆区委副书记。1973年10月至1974年12月，任西藏自治区江改县卡堆区委书记。1974年12月至1981年6月，任西藏自治区江孜县革委会副主任、主任、县革副书记、县长。1981年6月至1987年3月，任西藏自治区江孜县委书记、政协主席。1987年3月至1992年11月，任西藏自治区日喀则地区政协副主席、江孜县委书记。1992年11月至1995年4月，任西藏自治区日喀则地委副书记（其间：1993年9月至1995年4月，任西藏自治区日喀则地委正地级副书记）。1995年4月至1997年11月，任西藏自治区日喀则地委副书记、行署专员。成就1997年11月至1998年5月，任西藏自治区日喀则地委书记。1998．05—2002．12 政协西藏自治区第七届委员会副主席，日喀则地委书记2002．12—2003．01 政协西藏自治区第七届委员会副主席2003．01— 政协西藏自治区第八届委员会副主席</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

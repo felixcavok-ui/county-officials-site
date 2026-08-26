@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · web.archive.org</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：web.archive.org<br>
+  原页：<a href="http://web.archive.org/web/20040904122839/http://www.wuqiang.gov.cn:80/hswq/zwgk/xwh/ybd.htm" target="_blank" rel="noopener">http://web.archive.org/web/20040904122839/http://www.wuqiang.gov.cn:80/hswq/zwgk/xwh/ybd.htm</a><br>
+  存档日期：2026-08-22 · 信源分级：A · <a href="https://web.archive.org/web/*/http://web.archive.org/web/20040904122839/http://www.wuqiang.gov.cn:80/hswq/zwgk/xwh/ybd.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">欢迎访问武强县政府网站 
+ 您的位置:  返回首页 
+ -&gt; 政务公开 -&gt; 中共武强县委 -&gt; 领导介绍 
+ 中共武强县委 
+ 领导介绍 
+ 行政职能 
+ 机构设置 
+ 所属单位 
+ 联系方式 
+ 政务咨询 
+ 武强县人大 
+ 武强县政府 
+ 武强县政协 
+ 县委书记 杨宝达 
+ 个 
+ 人 简 介 
+     杨宝达，男，汉族，枣强县人，1953年9月出生，1972年7月入党，1970年7月参加工作，张家口农业专科学校畜牧兽医专业毕业，大普学历。 
+ 　　该同志1970年7月在枣强县橡胶厂工作；1973年9月在张家口农业专科学校畜牧兽医专业学习；1976年10月在枣强县康马公社工作；1983年4月任枣强县石村公社党委副书记；1983年12月任枣强县肖张乡党委书记；1990年12月任枣强县肖家镇党委书记；1994年11月任故城县委 
+ 常委；1996年1月任故城县委常委、纪委书记；1996年12月任武强县委副书记兼县委政法委书记、县委党校校长。2001年6月任武强县委副书记、政府县长，兼县委政法委书记。2002年6月任武强县委副书记、政府县长；2003年2月任武强县委书记。 
+ 《 
+ 返 回 》
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

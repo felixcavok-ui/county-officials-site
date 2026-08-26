@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 周忠轩任中共抚顺市委书记</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：周忠轩任中共抚顺市委书记<br>
+  原页：<a href="https://news.sina.com.cn/c/2004-03-26/09322144788s.shtml" target="_blank" rel="noopener">https://news.sina.com.cn/c/2004-03-26/09322144788s.shtml</a><br>
+  存档日期：2026-07-10 · 信源分级：B · <a href="https://web.archive.org/web/*/https://news.sina.com.cn/c/2004-03-26/09322144788s.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">中共辽宁省委决定：周忠轩任中共抚顺市委书记
+function checkPubTime(input)
+
+{
+
+	//分解年、月、日
+
+	var year = input.substring(0,4);
+
+	var month = input.substring(5,7);
+
+	var day = input.substring(8,10);
+
+
+
+	//用得到的年、月、日生成日期对象
+
+	var pubTime = new Date(year,month - 1,day);
+
+	//得到当前日期
+
+	var now = new Date();
+
+
+
+	//计算出当前日期与发布日期之间的毫秒差值
+
+	var dif = now.getTime() - pubTime.getTime();
+
+
+
+	//需要检测的日期差
+
+	var difDay = 10;
+
+
+
+	//一天24小时、一小时60分、一分60秒、一秒1000毫秒
+
+	if (dif &gt; difDay * 24 * 60 * 60 * 1000)
+
+	{
+
+		return false;
+
+	}
+
+	return true;
+
+}
+
+
+
+function getPubTime()
+
+{
+
+	var remarks=document.getElementsByTagName(&quot;!&quot;);
+
+	var pubInfo = remarks[0].outerHTML;
+
+	var beg = pubInfo.indexOf(&quot;at&quot;)+3;
+
+	var end = beg + 10;
+
+	return pubInfo.substring(beg, end)
+
+}
+中共辽宁省委决定：周忠轩任中共抚顺市委书记
+中新网3月26日电据辽宁日报报道，中共辽宁省委决定：周忠轩任中共抚顺市委委员、常委、书记，周银校不再担任中共抚顺市委书记、常委、委员职务(另有任用)。
+古天乐新片全国征召女主角
+从失败到成功：我净赚了5万!
+结识新网友，短信免费发，赶紧来新浪了了吧！
+体验真实的新浪交友乐趣
+免费试用新浪15M收费邮箱 赶紧行动！
+新闻中心意见反馈留言板</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

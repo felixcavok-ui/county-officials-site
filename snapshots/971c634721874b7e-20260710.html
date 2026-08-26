@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 锦州市历任领导</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：锦州市历任领导<br>
+  原页：<a href="https://jiuzg.com/art/f2059544-cc3c-470b-a9a9-036d28efcb4d.html" target="_blank" rel="noopener">https://jiuzg.com/art/f2059544-cc3c-470b-a9a9-036d28efcb4d.html</a><br>
+  存档日期：2026-07-10 · 信源分级：C · <a href="https://web.archive.org/web/*/https://jiuzg.com/art/f2059544-cc3c-470b-a9a9-036d28efcb4d.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">锦州市历任领导
+
+市长：
+1998.01-2000.11 褚光宇
+2000.11-2001.02 赵明鹏（代市长）
+2001.02-2004.09 赵明鹏
+2004.09-2005.01 刘志强（代市长）
+2005.01-2008.02 刘志强
+2008.02-2009.01 王文权（代市长）
+2009.01-2010.12 王文权
+2010.12-2011.01 魏俊星（代市长）
+2011.01-2011.11 魏俊星
+2011.11-2012.01 刘凤海（代市长）
+2012.01-2014.09 刘凤海
+2014.09-2015.01 刘兴伟（代市长）
+2015.01-2016.09 刘兴伟
+2016.09-2017.01 王德佳（代市长）
+2017.01-2018.07 王德佳
+2018.07-2018.09 于学利（代市长）
+2018.09-2021.06 于学利
+2021.06-2022.01 王心宇（代市长）
+2022.01-2025.06 王心宇
+2025.06-2025.07 孟华强（代市长）
+2025.07- 孟华强
+
+市委书记：
+2000.11-2003.01 褚光宇
+2003.03-2008.01 佟志武
+2008.02-2010.12 刘志强
+2010.12-2014.02 王文权
+2014.03-2018.02 王明玉
+2018.07-2021.06 王德佳
+2021.06-2023.02 靳国卫
+2023.02- 刘克武</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

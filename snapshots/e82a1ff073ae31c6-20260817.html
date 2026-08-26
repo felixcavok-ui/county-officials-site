@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 高屹东-快懂百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：高屹东-快懂百科<br>
+  原页：<a href="http://www.baike.com/wiki/高屹东" target="_blank" rel="noopener">http://www.baike.com/wiki/高屹东</a><br>
+  存档日期：2026-08-16 · 信源分级：C · <a href="https://web.archive.org/web/*/http://www.baike.com/wiki/高屹东" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">高屹东中文名高屹东国籍中国籍贯内蒙古伊金霍洛旗出生日期1973年6月职业资料政党中国共产党中国共产党入党时间1999年10月职位鄂尔多斯高新技术产业开发区党工委书记、东胜区委书记其他信息性别男高屹东，男，汉族汉族，1973年6月出生，内蒙古自治区内蒙古伊金霍洛旗伊金霍洛旗人，大学学历，公共管理硕士学位，1999年10月加入中国共产党，1995年8月参加工作。现任鄂尔多斯市鄂尔多斯高新技术产业开发区党工委书记、东胜区东胜区委书记。人物履历1993.09—1995.07  伊克昭盟教育学院伊克昭盟教育学院汉语言文学汉语言文学专业学习1995.08—1996.07  内蒙古自治区伊金霍洛旗二中任教1996.07—2001.06  内蒙古自治区伊金霍洛旗政府办秘书（其间：1994.10—2000.12在内蒙古师范大学内蒙古师范大学汉语言文学专业自考本科班学习）2001.06—2003.11  内蒙古自治区内蒙古自治区伊金霍洛旗伊金霍洛旗政府办副主任2003.11—2005.11  内蒙古自治区伊金霍洛旗新街镇党委书记2005.11—2008.08  内蒙古自治区伊金霍洛旗红庆河镇红庆河镇党委书记2008.08—2008.10  内蒙古自治区伊金霍洛旗城建局局长、宏泰城投公司总经理（其间：2008.07—2011.06在内蒙古师范大学公共管理专业学习）2008.10—2010.11  内蒙古自治区伊金霍洛旗阿镇装备基地管委会主任、伊金霍洛旗城建局局长、宏泰城投公司总经理（副处级）2010.11—2013.04  内蒙古自治区内蒙古自治区伊金霍洛旗伊金霍洛旗政府副旗长2013.04—2015.02  内蒙古自治区伊金霍洛旗委常委、政府副旗长2015.02—2018.02  内蒙古自治区东胜区东胜区委常委、政府副区长2018.02—2018.09  内蒙古自治区鄂尔多斯市鄂尔多斯市金融办党组书记、主任2018.09—2020.09  内蒙古自治区鄂尔多斯农村商业银行股份有限公司鄂尔多斯农村商业银行股份有限公司党委书记2020.09—2021.06  内蒙古自治区鄂尔多斯市财政局党组书记、局长2021.06，内蒙古自治区内蒙古自治区鄂尔多斯市东胜区委书记现任鄂尔多斯高新技术产业开发区党工委书记、东胜区委书记</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

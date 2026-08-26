@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · politics.people.com.cn</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：politics.people.com.cn<br>
+  原页：<a href="http://politics.people.com.cn/n/2015/0602/c1001-27089478-13.html" target="_blank" rel="noopener">http://politics.people.com.cn/n/2015/0602/c1001-27089478-13.html</a><br>
+  存档日期：2026-08-15 · 信源分级：B · <a href="https://web.archive.org/web/*/http://politics.people.com.cn/n/2015/0602/c1001-27089478-13.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">20年前获表彰百名县委书记：16人升省部级(简历)【13】--时政--人民网
+
+来源: http://politics.people.com.cn/n/2015/0602/c1001-27089478-13.html
+
+陈宝根简历
+陈宝根，男，汉族，1953年7月生，甘肃省临夏市人，中央党校研究生学历，1970年1月参加工作，1974年6月加入中国共产党。历任宝鸡镀锌铅丝厂厂长，陕西省宝鸡市渭滨区经委副主任，渭滨区副区长，区委常委、常务副区长，区委副书记、区长，区委书记，1995年6月任陕西省宝鸡市政府副市长，1998年2月任陕西省宝鸡市委副书记、市政府市长，1999年10月任四川省广元市委副书记，市政府副市长、代市长，2000年1月任四川省广元市委副书记、市政府市长，2002年2月任西安市委副书记，2002年4月任西安市委副书记，市政府常务副市长、党组副书记，2006年7月任西安市委副书记，市政府代市长、党组书记，2007年2月任西安市委副书记，市政府市长、党组书记。2012年2月在西安市第十五届人民代表大会第一次会议上当选为西安市人大常委会主任。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

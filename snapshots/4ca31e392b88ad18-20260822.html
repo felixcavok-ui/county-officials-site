@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.sogou.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.sogou.com<br>
+  原页：<a href="https://baike.sogou.com/v140457554.htm" target="_blank" rel="noopener">https://baike.sogou.com/v140457554.htm</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v140457554.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">【页面】王成宗 - 搜狗百科
+【URL】https://baike.sogou.com/v140457554.htm
+【抓取方式】web_reader 服务端抓取（requests 直抓遭 EO_Bot 反爬 JS 挑战，无原始 HTML 母版；百度百科 403、维基百科另义）
+【抓取日期】2026-08-22
+===== 词条正文 =====
+王成宗
+
+编辑词条
+- 添加义项
+- 收藏
+
+王成宗，男，汉族，1965年10月生，大学，中共党员。
+
+现任衡水市政协副主席。
+
+信息框：
+中文名：王成宗；民族：汉族；职务：衡水市政协副主席；国籍：中国；出生日期：1965年10月
+
+参考资料：
+1. 王成宗简历 中国经济网[引用日期2021-08-26]
+2. 河北4市最新任免！副市长、副县长…… 澎湃网[引用日期2021-06-07]
+3. 衡水市新一届政协主席、副主席、秘书长简历(主席钮兴辉)_中国经济网――国家经济门户 中国经济网[引用日期2021-08-26]
+
+词条标签：人物
+
+免责声明：搜狗百科词条内容由用户共同创建和维护，不代表搜狗百科立场。
+
+===== 页面摘要（页面 meta description，含任免记录原文）=====
+王成宗，男，汉族，1965年10月生，大学，中共党员。
+现任衡水市政协副主席。曾任河北省衡水市武邑县委副书记、县长。
+2021年8月，衡水市政协副主席。2021年5月29日，武邑县第十六届人大常委会召开第三十六次会议，决定接受王成宗辞去武邑县人民政府县长的请求。
+2021年8月25日，政协衡水市第七届委员会第一次会议，王成宗当选为政协衡水市第七届委员会副主席。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

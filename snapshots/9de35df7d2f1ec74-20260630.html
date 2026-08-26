@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 命中依据：维基百科「毛小兵」条目履历含「中共西宁市委副书记、代市长、市长、市委书记」一段，单位（西宁市）与职务（代市长/</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：命中依据：维基百科「毛小兵」条目履历含「中共西宁市委副书记、代市长、市长、市委书记」一段，单位（西宁市）与职务（代市长/<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/毛小兵" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/毛小兵</a><br>
+  存档日期：2026-06-30 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/毛小兵" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body"># 来源：中文维基百科 - 毛小兵
+# URL: https://zh.wikipedia.org/wiki/毛小兵
+# 抓取方式：python urllib 直抓（Wikipedia 返回解码后 UTF-8 HTML，正则提取正文段落）
+# 抓取日期：2026-06-30
+# 访问日期：2026-06-30
+# 运行 run_id：qh20260622a
+# 备注：人物档案页，涵盖简历、履历、落马经过。原文为维基百科条目正文。
+
+毛小兵（1965年4月—），湖南常德人。曾任西宁市市委书记。
+
+1984年加入中国共产党。北京钢铁学院（现北京科技大学）自动化系工业自动化专业毕业，中南大学资源与安全工程学院资源与环境经济学专业在职研究生学历，工学博士，高级工程师。历任青海省锡铁山矿务局副厂长、厂长、局长助理、副局长、局长；青海西部矿业有限责任公司董事长、总经理，西部矿业集团有限公司董事长；中共西宁市委副书记、代市长、市长、市委书记。2012年5月获任中共青海省委常委。
+
+毛小兵曾多次被网络举报。2014年4月24日，中纪委网站发布通告，毛小兵涉嫌严重违纪违法，正接受组织调查。2014年7月16日，经查他因涉嫌收受巨额贿赂、与他人通奸被双开，并移送司法机关处理。2014年7月31日，被最高人民检察院立案侦查。2015年11月13日，毛小兵受贿、挪用公款案，由最高人民检察院指定甘肃省人民检察院侦查终结后，移送兰州市人民检察院审查起诉。2016年1月6日，兰州中院一审公开开庭审理了毛小兵受贿、挪用公款案。2017年5月11日，兰州中院以受贿罪（1.048亿）、挪用公款罪（4亿）判处毛小兵无期徒刑。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

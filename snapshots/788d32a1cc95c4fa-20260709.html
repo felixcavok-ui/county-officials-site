@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://news.sina.com.cn/o/2016-11-15/doc-ifxxsfip4862236.shtml" target="_blank" rel="noopener">https://news.sina.com.cn/o/2016-11-15/doc-ifxxsfip4862236.shtml</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://news.sina.com.cn/o/2016-11-15/doc-ifxxsfip4862236.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">Source URL: https://news.sina.com.cn/o/2016-11-15/doc-ifxxsfip4862236.shtml
+Access Date: 20260709
+Title: 廖小军任福建省政协副秘书长(正厅长级) 原任宁德市委书记(简历)
+============================================================
+
+中国经济网福州11月15日综合报道 11月10日，十一届省政协常委会第二十二次会议在福州召开，会议通过了有关人事事项。廖小军同志任政协第十一届福建省委员会副秘书长（正厅长级）。    据中国经济网地方党政领导人物库资料显示，廖小军，1962年6月出生，曾任泉州市常务副市长，宁德市市长，2012年1月任宁德市委书记。今年9月27日，中国共产党宁德市第四届委员会举行第一次全体会议，廖小军当选为新一届宁德市委书记(相关报道)。　　廖小军简历　　廖小军，男，汉族，1962年6月出生，福建省上杭县人（在福建省上杭县出生），中共党员，1980年12月参加工作，在职研究生学历，经济学博士。　　1980.12——1984.01，福建省上杭县工商局干部；　　1984.01——1987.07，共青团福建省上杭县委干部、县直机关团委书记（其间：1985.09—1987.07福建师范大学政教系团干大专班学员）；　　1987.07——1989.08，共青团福建省委研究室科员、副主任科员；　　1989.08——1992.05，福建省纪委副主任科员、主任科员；　　1992.05——1993.09，福建省委办公厅正科级秘书；　　1993.09——1995.09，福建省委办公厅副处级秘书；　　1995.09——1996.11，福建省委办公厅正处级秘书；　　1996.11——1997.04，福建省委办公厅政改处处长（其间：1995.09—1998.01参加福建省委党校政治经济学专业研究生班学习）；　　1997.04——1998.09，福建省惠安县委副书记、代县长、县长；　　1998.09——2001.04，福建省惠安县委书记；　　2001.04——2005.03，福建省泉州市人民政府副市长；　　2005.03——2008.04，中共泉州市委常委、常务副市长；　　2008.04——2010.04，中共泉州市委副书记、常务副市长；　　2010.04——2012.01，任宁德市委副书记、代市长，市长；　　2012.01——2016.11，任中共宁德市委书记；　　2016.11—— 政协第十一届福建省委员会副秘书长（正厅长级）    相关：福建各地市书记、市长名单+简历</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

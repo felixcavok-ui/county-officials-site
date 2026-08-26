@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%88%98%E6%8C%AF%E6%B4%B2/23129518" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%88%98%E6%8C%AF%E6%B4%B2/23129518</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%88%98%E6%8C%AF%E6%B4%B2/23129518" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">刘振洲（河北省农业农村厅原一级巡视员）_百度百科
+来源: https://baike.baidu.com/item/刘振洲/23129518
+抓取日期: 2026-08-22（经 r.jina.ai 渲染提取，正文为页面可读文本）
+============================================================
+# 刘振洲
+
+播报 编辑讨论上传视频创建人物关系
+
+河北省农业农村厅原一级巡视员
+
+展开 4个同名词条
+
+刘振洲，男，汉族，1963年10月出生，中共党员，研究生学历，理学硕士。
+
+曾任河北省农业农村厅一级巡视员。 [2-3]
+
+中文名 刘振洲
+
+性 别 男
+
+国 籍中国
+
+民 族 汉族
+
+出生日期 1963年10月
+
+政治面貌 中共党员
+
+相关视频
+
+查看全部
+
+人物履历
+
+历任隆化县委副书记，隆化县委副书记、县长，隆化县委书记。
+
+2013年6月，任省委、省政府农村工作办公室(省委农村工作部)副主任(副部长)。
+
+2016年3月，任省委、省政府农村工作办公室副主任，省农业厅党组成员。
+
+2018年11月，任省农业农村厅副厅长、党组成员。 [1]
+
+曾任河北省农业农村厅一级巡 视员。 [2-3]
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

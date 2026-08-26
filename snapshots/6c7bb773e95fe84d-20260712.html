@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 左广-保山市人民政府门户网站</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：左广-保山市人民政府门户网站<br>
+  原页：<a href="https://www.baoshan.gov.cn/info/1090/10079884.htm" target="_blank" rel="noopener">https://www.baoshan.gov.cn/info/1090/10079884.htm</a><br>
+  存档日期：2026-07-14 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.baoshan.gov.cn/info/1090/10079884.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">\n        \n    \n
+\n   \n                          \n\n
+\n\n\n
+\n     \n
+\n\n\n
+【用户空间】
+\n  \n
+\n  \n
+\n\n$(&#x27;.zcdl&#x27;).parent(&#x27;div&#x27;).css({ &#x27;position&#x27;: &#x27;relative&#x27;, &#x27;z-index&#x27;:  2, &#x27;display&#x27;: &#x27;inline-block&#x27; });\n\n  //获取账号状态\n\n  $.ajax({\n    type: \&quot;POST\&quot;,\n    url: &#x27;/system/resource/getstatus.jsp&#x27;,\n    dataType: \&quot;json\&quot;,\n    success: function (data) {\n      if (data.success) {\n        $(\&quot;#zcdls\&quot;).css(\&quot;display\&quot;, \&quot;\&quot;);\n        $(\&quot;#nozcdl\&quot;).css(\&quot;display\&quot;, \&quot;none\&quot;);\n        $(\&quot;#namespan\&quot;).html(data.name);\n        sessionStorage.setItem(\&quot;userId\&quot;,data.id);\n      } else {\n        $(\&quot;#nozcdl\&quot;).css(\&quot;display\&quot;, \&quot;\&quot;);\n        $(\&quot;#zcdls\&quot;).css(\&quot;display\&quot;, \&quot;none\&quot;);\n        sessionStorage.removeItem(\&quot;userId\&quot;);\n      }\n    }\n  });\n  \n   function addFavorite(sURL, sTitle) {\n        $.ajax({\n            url:&#x27;/system/resource/myspace/collect/addfavorite.jsp&#x27;,\n            data:{\n                link:sURL,\n                name:sTitle\n            },\n            success:function(d){\n                d=d.replace(/^\\s+|\\s+$/g,\&quot;\&quot;);\n                alert(d);\n            }\n        });\n    }\n\n
+\n\n        \n
+\n         \n         \n
+\n            \n            \n
+\n                    \n           \n                 \n
+\n\n\n
+--&gt;\n\n
+\n\n\n\n
+\n\n    try{\n        \n            st_multiOnload(\&quot;st_convert(0)\&quot;);\n            \n        \n    }catch(e)\n    {\n    }\n\n
+\n\n\n
+\n                \n
+转换链接错误
+\&quot; style=\&quot;font-size: .2rem; color: #fff;background: #ce0228 url(../../images/zza.png) no-repeat 14px center; padding: 0 15px 0 40px;border-radius: 5px; cursor: pointer;\&quot;     class=\&quot;link-light\&quot;&gt;长者模式
+\n        --&gt;             \n            \n
+\n             \n
+进入适老模式
+\n          \n                \n                \n
+\n            \n
+\n            \n           \n            \n
+\n            \n            \n
+\n    $(&#x27;.close-rob&#x27;).click(function(){\n        event.preventDefault(); // 阻止a链接的默认行为\n        event.stopPropagation(); // 阻止事件冒泡\n        $(&#x27;.rob&#x27;).css(&#x27;visibility&#x27;,&#x27;hidden&#x27;)\n    })\n
+window.onload=function(){$(\&quot;.top-link a\&quot;).attr(\&quot;target\&quot;,\&quot;_self\&quot;);}
+\n\n                \n
+\n                \n
+\n               \n
+\n           \n
+\n\n\n
+\n        \n
+\n            应用维护中！\n
+\n    $(\&quot;#divu4\&quot;).html($(\&quot;#htmlu4\&quot;).text());\n
+\n    var appOwner = \&quot;\&quot;;\n    //var appOwner = \&quot;1888986967\&quot;;\n    var logoOwner = \&quot;1888986967\&quot;;\n    var token = &#x27;tourist&#x27;;\n    var urlPrefix = \&quot;/aop_component/\&quot;;\n\n    jQuery.support.cors = true;\n    $.ajaxSetup({\n        beforeSend:function(request, settings) {\n            request.setRequestHeader(\&quot;Authorization\&quot;, token);\n            request.setRequestHeader(\&quot;owner\&quot;, appOwner);\n            request.setRequestHeader(\&quot;logoowner\&quot;, logoOwner);\n        }\n    });\n\n    new Vue({\n        el: \&quot;#appu4\&quot;,\n        data: function() {\n            return {\n                query:{\n                    keyWord:\&quot;\&quot;,//搜索关键词\n                    owner:appOwner,\n                    logoowner:logoOwner,\n                    token:token,\n                    urlPrefix:urlPrefix,\n                    lang:\&quot;i18n_zh_CN\&quot;\n                },\n                isError: false\n            }\n        },\n        mounted: function() {\n            var _this = this;\n            // _this.init();\n        },\n        methods:{\n            init:function(){\n                $.ajax({\n                    url: \&quot;/aop_component//webber/search/test\&quot;,\n                    type:\&quot;get\&quot;,\n                    success: function(response){\n                        if(response.code==\&quot;0000\&quot;){\n                        }else if(response.code ==\&quot;220\&quot;){\n                            _this.isError = true;\n                            console.log(response);\n                        }else if(!response.code){\n                            _this.isError = true;\n                            console.log(response);\n                        }\n                    },\n                    error: function(response){\n                        _this.isError = true;\n                    }\n                });\n            },\n            onSubmit:function(e){\n                var url = \&quot;/views/search/modules/resultpcegov/soso.html\&quot;;\n                if (\&quot;10\&quot; == \&quot;1\&quot; || \&quot;10\&quot; == \&quot;2\&quot;) {\n                    url = \&quot;\&quot; + url;\n                }\n                var _this = this;\n                var query = _this.query;\n                if(url.indexOf(\&quot;?\&quot;)&gt;-1){\n                    url =url.split(\&quot;?\&quot;)[0];\n                }\n                if(query.keyWord){\n                    var query=new Base64().encode(JSON.stringify(query));\n                    window.open(url+\&quot;?query=\&quot;+query);\n                }else{alert(\&quot;请填写搜索内容\&quot;)}\n            },\n\n        }\n    })\n
+\n            \n
+\n            \n\n
+\n            \n\n
+\n            \n\n
+\n            \n\n
+\n            \n\n
+\n            \n\n
+\n            \n
+\n                    \n                    \n
+\n\n\n
+\n                    \n                    \n
+\n\n\n
+政府工作报告
+\n                    \n                    \n
+\n\n\n
+\n                    \n                    \n
+\n\n\n
+当前位置：\n
+\n市长、市政府党组书记
+\n\n\n
+左    广
+发布日期：2026-03-12 10:52
+_showDynClicks(\&quot;wbnews\&quot;, 1888986967, 10079884)
+\n                \n                \n
+左广，男，汉族，1974年1月出生，研究生学历，管理学博士，中共党员。现任中共保山市委副书记，市人民政府市长、党组书记。
+主持市人民政府全面工作。负责审计工作。
+\n                    \n                    \n
+\n             \n            \n\n\n\n\n\n\n\n
+\n\n                    \n
+\n\n\n\n
+\n\n               \n            \n
+市政府办公室
+\n                        \n  \n
+市发展改革委
+\n                        \n  \n
+市工业和信息化局
+\n                        \n  \n
+市教育体育局
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+市人力资源社会保障局
+\n                        \n  \n
+市自然资源和规划局
+\n                        \n  \n
+市生态环境局
+\n                        \n  \n
+市住房城乡建设局
+\n                        \n  \n
+市交通运输局
+\n                        \n  \n
+市农业农村局
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+市文化和旅游局
+\n                        \n  \n
+市卫生健康委
+\n                        \n  \n
+市退役军人事务局
+\n                        \n  \n
+市应急管理局
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+市政府研究室
+\n                        \n  \n
+市市场监督管理局
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+\n                        \n  \n
+市政务服务局
+\n                        \n  \n
+市供销合作社
+\n                        \n  \n
+市投资促进局
+\n                        \n  \n
+\n                        \n  \n
+市住房公积金管理中心
+\n                        \n  \n
+市疾控中心（市卫生监督所）
+\n                        \n  \n
+市民族宗教局
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n             \n
+\n                        \n
+保山市纪委市监委
+\n                        \n
+保山市保密局
+\n                        \n
+省内政府网站
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+\n                        \n
+国内政府网站
+云南省人民政府网站
+\n                        \n
+北京市人民政府网站
+\n                        \n
+上海市人民政府网站
+\n                        \n
+新疆维吾尔自治区人民政府
+\n                        \n
+海南省人民政府网站
+\n                        \n
+青海省人民政府网站
+\n                        \n
+福建省人民政府网站
+\n                        \n
+广东省人民政府网站
+\n                        \n
+天津市人民政府网站
+\n                        \n
+湖南省人民政府网站
+\n                        \n
+吉林省人民政府网站
+\n                        \n
+安徽省人民政府网站
+\n                        \n
+广西壮族自治区人民政府
+\n                        \n
+陕西省人民政府网站
+\n                        \n
+江西省人民政府网站
+\n                        \n
+宁夏回族自治区人民政府
+\n                        \n
+黑龙江省人民政府网站
+\n                        \n
+贵州省人民政府网站
+\n                        \n
+山西省人民政府网站
+\n                        \n
+西藏自治区人民政府网站
+\n                        \n
+甘肃省人民政府网站
+\n                        \n
+江苏省人民政府网站
+\n                        \n
+四川省人民政府网站
+\n                        \n
+湖北省人民政府网
+\n                        \n
+山东省人民政府网站
+\n                        \n
+辽宁省人民政府网站
+\n                        \n
+重庆市人民政府网站
+\n                        \n
+河南省人民政府网站
+\n                        \n
+浙江省人民政府网站
+\n                        \n
+河北省人民政府网站
+\n                        \n
+云南省人民政府公报微信小程序
+\n          \n          \n
+\n\n\n\n
+保山市人民政府公报二维码
+\n          \n          \n
+\n\n\n\n
+征集影响营商环境建设问题线索
+\n          \n          \n
+\n                    \n
+征集影响营商环境建设问题线索
+有建议 来这里留言
+\n                \n                 \n                        \n                        \n          --&gt;       \n\n\n\n
+\n          \n          \n
+\n                        \n                        \n          --&gt;       \n\n
+\n                    \n
+(function(){var s = document.getElementsByTagName(\&quot;script\&quot;)[0]; var hm = document.createElement(\&quot;script\&quot;); hm.async=&#x27;async&#x27;;hm.src =  \&quot;/views/statistics/js/script.js?948b7f8f-5555-4033-ad9d-de95e1145304\&quot;;s.parentNode.insertBefore(hm, s);})();
+主办：保山市人民政府 承办：保山市人民政府办公室
+地址：云南省保山市隆阳区同仁街26号
+滇ICP备12002983号
+53050202000020号
+网站标识码：5305000006 政务热线：0875-12345
+\n                    \n
+\n           \n     \n                       \n     \n
+\n        \n        \n\n
+\n      \n      \n      \n        \n
+\n\n\n\n
+按回车键在新窗口打开无障碍说明页面,按Ctrl+~键打开导盲模式。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

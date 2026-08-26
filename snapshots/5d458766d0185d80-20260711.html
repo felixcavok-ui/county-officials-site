@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%88%98%E5%BF%97%E6%9D%B0/68294" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%88%98%E5%BF%97%E6%9D%B0/68294</a><br>
+  存档日期：2026-07-11 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%88%98%E5%BF%97%E6%9D%B0/68294" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">刘志杰_百度百科
+网址：https://baike.baidu.com/item/%E5%88%98%E5%BF%97%E6%9D%B0/68294
+
+山西省政协提案委员会原主任
+刘志杰，男，汉族，1962年11月生，山西晋中人，中央党校研究生学历，1982年1月加入中国共产党，1983年8月参加工作。
+曾任山西省政协提案委员会主任。
+
+中文名：刘志杰
+国籍：中国
+民族：汉族
+籍贯：山西晋中
+出生日期：1962年11月
+毕业院校：中央党校
+政治面貌：中共党员
+
+人物履历
+1983.08—1991.06，晋中地委组织部干事、副科长、科长（其间：1986.03—1987.03，寿阳县西洛镇挂职党委副书记）；
+1991.06—1993.03，晋中地委组织部副县级组织员、组织科科长；
+1993.03—1995.02，平遥县委副书记；
+1995.02—1997.10，平遥县委副书记、县长，县委书记（其间：1997.09—1998.07，中央党校第十四期中青年干部培训班学习；1997.09—2000.07，中央党校在职研究生班政治学专业学习）；
+1997.10—2000.10，共青团山西省委副书记、党组成员；
+2000.10—2003.03，共青团山西省委副书记、党组成员，省青联副主席（2002.03—2004.12，山西农业大学推广硕士研究生）；
+2003.03—2004.03，共青团山西省委副书记、党组副书记、共青团第十五届中央委员，全国青联常委、省青联主席；
+2004.03—2008.02，大同市委常委、组织部部长（其间：2005.09—2006.01，中央党校第四期半年制中青年干部培训班学习）；
+2008.02—2008.03，临汾市委副书记，市政府党组书记、副市长、代市长；
+2008.03—2008.09，临汾市委副书记，市政府党组书记、市长；
+2013.07—2015.12，山西省委农村工作领导组办公室副主任、省农业厅副厅长、党组成员；
+2015.12—2021.01，山西省扶贫开发办公室主任、党组书记；
+2021.01—2023.01，山西省委农办主任、省农业农村厅党组书记、厅长；
+2023.01—2026.05，山西省政协提案委员会主任。
+
+担任职务
+山西省第十一届人大代表，十一届山西省委委员，中国人民政治协商会议第十二届山西省委员会委员、常委
+政协第十三届山西省委员会委员、常务委员（2026年5月辞去）
+
+职务任免
+2026年5月12日，经政协第十三届山西省委员会常务委员会第十九次会议决定：免去刘志杰同志的山西省政协提案委员会主任职务。
+
+人物事件
+2008年9月，因山西襄汾泥石流事故，山西省委决定免去刘志杰临汾市委副书记、常委、委员职务，提名免去刘志杰临汾市市长职务。
+
+所获荣誉
+2021年2月，被党中央、国务院授予：&quot;全国脱贫攻坚先进个人&quot;称号。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

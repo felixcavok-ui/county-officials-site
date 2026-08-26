@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 陈志乃-快懂百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：陈志乃-快懂百科<br>
+  原页：<a href="https://m.baike.com/wikiid/4745545049567911694" target="_blank" rel="noopener">https://m.baike.com/wikiid/4745545049567911694</a><br>
+  存档日期：2026-08-17 · 信源分级：C · <a href="https://web.archive.org/web/*/https://m.baike.com/wikiid/4745545049567911694" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">URL: https://m.baike.com/wikiid/4745545049567911694
+TITLE: 陈志乃-快懂百科
+DATE: 2026-08-17
+
+陈志乃-快懂百科 
+ 陈志乃 河北省承德市政协原副主席 创建同名条目 条目 编辑 陈志乃， 满族 ，1956年3月生，曾任 河北省 承德市政协副主席。 人物履历 历任河北宽城县委组织部干事，财政局纪检组长、财政局副局长、财政局局长，人民政府副县长、县委常委、常务副县长； 围场满族蒙古族自治县 委副书记、县长、县委书记。 2011年2月任政协 承德市 第十二届委员会副主席。 --&gt;</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

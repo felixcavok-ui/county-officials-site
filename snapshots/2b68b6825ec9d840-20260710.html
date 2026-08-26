@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 图文：陈政高正式当选沈阳市市长</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：图文：陈政高正式当选沈阳市市长<br>
+  原页：<a href="http://www.chinanews.com.cn/2001-02-14/26/70114.html" target="_blank" rel="noopener">http://www.chinanews.com.cn/2001-02-14/26/70114.html</a><br>
+  存档日期：2026-07-10 · 信源分级：C · <a href="https://web.archive.org/web/*/http://www.chinanews.com.cn/2001-02-14/26/70114.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">图文：陈政高正式当选沈阳市市长 中国新闻社主办 新闻大观&gt;国内新闻&gt;新闻报道 图文：陈政高正式当选沈阳市市长 2001年2月14日 19:13 中新网沈阳2月14日消息：辽宁省沈阳市第12届人民代表大会第4次会议今天选举陈政高为沈阳市市长。 2000年12月22日，第12届沈阳市人大常委会第21次会议任命陈政高为沈阳市副市长、代理市长。 陈政高，1952年3月生，汉族，辽宁海城人，曾任大连市副市长、辽宁省省长助理、辽宁省副省长等职。 新闻大观&gt;国内新闻&gt;新闻报道 滚动新闻 |新闻大观 |中新图片 |中新专稿 |图文专稿 |中新影视 |中新出版品 |中新电讯 |中新专著 |中新英才 |联系我们 新闻标题检索： 主编信箱 本网站所刊载信息，不代表中新社观点。 刊用本网站稿件，务经书面授权。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 中国昆山（Wayback 2006-06 快照）</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：中国昆山（Wayback 2006-06 快照）<br>
+  原页：<a href="https://web.archive.org/web/20060618061451/http://www.ks.gov.cn:80/zyld/ldjj.jsp?ID=420" target="_blank" rel="noopener">https://web.archive.org/web/20060618061451/http://www.ks.gov.cn:80/zyld/ldjj.jsp?ID=420</a><br>
+  存档日期：2026-06-11 · 信源分级：A · <a href="https://web.archive.org/web/*/https://web.archive.org/web/20060618061451/http://www.ks.gov.cn:80/zyld/ldjj.jsp?ID=420" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">中国昆山
+首  页
+昆山概览
+主要领导
+投资指南
+生活向导
+政商信息
+惩防体系
+昆山文明
+工商频道
+政务公开
+领导简介
+工作分工
+政务活动
+曹新平
+曹新平，男，浙江宁波鄞县人，1956年1月出生于江苏省徐州市，1984年5月入党，本科学历，1971年1月参加工作。2003年5月起任昆山市委书记。
+1971．01-1977．02 徐州化肥厂工人
+1977．02-1980．03 江苏师范学院政史系学生
+1980．03-1984．03 徐州教师进修学院、教育学院教师、教研组组长
+其中：1982．09-1983．07 苏州大学政治系进修班学员
+1984．03-1988．10 徐州师范专科学校教师，校团委副书记、宣传部副部长、学报副主编
+1988．10-1988．12 苏州市广播电视大学教师
+1988．12-1989．02 苏州市委组织部组织科帮助工作
+1989．02-1993．03 苏州市委组织部组织科组织员、副科长
+1993．03-1996．01 苏州市委组织部组织科(处)科(处)长
+1996．01-1997．05 苏州市平江区委常委、组织部部长
+1997．05-1998．01 苏州市平江区委副书记、代区长
+1998．01-2001．05 苏州市平江区委副书记、区长
+2001．05-2003．05 苏州市金阊区委书记
+其中：1999．08-2001．12 中央党校函授学院法律专业学习(本科)
+2003．05以后 昆山市委书记
+昆山经济技术开发区工委书记
+E-mail:  caoxp@ks.gov.cn
+昆山市人民政府  版权所有   网进科技 提供技术支持
+地址：中国江苏省昆山市前进中路108号  电话：0512-57303376</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

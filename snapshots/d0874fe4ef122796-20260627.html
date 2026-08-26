@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%90%B4%E5%A4%A9%E5%90%9B/11005588" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%90%B4%E5%A4%A9%E5%90%9B/11005588</a><br>
+  存档日期：2026-06-27 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%90%B4%E5%A4%A9%E5%90%9B/11005588" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">吴天君_百度百科
+来源: https://baike.baidu.com/item/%E5%90%B4%E5%A4%A9%E5%90%9B/11005588
+访问日期: 2026-06-27
+run_id: henan20260627a
+
+【人物简介】
+吴天君，男，汉族，河南省濮阳县人，1957年2月出生，1979年12月参加工作，1982年12月加入中国共产党，中国地质大学资源产业经济专业博士研究生。曾任河南省委常委、政法委书记。
+2017年8月4日，被判处有期徒刑十一年。
+
+【人物履历】
+1977.03——1978.10，安阳农业大学农学系农学专业学习；
+1978.10——1979.12，返乡务农；
+1979.12——1981.12，河南省安阳地区农科所技术员、团支部书记；
+1981.12——1984.04，河南省淇县北阳人民公社管委会副主任、主任，北阳乡乡长；
+1984.04——1985.04 河南省淇县人民政府副县长；
+1985.04——1987.11，河南省安阳市农工委副主任、农牧局副局长；
+1987.11——1989.06，河南省内黄县委副书记；
+1989.06——1991.08，河南省内黄县委副书记、县长；
+1991.08——1994.02，河南省内黄县委书记（其间：1995.08——1997.12，在中央党校函授学院河南分院本科班经济管理专业学习）；
+1994.02——1998.12，河南省安阳市人民政府副市长；
+1998.12——2000.01，河南省安阳市委常委、市委秘书长（1998.09——1999.07，在中央党校一年制中青年干部培训班学习）；
+2000.01——2001.12，河南省新乡市委副书记（1998.07——2001.07，在中央党校研究生院在职研究生班法学理论专业学习）；
+2001.12——2006.02，河南省新乡市委副书记、市长；  【对照锚点: 新乡市行政正职 2001-12 至 2006-02 - 完全吻合】
+2006.02——2006.03，河南省新乡市委书记、市长；
+2006.03——2011.05，河南省新乡市委书记（2005.09——2008.07，在中国地质大学地球科学与资源学院资源产业经济专业学习，获工学博士学位）；  【对照锚点: 新乡市书记 2006-03 至 2011-05 - 完全吻合】
+2011.05——2011.10，河南省郑州市委副书记、代市长；
+2011.10——2011.12，河南省委常委，郑州市委副书记、代市长；
+2011.12——2012.02，河南省委常委、政法委书记；
+2012.02——2016.05，河南省委常委、郑州市委书记；
+2016.05——2016.11，河南省委常委、政法委书记。
+中共十七大代表，第十届全国人大代表，河南省第八次、第九次党代会代表，第八届、第九届河南省委委员。
+
+【人物事件】
+2016年11月11日接受组织调查；2017年1月被双开；2017年8月4日被判处有期徒刑十一年。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

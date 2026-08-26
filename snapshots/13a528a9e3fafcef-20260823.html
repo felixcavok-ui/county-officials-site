@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.baike.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.baike.com<br>
+  原页：<a href="https://www.baike.com/wiki/%E9%99%88%E4%BC%9F/7509795180834471988" target="_blank" rel="noopener">https://www.baike.com/wiki/%E9%99%88%E4%BC%9F/7509795180834471988</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.baike.com/wiki/%E9%99%88%E4%BC%9F/7509795180834471988" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">陈伟-快懂百科
+陈伟
+河北省三河市委书记
+
+陈伟，男，汉族，1975年11月生，河北安国人，1996年11月参加工作，1997年7月加入中国共产党，省委党校研究生学历。
+现任河北省三河市委书记。
+
+人物履历
+1994.09--1996.07 河北师大中文系现代文秘专业学习；
+1996.07--1996.11 待分配；
+1996.11--1999.04 河北省保定市安国市祁州镇秘书；
+1999.04--2003.08 河北省保定市安国市政府办公室秘书、综合一科科长；（1998.08-2000.12在中央党校函授学院本科班政法专业学习）
+2003.08--2004.04 河北省保定市安国市政府办公室副主任；
+2004.04--2005.07 河北省保定市安国市政府办公室纪检组长；
+2005.07--2007.03 河北省保定市安国市政府办公室副主任；
+2007.03--2007.07 河北省保定市安国市政府办公室副主任、主任科员；
+2007.07--2008.10 河北省保定市安国市石佛镇党委副书记、镇长；
+2008.10--2011.08 河北省保定市安国市纪检委常务副书记、监察局长；
+2011.08--2014.12 河北省保定市博野县委常委、宣传部长、农工委书记；（2009.09-2012.06在河北省委党校在职研究生班经济管理专业学习）
+2014.12--2017.01 河北省保定市博野县委常委、组织部长；
+2017.01--2019.09 河北省保定市博野县委副书记；
+2019.09--2020.09 唐尧网络新媒体传播集团党委委员、书记、董事长；
+2020.09--2020.11 河北省保定市委宣传部副部长、市政府新闻办主任（正县级）；
+2020.11--2021.05 河北省保定市委网信办主任、市互联网信息办公室主任，市委宣传部副部长、市政府新闻办公室主任；
+2021.05，河北省保定市蠡县县委书记；
+2025.05，河北省三河市委书记。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

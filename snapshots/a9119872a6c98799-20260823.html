@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · m.baike.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：m.baike.com<br>
+  原页：<a href="https://m.baike.com/wikiid/5085578688180972854" target="_blank" rel="noopener">https://m.baike.com/wikiid/5085578688180972854</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://m.baike.com/wikiid/5085578688180972854" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">王永威-快懂百科（河北省廊坊市人大监察和司法委员会主任委员）
+来源: https://m.baike.com/wikiid/5085578688180972854
+
+王永威，男，汉族，1963年10月出生，河北省霸州市人，1987年7月加入中国共产党，1979年8月参加工作，中央党校在职研究生学历。
+现任河北省廊坊市人大监察和司法委员会主任委员。
+人物履历
+1979.08--1983.09，霸县商业局资料员
+1983.09--1985.11，河北商业学校商业企业管理专业学习
+1985.11--1990.04，霸县县委办公室秘书组秘书、副组长、调研组长
+1990.04--1992.05，霸县团县委副书记
+1992.05--1993.05，霸县团市委书记
+1993.05--1995.11，霸州开发区管委会副主任、总公司副经理
+1995.11--1997.04，霸州开发区工委副书记、总公司经理（1993.08--1995.12，在中央党校经济管理专业函授学习）
+1997.04--1997.10，霸州开发区管委会主任、工委书记
+1997.10--1999.06，廊坊市城市综合治理办公室主任（副处级）
+1999.06--2001.02，廊坊市政府副秘书长、办公室党组成员，城市综合治理办公室主任
+2001.02--2002.09，廊坊市政府副秘书长、办公室党组成员（1998.09--2001.07，在中央党校研究生院科学社会主义专业学习）
+2002.09--2004.06，廊坊市政府副秘书长、办公室党组成员，市建设局局长、党委书记
+2004.06--2005.10，廊坊市建设局局长、党委书记
+2005.10--2006.02，廊坊市安次区委副书记、代区长
+2006.02--2009.02，廊坊市安次区委副书记、区长
+2009.02--2016.12，廊坊市安次区委书记
+2016.12--2017.04，廊坊市人大常委会党组成员
+2017.04--2019.01，廊坊市人大常委会副主任、党组成员
+2019.01，河北省廊坊市人大监察和司法委员会主任委员。
+中共第五届廊坊市委委员
+任免信息
+2017年4月14日，廊坊市七届人大一次会议举行第三次全体会议，选举王永威为市人大常委会副主任。
+2019年1月24日，王永威任廊坊市第七届人民代表大会监察和司法委员会主任委员。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

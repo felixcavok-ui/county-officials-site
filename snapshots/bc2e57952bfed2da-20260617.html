@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 陈加猛简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：陈加猛简历<br>
+  原页：<a href="https://baike.sogou.com/v154757910.htm" target="_blank" rel="noopener">https://baike.sogou.com/v154757910.htm</a><br>
+  存档日期：2026-06-17 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v154757910.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">陈加猛 _ 百科 编辑词条 登录 1 . 摘要 2 . 基本信息 3 . 人物履历 4 . 参考资料 陈加猛 广州市人大常委会党组成员、副主任 陈加猛，男，1968年11月生，汉族，1996年6月加入中国共产党，研究生学历，工学博士 1 。 现任广州市人大常委会党组成员、副主任 1 ，广州市第十六届人民代表大会常务委员会代表资格审查委员会主任委员 2 。 基本信息 中文名 陈加猛 国籍 中国 民族 汉族 1 出生日期 1968年11月 1 人物履历 曾任广州市天河区委书记 3 ； 1988年09月—1992年07月 昆明理工大学学习（学士）； 1992年09月—1994年07月 昆明理工大学学习（硕士）； 1994年09月—1997年07月 华南理工大学 学习（博士）； 1997年07月—2000年08月 任广州市建筑科学研究院工程师、高级工程师、院长助理； 2000年09月—2003年02月 任广州市建工设计院董事长、院长，广州市建筑集团副总工程师； 2003年04月—2006年10月 任从化市委常委，常务副市长； 2006年10月—2011年08月 任广州大学城建设指挥部办公室、广州白云国际会议中心项目建设办公室常务副主任； 2007年12月—2011年08月 任广州市重点公共建设项目管理办公室副主任； 2008年05月—2016年09月 任广州市重点公共建设项目管理办公室党委书记； 2011年08月—2013年01月 任广州市重点公共建设项目管理办公室兼广州大学城建设指挥部办公室主任； 2013年01月—2016年09月 任广州市重点公共建设项目管理办公室主任； 2016年09月—2016年10月 任广州市天河区党委副书记，代理区长； 2016年10月 任广州市天河区党委副书记，区长（2019年12月辞去） 4 5 ； 2022年01月 任广州市人大常委会副主任 6 ； 2025年06月 任广州市第十六届人民代表大会常务委员会代表资格审查委员会主任委员 2 ； 现任广州市人大常委会党组成员、副主任 1 ，广州市第十六届人民代表大会常务委员会代表资格审查委员会主任委员 2 。 参考资料</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

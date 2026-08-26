@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.sogou.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.sogou.com<br>
+  原页：<a href="https://baike.sogou.com/v205506302.htm" target="_blank" rel="noopener">https://baike.sogou.com/v205506302.htm</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v205506302.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">张抗震 _ 百科 编辑词条 登录 1 . 摘要 2 . 基本信息 3 . 人物履历 4 . 参考资料 张抗震 河北省保定市委常委、秘书长 张抗震，现任河北省保定市委常委、秘书长 1 。 基本信息 中文名 张抗震 国籍 中国 人物履历 曾任河北省新乐市委常委、宣传部部长、统战部部长，栾城县委常委、组织部部长，栾城区委常委，常务副区长，雄安新区党群工作部部长等职 2 。 2021年5月，任承德市双滦区委委员、常委、书记 3 （2024年9月不再担任 4 ），双滦区人武部党委委员、第一书记 5 。 2024年10月—2025年9月，任保定市人民政府副市长 6 。 2025年9月，任保定市委委员、常委 7 ，市人民政府副市长（2025年10月免去） 8 。 现任河北省保定市委常委、秘书长 1 。 承德市第十五届人民代表大会代表 9 。 参考资料 1 中国传媒大学政府与公共事务学院组织2025级MPA新生赴保定开展素质拓展活动 微信公众号 （引用日期 2025-10-23） 2 张抗震履新保定，曾在雄安任职 微信公众号 （引用日期 2024-11-11） 3 河北7市最新任免!多位县委书记履新 澎湃新闻 （引用日期 2021-05-20） 4 河北两地主要领导调整 微信公众号 （引用日期 2024-11-11） 5 承德市双滦区人武部党委第一书记 宣布任职命令大会召开 微信公众号 （引用日期 2024-11-11） 6 最新！保定市人大常委会表决通过一批人事任免事项 微信公众号 （引用日期 2024-11-11） 7 张抗震任保定市委常委 腾讯新闻 （引用日期 2025-09-02） 8 保定市人大常委会表决通过一批人事任免事项 微信公众号 （引用日期 2025-10-23） 9 承德市第十五届人民代表大会代表名单 微信公众号 （引用日期 2024-09-18）</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

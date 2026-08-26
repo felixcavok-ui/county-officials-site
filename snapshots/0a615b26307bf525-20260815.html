@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.sixian.gov.cn/content/column/11465673?liId=16001" target="_blank" rel="noopener">https://www.sixian.gov.cn/content/column/11465673?liId=16001</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.sixian.gov.cn/content/column/11465673?liId=16001" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_泗县人民政府 政务微信 政务微博 手机版 RSS订阅 繁體中文 加入收藏 智能问答 导航 网站首页 网站首页 领导之窗 政务资讯 政府信息公开 政务服务 互动交流 解读回应 政府数据 魅力泗县 您当前的位置： 首页 &gt; 领导之窗 县委领导 县委领导 杨松涛 县委书记 谢颖锋 县委副书记、县长 邱 磊 县委副书记 冉 昊 县委常委、常务副县长 桂连成 县委常委、县人武部部长 刘 朋 县委常委、组织部部长 周 志 县委常委、宣传部部长 杜 煜 县委常委、纪委书记、监委主任 史肖生 县委常委、社工部部长、政法委书记，县政府副县长 江利景 县委常委、县政府副县长人选 刘 琪 县委常委、统战部部长、大庄镇党委书记 县政府领导 县政府领导 谢颖锋 县委副书记、县长 冉 昊 县委常委、常务副县长 史肖生 县委常委、社工部部长、政法委书记，县政府副县长副县长 江利景 县委常委、县政府副县长人选 刘培培 副县长 余 浩 副县长、县公安局党委书记、局长 骆 松 副县长 我的照片 江利景 我的分工 负责发展改革、粮食和物资储备、国防动员、人民防空、统计、工业和信息化、科技、招商引资、供电、商务、医药、经济开发区等方面工作。 分管发改委（粮食局、国动办、人防办）、统计局、工业和信息化局、科技局、投资促进中心、商务局、医药总公司、经济开发区。协助分管工投集团。 联系供电公司、烟草局（公司）、盐业公司、石油公司、邮政公司、电信公司、移动公司、联通公司、铁塔公司。 我的简介 江利景，泗县县委常委、县政府副县长人选，男，汉族，1991年7月出生，研究生学历、管理学博士，中共党员。 我的活动 国家部委网站 省内地市级网站 媒体和其他机构网站 县区网站 使用帮助 网站声明 网站地图 联系我们 隐私保护 页面纠错 主办单位：安徽省泗县人民政府 承办单位：泗县政务公开办（政务信息舆情室） 联系电话：0557-7022031 联系邮箱：sxzwgk@163.com 地址：泗县汴河大道124号行政中心 网站标识码：3413240008 备案号： 皖ICP备11008033号 皖公网安备 34132402000140号 访问次数： 网站平台网络举报 违法与不良信息举报电话：12377 本站支持IPv6访问 智能问答 领导信箱 微信 微博 分享
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

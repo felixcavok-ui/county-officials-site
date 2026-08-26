@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E9%9E%A0%E6%8C%AF/9110177" target="_blank" rel="noopener">https://baike.baidu.com/item/%E9%9E%A0%E6%8C%AF/9110177</a><br>
+  存档日期：2026-07-11 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E9%9E%A0%E6%8C%AF/9110177" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">鞠振 - 百度百科词条内容
+来源：https://baike.baidu.com/item/%E9%9E%A0%E6%8C%AF/9110177
+抓取日期：2026-07-11
+
+## 基本信息
+
+中文名：鞠振
+性别：男
+国籍：中国
+民族：汉族
+籍贯：天津市
+出生日期：1972年4月
+毕业院校：山西师范大学
+政治面貌：中共党员
+学位：硕士
+
+## 人物简介
+
+鞠振为男性汉族人士，1972年4月出生于天津市，具有大学学历和历史学硕士学位。参加工作时间为1994年7月，1991年12月加入中国共产党。现任山西省阳泉市委书记和阳泉军分区党委第一书记。
+
+## 人物履历
+
+1994.07-2001.02 历任山西师范大学历史系办公室行政秘书、生物系团委副书记、生物系团委书记、团委办公室主任
+2001.02-2001.11 山西师范大学团委副书记
+2001.11-2003.03 山西师范大学团委副书记（主持工作）
+2003.03-2006.01 山西师范大学团委书记
+2006.01-2010.06 山西师范大学党办、校办主任
+2010.06-2011.04 山西师范大学党委委员，党办、校办主任
+2011.04-2017.07 山西省政府外事侨务办公室副主任、党组成员
+2017.07-2020.03 山西省运城市委常委、河津市委书记
+2020.03-2021.01 山西省委农村工作领导小组办公室主任，省农业农村厅厅长、党组书记
+2021.01-2021.12 神农科技集团有限公司党委书记、董事长
+2021.12-2023.01 神农科技集团有限公司党委书记、董事长，广誉远中药股份有限公司党委书记、董事长
+2023.01-2024.12 山西省市场监督管理局党组书记、局长
+2024.12-2025.02 山西省阳泉市委副书记、市政府党组书记、副市长、代市长
+2025.02-2025.12 山西省阳泉市委副书记、市政府党组书记、市长
+2025.12- 阳泉市委书记
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

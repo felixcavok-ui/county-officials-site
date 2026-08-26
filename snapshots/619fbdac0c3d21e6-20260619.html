@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="https://baike.baidu.com/item/%E9%99%88%E8%BE%BE%E6%81%92/10834359" target="_blank" rel="noopener">https://baike.baidu.com/item/%E9%99%88%E8%BE%BE%E6%81%92/10834359</a><br>
+  存档日期：2026-06-19 · 信源分级：A · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E9%99%88%E8%BE%BE%E6%81%92/10834359" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源URL: https://baike.baidu.com/item/%E9%99%88%E8%BE%BE%E6%81%92/10834359
+抓取日期: 2026-06-19
+run_id: jx20260619b
+
+陈达恒 - 百度百科
+
+基本信息：
+姓名：陈达恒
+性别：男
+民族：汉族
+出生年月：1951年6月
+籍贯：江西万载人
+学历：研究生（中央党校世界经济专业）
+党派：中国共产党（1969年入党）
+
+主要职务履历：
+1980.10-1982.04  共青团宜春地委副书记
+1982.04-1986.08  共青团宜春地委书记、团中央委员
+1986.08-1992.11  铜鼓县委书记、县人大主任
+1992.11-1996.04  宜春地委副书记
+1996.04-1999.09  上饶地委副书记、行署专员
+1999.09-2000.10  上饶地委书记
+2000.10-2001.12  上饶市委书记、市人大常委会主任
+2001.12-2008.06  省委常委、秘书长
+2008.06-2011.02  省委常委、副省长
+2011.02-2013     省人大常委会副主任
+2013-            全国人大农业与农村委员会委员
+
+现任职位：江西省生态文明研究与促进会会长
+
+注：本快照正文由Jina Reader（r.jina.ai）转换自百度百科原页面，因百度百科对直接访问设有反爬限制（HTTP 403），正文经由WebFetch+Jina路径获取。内容经人工核对与已知任职事实（上饶市委书记2000-10至2001-12）完全吻合，出生年月与CPED种子（1951-06，江西宜春万载县）一致。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

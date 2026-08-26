@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 公告|张维亮当选邯郸市人民政府市长</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：公告|张维亮当选邯郸市人民政府市长<br>
+  原页：<a href="http://www.hdrd.gov.cn/h-nd-2144.html" target="_blank" rel="noopener">http://www.hdrd.gov.cn/h-nd-2144.html</a><br>
+  存档日期：2026-06-24 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.hdrd.gov.cn/h-nd-2144.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">邯郸市第十五届人民代表大会第五次会议公告 邯郸市第十五届人民代表大会第五次会议于二〇一九年六月二十日选举张维亮同志为邯郸市人民政府市长。 现予公告。 邯郸市第十五届人民代表大会 第五次会议主席团 二〇一九年六月二十日 张维亮简历 张维亮，男，汉族，1964年12月出生，河北省滦南县人，1995年5月入党，1990年7月参加工作，长春地质学院能源地质系岩石学专业毕业，研究生学历，理学硕士学位。现任邯郸市委副书记，市政府市长、党组书记。 简 历 1983.09--1987.07 长春地质学院地质学专业学习 1987.07--1990.07 长春地质学院能源地质系岩石学专业研究生学习 1990.07--1993.05 唐山市冶金工业公司科员 1993.05--1994.05 唐山市地质矿产局督查科科员、工程师 1994.05--1995.11 唐山市地质矿产局法制处副处长（主持工作，副科级） 1995.11--1995.12 唐山市地质矿产局人事处处长（正科级） 1995.12--1996.10 邯郸市地质矿产局副局长 1996.10--1998.11 省地质矿产厅办公室副主任、督查室主任（副处级） 1998.11--2000.05 省地质矿产厅人事教育处副处长（主持工作） 2000.05--2004.02 省国土资源厅人事教育处处长 2004.02--2004.03 省国土资源厅党组成员 2004.03--2013.07 省国土资源厅副厅长、党组成员 2013.07--2016.07 张家口市委常委、市纪委书记 2016.07--2016.08 省创新发展示范区筹备工作领导小组办公</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 祝华 - 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：祝华 - 百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/祝华" target="_blank" rel="noopener">https://baike.baidu.com/item/祝华</a><br>
+  存档日期：2026-07-31 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/祝华" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">URL: https://baike.baidu.com/item/祝华
+TITLE: 祝华 - 百度百科（词条名：祝华，lemmaId：51148）
+
+说明：本页经 WebFetch 抓取并返回解码后正文（baike.baidu.com 对 python requests 返回「百度安全验证」拦截页，无法直抓原始字节；web-access 浏览器兜底脚本在本机缺失，故以 WebFetch 路径返回的解码文本落盘）。下文为页面「人物履历」节的逐字内容。
+
+祝华，男，1962年12月生，淄博人，汉族，1991年7月加入中国共产党。
+
+人物履历：
+1979.09 天津大学化工系化工机械专业学生
+1983.08 济南明水化肥厂机动科科员
+1987.01 济南市石化局设备安全处科员
+1991.03 济南市石化局设备安全处副处长
+1992.03 挂职章丘县曹范乡党委副书记
+1993.10 济南市石化局基建设备处副处长兼济南化工建设工程质量监督站副站长
+1994.12 济南市石化局办公室主任
+1998.07 济南市石化局局长助理兼办公室主任
+2000.03 济南市石油化学总会（局）副会（局）长、党委委员
+2001.01 商河县委副书记
+2003.01 商河县委副书记、县长
+2006.12 胶州市委书记、市委党校校长
+2012.02 青岛市中级人民法院党组书记
+2012.03 青岛市中级人民法院党组书记、院长
+2016.09 青岛市委常委、青岛市政法委书记、青岛市中级人民法院院长。
+2017.04 青岛市委常委、秘书长
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

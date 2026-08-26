@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 文安县第十八届人民代表大会第五次会议胜利闭幕</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：文安县第十八届人民代表大会第五次会议胜利闭幕<br>
+  原页：<a href="https://www.wenan.gov.cn/GOV1/Item/41771.aspx" target="_blank" rel="noopener">https://www.wenan.gov.cn/GOV1/Item/41771.aspx</a><br>
+  存档日期：2026-08-21 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.wenan.gov.cn/GOV1/Item/41771.aspx" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">文安县第十八届人民代表大会第五次会议胜利闭幕-文安县人民政府
+.subheading {
+font-size: 25px;
+font-family: 楷体;
+}
+function searchkey()
+{
+var key=document.getElementById(&quot;keyword&quot;).value;
+if(key==&quot;&quot;||key==&quot;请输入关键词&quot;){
+alert(&quot;搜索关键字不能为空&quot;);
+return false;
+}
+window.open(&#x27;/GOV1/search.aspx?keyword=&#x27;+escape(key),&quot;_blank&quot;);
+}
+网站首页
+文安概况
+文安简介
+自然地理
+历史沿革
+行政区划
+经济概况
+历史文安
+水韵文安
+现代文安
+影像文安
+政务公开
+政府领导
+政务会议
+政务动态
+政府文件
+政府机构
+人事任免
+政策解读
+政府公报
+政务服务
+互动交流
+民生通道
+(function () {
+var navST;
+var navST1;
+var name = &#x27;mainNav&#x27;;
+var t = 200;
+var type = 1;
+var removeOn = &#x27;False&#x27;;
+var effect = &#x27;fade&#x27;;
+var appendItem = &#x27;#&#x27;;
+var li = &quot;#&quot; + name + &quot; li&quot;;
+var index = 0;
+if (!$(&quot;#&quot; + name + &quot; .li1&quot;).hasClass(&quot;on1&quot;)) {
+$(&quot;#&quot; + name + &quot; .li1&quot;).first().addClass(&quot;on1&quot;);
+} //默认第一个加.on1类
+index = $(&quot;#&quot; + name + &quot; .li1&quot;).index($(&quot;#&quot; + name + &quot; .on1&quot;));
+//鼠标离开导航后，回复默认.on1类位置
+$(&quot;#&quot; + name)
+.hover(
+function () {
+if (navST1 != null) {
+clearTimeout(navST1);
+}
+},
+function () {
+navST1 = setTimeout(function () {
+$(&quot;#&quot; + name + &quot; .li1&quot;).removeClass(&quot;on1&quot;).eq(index).addClass(&quot;on1&quot;);
+},
+500);
+}
+);
+if (type == &#x27;1&#x27;) {
+li = &quot;#&quot; + name + &quot; .li1&quot;;
+}
+if (appendItem != &#x27;#&#x27;) { //插入内容
+var appendHtml = $(appendItem).html();
+$(li).first().append(appendHtml);
+$(appendItem).remove();
+}
+if (type == &#x27;3&#x27;) {
+$(&quot;#&quot; + name + &quot; .on1&quot;).find(&quot;ul&quot;).first().show();
+}
+$(li)
+.hover(function () {
+var curItem = $(this);
+var onNum = (curItem.attr(&quot;class&quot;).split(&quot; &quot;))[0].replace(&quot;li&quot;, &quot;&quot;);
+$(li).removeClass(&quot;on&quot; + onNum);
+curItem.addClass(&quot;on&quot; + onNum);
+navST = setTimeout(function () { //延时触发
+if ($(&quot;ul:first&quot;, curItem).css(&quot;display&quot;) != &quot;block&quot;) {
+$(li + &quot; .ul&quot; + onNum).hide();
+if (effect == &#x27;fade&#x27;) {
+$(&quot;ul:first&quot;, curItem).fadeIn(t);
+} else {
+$(&quot;ul:first&quot;, curItem).slideDown(t);
+}
+};
+navST = null;
+},
+t);
+},
+function () {
+if (navST != null) {
+clearTimeout(navST);
+}
+if (type == &#x27;1&#x27; || type == &#x27;2&#x27;) {
+if (effect == &#x27;fade&#x27;) {
+$(this).find(&quot;ul&quot;).first().fadeOut(t);
+} else {
+$(this).find(&quot;ul&quot;).first().slideUp(t);
+}
+}
+if (removeOn == &#x27;True&#x27;) {
+$(this).removeClass(&quot;on1&quot;);
+}
+},
+t); //end hover
+})()
+//手机版显示二维码
+hover($(&quot;.topBar dl&quot;), &quot;on&quot;);
+您的位置：
+首页
+&gt;&gt;
+政务公开
+&gt;&gt;
+政务会议
+政务公开
+政府领导
+政务会议
+政务动态
+政府文件
+政府机构
+人事任免
+政策解读
+政府公报
+if (jQuery(&quot;#sideMenu .bd li&quot;).size() === 0) {
+jQuery(&quot;#sideMenu&quot;).hide();
+}
+文安县第十八届人民代表大会第五次会议胜利闭幕
+作者：田朔鑫
+来源：文安官网
+发布时间：2025年01月15日
+浏览次数：
+次
+1月15日，文安县第十八届人民代表大会第五次会议圆满完成各项议程，在行政中心礼堂胜利闭幕。
+上午10时15分，县十八届人大五次会议举行第四次全体会议。大会主席团常务主席、执行主席：任涛、杨烁、王润库、安淑苓、王香臣、张国民、刘建国在主席台执行主席席就座。李建国、褚铮、李文凯、靳玉强、马玲、卢国峰、巴亚锋、李洋、关继川等县处级领导及大会主席团其他成员在主席台就座。王润库同志主持会议。本次会议应出席代表244名，出席会议代表232名，符合法定人数。
+大会宣布：杨烁当选文安县人民政府县长；王阳、方永胜、刘志刚、杨毅、张玉臣当选文安县第十八届人民代表大会常务委员会委员。公布了2025年文安县民生实事项目票决结果。
+随后，全体人员起立，奏唱国歌。宪法宣誓仪式开始，新当选的文安县人民政府县长；文安县第十八届人民代表大会常务委员会委员面向国徽，庄严宣誓。
+大会完成各项议程后，任涛向新当选的县人民政府县长、县人大常委会委员表示热烈的祝贺。他指出，刚刚过去的2024年，县人大常委会始终与县委工作“同心”、与中心大局“同轨”、与人民需求“同声”，聚焦实现“脱胎换骨”的全新变化这一目标，紧密团结和依靠全县人民，在重点难点问题上持续发力，在狠抓末端落实中开局破题，为全县项目建设、产业转型、民生事业、社会环境等各项重点工作作出了积极贡献。
+任涛强调，站在2025年新的起点上，全县上下要真正把思想和行动统一到党中央决策部署、省市县委工作要求和县两会确定的目标任务上来，紧紧围绕县委全会确定的“一个目标、两种作风、三张名片、四大工程、五项清零”总体要求，坚持干字当头，以“坚决一点、快一点”的作风，积极主动作为，找准贯彻落实的切入点，以“稳”为基础和前提，以“进”为目标和追求，集中精力上项目，坚定决心清底线，推动全县各项事业取得新的更大成就。
+任涛指出，县委将一如既往地支持县人大开展工作，切实加强和改进党对人大工作的领导，积极主动为县人大常委会及人大代表开展工作创造良好条件。县人大常委会既要切实履行宪法和法律赋予的神圣职责，更要着力加强自身建设，主动把工作融入大局来谋划和推进，努力开创人大工作新局面。
+任涛最后号召，让我们更加紧密地团结在以习近平同志为核心的党中央周围，深入贯彻落实县委十三届七次全会和县两会精神，以求真务实的过硬作风，全力冲刺“十四五”规划圆满收官，为文安加快实现“脱胎换骨”的全新变化作出新的更大贡献！
+在当选文安县人民政府县长后，杨烁表示，大会选举我担任县人民政府县长，这一张张选票，凝聚着各位代表的信任和支持，更饱含着全县人民的期望和重托。我将在县委的坚强领导下，团结带领政府一班人，紧紧依靠文安人民，坚定发展信心，接续奋斗、躬身实干，为文安高质量发展、实现“脱胎换骨”全新变化，贡献个人力量。在今后的工作中，忠诚立魂，砥砺奋进，始终把对党忠诚作为第一品格；实干担当，聚力发展，始终把发展作为第一要务；增进福祉，惠泽民生，始终把为民服务作为第一责任；廉洁自律、率先垂范，始终把清正廉洁作为第一操守，以“功成不必在我”的情怀和“功成必定有我”的担当，与全县人民并肩携手，接续奋斗、全力奔跑，奋力推动文安“脱胎换骨”全新变化取得新的更大成效！
+王润库在讲话中指出，县委书记任涛同志发表的重要讲话，对县人大常委会过去一年的工作和全体人大代表的履职成效给予了充分肯定，同时围绕完成今年的目标任务，从“解放思想、凝聚共识，以更高站位把牢政治方向；奋楫笃行、迎难而上，以真抓实干推动跨越发展；上下同心、团结一致，以奋发进取凝聚前行力量”三个方面，对全县工作提出了新要求、作出了新部署。我们要认真学习好、深入落实好任涛书记的讲话精神，在围绕中心、服务大局上进一步精准定位、主动作为，在依法治县、履职行权上进一步创新探索、规范提升，在践行初心、为民谋利上进一步用心用情、见行见效，在锻造队伍、锤炼作风上进一步严格要求、争先创优，为奋力推动“脱胎换骨”的全新变化取得新的更大成效发挥人大作用、展现人大担当、作出人大贡献！
+以上图片均由王晖 摄
+10时50分，文安县第十八届人民代表大会第五次会议在雄壮的国歌声中胜利闭幕。
+关于我们
+|
+网站声明
+|
+网站地图
+|
+联系我们
+版权所有:文安县人民政府主办 文安县人民政府办公室承办
+冀公网安备
+13102602000311号
+冀ICP备12007192号
+网站标识码：1310260009
+违法和不良信息举报电话：0316-5231644
+违法和不良信息举报邮箱：wenanxinxiban@126.com
+网络内容从业人员违法违规行为举报邮箱：waxwwxb@163.com</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

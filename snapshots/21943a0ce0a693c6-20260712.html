@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 金华市七届人大六次会议胜利闭幕</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：金华市七届人大六次会议胜利闭幕<br>
+  原页：<a href="https://zjnews.zjol.com.cn/zjnews/jhnews/202102/t20210226_22167098.shtml" target="_blank" rel="noopener">https://zjnews.zjol.com.cn/zjnews/jhnews/202102/t20210226_22167098.shtml</a><br>
+  存档日期：2026-07-12 · 信源分级：B · <a href="https://web.archive.org/web/*/https://zjnews.zjol.com.cn/zjnews/jhnews/202102/t20210226_22167098.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">浙江在线首页
+浙江在线首页
+请输入搜索关键字
+function search(){
+var u = navigator.userAgent;
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+var urlstr = &#x27;//s.zjol.com.cn/cse/search?s=6048247431686495421&amp;entry=1&amp;q=&#x27;+document.getElementById(&#x27;search&#x27;).value;
+if(isiOS){
+window.location.href = urlstr ;
+}else{
+window.open(urlstr) ;
+// 拦截 buttonLite.js 和 bshareC1.js 的加载,并移除 divShareAll
+(function() {
+&#x27;use strict&#x27;;
+// 方法1: 立即隐藏并禁用 divShareAll
+const style = document.createElement(&#x27;style&#x27;);
+style.textContent = &#x27;.divShareAll { display: none !important; visibility: hidden !important; }&#x27;;
+document.head.insertBefore(style, document.head.firstChild);
+// 方法2: 预定义 window.bShare 为空对象,防止脚本初始化
+window.bShare = {
+share: function() { console.log(&#x27;bShare.share 已被拦截&#x27;); },
+addURL: function() { console.log(&#x27;bShare.addURL 已被拦截&#x27;); }
+Object.freeze(window.bShare); // 冻结对象,防止被修改
+// 方法3: 拦截 XMLHttpRequest
+const originalXHR = window.XMLHttpRequest;
+window.XMLHttpRequest = function() {
+const xhr = new originalXHR();
+const originalOpen = xhr.open;
+xhr.open = function(method, url) {
+if (url &amp;&amp; (url.includes(&#x27;buttonLite.js&#x27;) || url.includes(&#x27;bshareC1.js&#x27;))) {
+console.log(&#x27;已拦截 XHR 请求:&#x27;, url);
+throw new Error(&#x27;Blocked by interceptor&#x27;);
+return originalOpen.apply(this, arguments);
+return xhr;
+// 方法4: 拦截 fetch API
+const originalFetch = window.fetch;
+window.fetch = function(...args) {
+const url = args[0];
+if (typeof url === &#x27;string&#x27; &amp;&amp; (url.includes(&#x27;buttonLite.js&#x27;) || url.includes(&#x27;bshareC1.js&#x27;))) {
+console.log(&#x27;已拦截 fetch 请求:&#x27;, url);
+return Promise.reject(new Error(&#x27;Blocked by interceptor&#x27;));
+return originalFetch.apply(this, args);
+// 方法5: 使用 MutationObserver 快速移除元素
+const observer = new MutationObserver(function(mutations) {
+mutations.forEach(function(mutation) {
+mutation.addedNodes.forEach(function(node) {
+if (node.nodeType === 1) { // Element node
+// 拦截 buttonLite.js
+if (node.tagName === &#x27;SCRIPT&#x27; &amp;&amp; node.src &amp;&amp; node.src.includes(&#x27;buttonLite.js&#x27;)) {
+console.log(&#x27;已拦截 buttonLite.js 的加载&#x27;);
+node.parentNode.removeChild(node);
+// 拦截 bshareC1.js
+if (node.tagName === &#x27;SCRIPT&#x27; &amp;&amp; node.src &amp;&amp; node.src.includes(&#x27;bshareC1.js&#x27;)) {
+console.log(&#x27;已拦截 bshareC1.js 的加载&#x27;);
+node.parentNode.removeChild(node);
+// 移除 divShareAll
+if (node.className &amp;&amp; typeof node.className === &#x27;string&#x27; &amp;&amp; node.className.includes(&#x27;divShareAll&#x27;)) {
+console.log(&#x27;已移除 divShareAll&#x27;);
+node.style.display = &#x27;none&#x27;;
+node.style.visibility = &#x27;hidden&#x27;;
+setTimeout(() =&gt; {
+if (node.parentNode) node.parentNode.removeChild(node);
+}, 0);
+observer.observe(document.documentElement, {
+childList: true,
+subtree: true
+// 方法6: 立即处理已存在的元素
+window.addEventListener(&#x27;DOMContentLoaded&#x27;, function() {
+// 移除所有匹配的 script 标签
+const scripts = document.querySelectorAll(&#x27;script[src*=&quot;buttonLite.js&quot;], script[src*=&quot;bshareC1.js&quot;]&#x27;);
+scripts.forEach(script =&gt; {
+console.log(&#x27;移除已加载的脚本:&#x27;, script.src);
+script.parentNode.removeChild(script);
+// 隐藏 divShareAll
+const divShareAll = document.querySelector(&#x27;.divShareAll&#x27;);
+if (divShareAll) {
+console.log(&#x27;隐藏 divShareAll&#x27;);
+divShareAll.style.display = &#x27;none&#x27;;
+divShareAll.style.visibility = &#x27;hidden&#x27;;
+}, true);
+//修改导航顶部条
+$(&#x27;#lava&#x27;).width($(&#x27;#ulNav .liNav&#x27;).eq(0).find(&#x27;.aNav&#x27;).text().length*16);
+$(window).load(function(){
+$(&#x27;#ulNav .liNav&#x27;).hover(function(){
+$(&#x27;#lava&#x27;).width($(this).find(&#x27;.aNav&#x27;).text().length*16);
+}catch(e){}
+分享到新浪微信
+分享到新浪微博
+您当前的位置 ：
+金华市七届人大六次会议胜利闭幕
+2021年02月26日 08:12:56
+2月25日上午，金华市第七届人民代表大会第六次会议圆满完成各项议程，胜利闭幕。
+闭幕会由大会执行主席、主席团常务主席陈玲玲主持。大会执行主席陈龙、蔡永波、郑敏强、陶国兴、王丁路、周剑敏、陈志身、董巧娟、周丽水、王振勇、章旭升、俞佩芬、姚激扬、王志强和大会主席团成员在主席台就座。
+邢志宏、宋志恒、郑余良、林毅、吕伟强、张伟亚、祝伦根、沈晓红、楼东江、姜玉芳、邵国强、王健、张新宇、赵秋立、傅显明、许章才、傅路红、张跃进、荣安华、邱建中、陶叶萍、杨坚明、石骁敏，金华军分区司令员陈骏，市中级人民法院院长汤海庆，市人民检察院检察长钟瑞友，浙江师范大学校长郑孟状等在主席台就座。
+在主席台就座的还有黄锦朝、朱洪法、阎寿根、黄友源、林一心、金中梁、张荣贵、钱世茂、蔡健、王国强、江跃进等。
+大会采用无记名投票方式，依法补选邢志宏为金华市人民政府市长，补选沈晓红为金华市监察委员会主任，补选楼东江、姜玉芳为金华市第七届人民代表大会常务委员会副主任，补选钟瑞友为金华市人民检察院检察长（须报经浙江省人民检察院检察长提请浙江省人民代表大会常务委员会批准），补选王一、兰景贵、严小俊、陆品能为金华市第七届人民代表大会常务委员会委员；通过市政府2021年民生实事项目。
+随后，新当选的市人民政府市长邢志宏，市监察委员会主任沈晓红，市七届人民代表大会常务委员会副主任楼东江、姜玉芳，市七届人民代表大会常务委员会委员王一、兰景贵、严小俊、陆品能在大会主会场进行了宪法宣誓。
+大会以按电子表决器的方式，通过金华市第七届人民代表大会有关专门委员会主任委员人选名单；通过关于市人民政府工作报告、“十四五”规划和二〇三五年远景目标纲要、金华市2020年国民经济和社会发展计划执行情况与2021年国民经济和社会发展计划、全市和市本级2020年财政预算执行情况及2021年财政预算的决议；通过关于市人民代表大会常务委员会工作报告、市中级人民法院工作报告、市人民检察院工作报告的决议。
+市委书记陈龙代表市委对大会的圆满成功表示热烈的祝贺。他说，会议期间，各位代表以饱满的政治热情和高度负责的态度，认真履职建言，共谋金华发展大计，体现了强烈的政治担当，展现了良好的精神风貌。会议开得很成功，是一次高举旗帜、共谋发展、催人奋进的大会。
+陈龙指出，2021年是实施“十四五”规划的第一年，也是建党100周年。党的十九届五中全会擘画了“十四五”和全面建设社会主义现代化国家的宏伟蓝图。市委七届八次全会认真贯彻中央和省委决策部署，明确提出争创社会主义现代化先行市奋斗目标，吹响了奋进的号角。希望全市各级人大和全体代表切实把思想和行动统一到市委的决策部署上来，坚持“数字赋能、拼搏争先”工作导向，奋力推进“九市建设”，凝心聚力开新局，砥砺奋进谱新篇。开新局、谱新篇，必须强化政治自觉，把牢政治方向抓落实，提高政治站位，胸怀“两个大局”，坚定信心，把良好的发展势头巩固好、延续好。必须坚持真抓实干，聚焦高质量发展抓落实，紧盯目标“干”，抓住重点“干”，创新突破“干”，全力推动经济高质量发展。必须牢记初心使命，坚持以人为本抓落实，及时准确掌握社情民意，提出科学有效的工作建议，完善为民服务的长效机制，努力交出人民满意的答卷。必须强化拼搏争先，勇于担当作为抓落实，拼搏争先显担当，增强本领强担当，强化监督促担当，推动全市各项工作取得更大成效。
+陈龙强调，人民代表大会制度是我国的根本政治制度。要深入学习贯彻习近平总书记关于坚持和完善人民代表大会制度的重要思想，认真贯彻落实中央、省委关于做好人大工作的各项决策部署，扎实推动金华市人大工作迈上新台阶。市委将一如既往支持和保障各级人大依法行使职权，加强和改进对人大工作的领导。各级党委要切实把人大工作摆在重要位置，为推动人大工作高质量发展提供坚强有力的支持。“一府两院”要自觉接受人大监督，主动向人大及其常委会报告工作，提高依法行政和公正司法水平。各级政府部门要认真办理人大代表建议意见，积极主动为人大依法行使职权、代表履行职责创造有利条件、营造良好氛围。
+陈龙最后号召，让我们更加紧密地团结在以习近平同志为核心的党中央周围，大力发扬“孺子牛、拓荒牛、老黄牛”精神，不负韶华、不懈奋斗，以实干实绩为争创社会主义现代化先行市贡献力量，为建党100周年献礼！
+陈玲玲代表大会主席团向全体参会人员、向服务保障大会的全体工作人员表示衷心的感谢。她强调，全市上下和各级人大及全体代表要高举习近平新时代中国特色社会主义思想伟大旗帜，全面贯彻中央和省委市委的决策部署，在中共金华市委的坚强领导下，扎实推进“九市建设”，全力投入“四攻坚四争先”行动，充分发挥人大政治优势、制度优势、职能优势、组织优势、智治优势，更好发挥人大制度的守正固本作用、地方立法的引领保障作用、人大监督的推动落实作用、人大代表的凝心聚力作用、各级人大的连接贯通作用，振奋精神，拼搏实干，敢于担当，奋勇争先，忠实践行“八八战略”、奋力打造“重要窗口”，为争创社会主义现代化先行市开新局、谋新篇作出新的更大贡献。
+在雄壮的国歌声中，大会胜利闭幕。
+金华市;社会主义现代化;陈龙;人大工作;补选;人大;大会
+看浙江新闻，关注浙江在线微信
+泪目！98岁老党员最后遗愿——一笔10万元的“特殊党费”
+温州各县（市、区）两会热议“勇争先、强执行、开新局”
+(function(){document.write(unescape(&#x27;%3Cdiv id=&quot;bdcsFrameBox&quot;%3E%3C/div%3E&#x27;));var bdcs = document.createElement(&quot;script&quot;);bdcs.type = &quot;text/javascript&quot;;bdcs.async = true;bdcs.src = &quot;//znsv.baidu.com/customer_search/api/rs?sid=6048247431686495421&quot; + &quot;&amp;plate_url=&quot; + encodeURIComponent(window.location.href) + &quot;&amp;t=&quot; + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName(&quot;script&quot;)[0];s.parentNode.insertBefore(bdcs, s);})();
+&amp;style=-1&quot;&gt;
+质量好污染少成本低 2020年宁波三成以上新建建筑将是装配式
+马云：实体经济缺开拓精神
+清凉峰山中精灵
+版权和免责申明
+凡注有&quot;浙江在线&quot;或电头为&quot;浙江在线&quot;的稿件，均为浙江在线独家版权所有，未经许可不得转载或镜像；授权转载必须注明来源为&quot;浙江在线&quot;，并保留&quot;浙江在线&quot;的电头。
+.rimgt {
+position: relative;
+height: 195px;
+margin-top: 15px;
+.rimgt img {
+width: 100%;
+height: 100%;
+.rimgt h3 {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 310px;
+height: 38px;
+line-height: 38px;
+font-size: 14px;
+color: #fff;
+padding: 0 10px;
+background-color: rgba(0, 0, 0, 0.5);
+overflow: hidden;
+有专科医院年接诊量同比涨超20% 专家建议心理治疗费用纳入医保
+河道边园林道路微改造 居民告别“走土坡”
+“凉了个凉”！浙江多地最低气温将跌到“1”字头
+江苏无锡排查出7名阳性感染者！浙江两地发布紧急通知，相关人员请立即报备
+送你一朵“七色花” 杭州南站上线七彩指路便签服务旅客出行
+#亚运C位#“手”护听障群体观赛体验！她将亚运动态传至无声世界
+2023年浙江医疗保障情况如何？一图速览！
+【闻绘报】秋风起，螃蟹肥！如何在秋天做一个最会吃螃蟹的人？
+对话程晓陶：防汛决不能掉以轻心 浙江需提防&quot;三碰头&quot;
+【政百科】第六十九期：成为中国首个脱贫省份 浙江凭的是什么？
+“我和我的祖国”——庆祝中华人民共和国成立70周年
+孩子被困车内危险
+扶梯不再“左行右立”
+一“桥”架中美，相知无远近——温州肯恩大学设校十年记
+快检快放，新鲜杨梅甜到海外
+价值100万元！杭州两所特殊教育学校收到爱心运动装备
+宁波杨梅坐飞机 全国200多个城市次（隔）日达
+浙南新一轮强降水发展，浙北闷热维持，直到这天大反转
+个头仅有拳头大！平湖西瓜新增“迷你成员”
+Copyright © 1999-2017 Zjol. All Rights Reserved
+浙江在线版权所有
+22167098
+金华市七届人大六次会议胜利闭幕
+2021-02-26 08:12:56
+//img.zjol.com.cn/mlf/dzw/zjxw/zjnews/jhnews/202102/W020210226295740586256.png
+金华市七届人大六次会议胜利闭幕</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

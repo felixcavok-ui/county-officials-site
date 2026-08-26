@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E4%BD%95%E6%A0%91%E5%B9%B3/15827560?force=mobile" target="_blank" rel="noopener">https://baike.baidu.com/item/%E4%BD%95%E6%A0%91%E5%B9%B3/15827560?force=mobile</a><br>
+  存档日期：2026-08-15 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E4%BD%95%E6%A0%91%E5%B9%B3/15827560?force=mobile" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">何树平（四川省政协副主席）_百度百科
+来源: https://baike.baidu.com/item/%E4%BD%95%E6%A0%91%E5%B9%B3/15827560?force=mobile
+何树平，男，汉族，1968年11月生，四川南充人，1987年5月加入中国共产党，西南财经大学产业（工业）经济学博士，研究员。
+现任四川省政协副主席。
+1984.07-1993.09 四川南部师范学校学习、南充市小龙小学初中部任教、南充教育学院英语系学习
+1993.09-1996.07 湖南师范大学教育科学学院研究生学习，获教育学硕士学位
+1996.07-2002.01 历任四川省委宣传部理论处副主任科员、主任科员、副处长（其间：2000.05-2002.01任攀枝花市政府副秘书长兼招商口岸办公室主任；2001.05-2001.08四川省中青年干部赴美国辛辛那提大学中长期培训班学习）
+2002.01-2004.04 四川省雅安市市委、政府副秘书长，市招商引资局党组书记、局长（1998.09-2002.03西南财经大学工商管理学院产业经济学专业研究生学习，获经济学博士学位；2002.08兼任雅安市生态科技工业园区管委会副主任）
+2004.04-2005.03 四川省芦山县委副书记、县长
+2005.03-2008.06 四川省芦山县委书记、县人大常委会主任
+2008.06-2009.08 四川省雅安职业技术学院党委书记
+2009.08-2014.01 历任中央文献研究室第五编研部副局级干部、副主任
+2014.01-2016.12 历任四川省政府研究室副主任（主持工作）、主任、省政府办公厅党组成员
+2016.12-2017.09 四川天府新区办常务副主任、党组书记
+2017.09-2021.02 四川省自贡市委副书记、市长
+2021.02-2022.07 四川省住房和城乡建设厅党组书记、厅长
+2022.07-2026.02 四川省广元市委书记
+2026.02-2026.04 四川省政协副主席，广元市委书记
+2026.04- 四川省政协副主席
+四川省第十三届、第十四届人大代表
+、第十三届全国人民代表大会代表
+、中国共产党四川省第十二届委员会委员、
+中国共产党四川省第十二次代表大会代表
+、政协四川省第十三届委员会委员（2026年1月增补）
+2026年2月6日，政协四川省第十三届委员会第四次会议举行第三次全体会议。何树平当选为政协四川省第十三届委员会副
+主席。
+2026年4月，四川省委决定：何树平同志不再担任中共广元市委书记、常委、委员职务。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 吴自胜-快懂百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：吴自胜-快懂百科<br>
+  原页：<a href="http://www.baike.com/wiki/%E5%90%B4%E8%87%AA%E8%83%9C" target="_blank" rel="noopener">http://www.baike.com/wiki/%E5%90%B4%E8%87%AA%E8%83%9C</a><br>
+  存档日期：2026-08-17 · 信源分级：C · <a href="https://web.archive.org/web/*/http://www.baike.com/wiki/%E5%90%B4%E8%87%AA%E8%83%9C" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">1990.07--1992.10，江西省抚州市黎川县中田乡政府干部；
+2002.11--2003.01，江西省抚州市乐安县政府党组成员，副县长候选人；
+2007.11--2010.07，江西省抚州市南丰县委常委、纪委书记（期间：2006.09--2009.07，中央党校
+2011.06--2013.06，江西省抚州市临川区委常委、常务副区长；
+2013.06--2013.07，江西省抚州市临川区委副书记、代区长；
+2013.07--2016.07，江西省抚州市临川区委副书记、区长（期间：2014.11--2015.09，牵头负责区委工作）；
+2016年7月，拟任中共南丰县委书记。
+2016年7月29日，任中共南丰县委委员、常委、书记。
+2021年7月24日，现任南丰县委书记，拟继续任县（区）党委正职。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

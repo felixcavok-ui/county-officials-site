@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 浙江11市人大、政府、政协换届工作圆满完成（含洪湖鹏当选）</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：浙江11市人大、政府、政协换届工作圆满完成（含洪湖鹏当选）<br>
+  原页：<a href="https://zjnews.zjol.com.cn/202204/t20220430_24164837.shtml" target="_blank" rel="noopener">https://zjnews.zjol.com.cn/202204/t20220430_24164837.shtml</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/https://zjnews.zjol.com.cn/202204/t20220430_24164837.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">浙江在线首页
+浙江在线首页
+请输入搜索关键字
+function search(){
+var u = navigator.userAgent;
+var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+var urlstr = &#x27;//s.zjol.com.cn/cse/search?s=6048247431686495421&amp;entry=1&amp;q=&#x27;+document.getElementById(&#x27;search&#x27;).value;
+if(isiOS){
+window.location.href = urlstr ;
+}else{
+window.open(urlstr) ;
+// 拦截 buttonLite.js 和 bshareC1.js 的加载,并移除 divShareAll
+(function() {
+&#x27;use strict&#x27;;
+// 方法1: 立即隐藏并禁用 divShareAll
+const style = document.createElement(&#x27;style&#x27;);
+style.textContent = &#x27;.divShareAll { display: none !important; visibility: hidden !important; }&#x27;;
+document.head.insertBefore(style, document.head.firstChild);
+// 方法2: 预定义 window.bShare 为空对象,防止脚本初始化
+window.bShare = {
+share: function() { console.log(&#x27;bShare.share 已被拦截&#x27;); },
+addURL: function() { console.log(&#x27;bShare.addURL 已被拦截&#x27;); }
+Object.freeze(window.bShare); // 冻结对象,防止被修改
+// 方法3: 拦截 XMLHttpRequest
+const originalXHR = window.XMLHttpRequest;
+window.XMLHttpRequest = function() {
+const xhr = new originalXHR();
+const originalOpen = xhr.open;
+xhr.open = function(method, url) {
+if (url &amp;&amp; (url.includes(&#x27;buttonLite.js&#x27;) || url.includes(&#x27;bshareC1.js&#x27;))) {
+console.log(&#x27;已拦截 XHR 请求:&#x27;, url);
+throw new Error(&#x27;Blocked by interceptor&#x27;);
+return originalOpen.apply(this, arguments);
+return xhr;
+// 方法4: 拦截 fetch API
+const originalFetch = window.fetch;
+window.fetch = function(...args) {
+const url = args[0];
+if (typeof url === &#x27;string&#x27; &amp;&amp; (url.includes(&#x27;buttonLite.js&#x27;) || url.includes(&#x27;bshareC1.js&#x27;))) {
+console.log(&#x27;已拦截 fetch 请求:&#x27;, url);
+return Promise.reject(new Error(&#x27;Blocked by interceptor&#x27;));
+return originalFetch.apply(this, args);
+// 方法5: 使用 MutationObserver 快速移除元素
+const observer = new MutationObserver(function(mutations) {
+mutations.forEach(function(mutation) {
+mutation.addedNodes.forEach(function(node) {
+if (node.nodeType === 1) { // Element node
+// 拦截 buttonLite.js
+if (node.tagName === &#x27;SCRIPT&#x27; &amp;&amp; node.src &amp;&amp; node.src.includes(&#x27;buttonLite.js&#x27;)) {
+console.log(&#x27;已拦截 buttonLite.js 的加载&#x27;);
+node.parentNode.removeChild(node);
+// 拦截 bshareC1.js
+if (node.tagName === &#x27;SCRIPT&#x27; &amp;&amp; node.src &amp;&amp; node.src.includes(&#x27;bshareC1.js&#x27;)) {
+console.log(&#x27;已拦截 bshareC1.js 的加载&#x27;);
+node.parentNode.removeChild(node);
+// 移除 divShareAll
+if (node.className &amp;&amp; typeof node.className === &#x27;string&#x27; &amp;&amp; node.className.includes(&#x27;divShareAll&#x27;)) {
+console.log(&#x27;已移除 divShareAll&#x27;);
+node.style.display = &#x27;none&#x27;;
+node.style.visibility = &#x27;hidden&#x27;;
+setTimeout(() =&gt; {
+if (node.parentNode) node.parentNode.removeChild(node);
+}, 0);
+observer.observe(document.documentElement, {
+childList: true,
+subtree: true
+// 方法6: 立即处理已存在的元素
+window.addEventListener(&#x27;DOMContentLoaded&#x27;, function() {
+// 移除所有匹配的 script 标签
+const scripts = document.querySelectorAll(&#x27;script[src*=&quot;buttonLite.js&quot;], script[src*=&quot;bshareC1.js&quot;]&#x27;);
+scripts.forEach(script =&gt; {
+console.log(&#x27;移除已加载的脚本:&#x27;, script.src);
+script.parentNode.removeChild(script);
+// 隐藏 divShareAll
+const divShareAll = document.querySelector(&#x27;.divShareAll&#x27;);
+if (divShareAll) {
+console.log(&#x27;隐藏 divShareAll&#x27;);
+divShareAll.style.display = &#x27;none&#x27;;
+divShareAll.style.visibility = &#x27;hidden&#x27;;
+}, true);
+//修改导航顶部条
+$(&#x27;#lava&#x27;).width($(&#x27;#ulNav .liNav&#x27;).eq(0).find(&#x27;.aNav&#x27;).text().length*16);
+$(window).load(function(){
+$(&#x27;#ulNav .liNav&#x27;).hover(function(){
+$(&#x27;#lava&#x27;).width($(this).find(&#x27;.aNav&#x27;).text().length*16);
+}catch(e){}
+分享到新浪微信
+分享到新浪微博
+您当前的位置 ：
+浙江11市人大、政府、政协换届工作圆满完成
+2022年04月30日 07:12:29
+浙江在线-浙江日报
+浙江在线4月30日讯（记者 沈吟）
+截至4月29日，我省11个设区市人大、政府、政协换届工作全部圆满结束。
+李火林当选杭州市人大常委会主任，刘忻当选杭州市人民政府市长，马卫光当选杭州市政协主席；张平当选宁波市人大常委会主任，汤飞帆当选宁波市人民政府市长，徐宇宁当选宁波市政协主席；葛益平当选温州市人大常委会主任，张振丰当选温州市人民政府市长，陈作荣当选温州市政协主席；孙贤龙当选湖州市人大常委会主任，洪湖鹏当选湖州市人民政府市长，李上葵当选湖州市政协主席；高玲慧当选嘉兴市人大常委会主任，李军当选嘉兴市人民政府市长，陈利众当选嘉兴市政协主席；谭志桂当选绍兴市人大常委会主任，施惠芳当选绍兴市人民政府市长，魏伟当选绍兴市政协主席；陈玲玲当选金华市人大常委会主任，邢志宏当选金华市人民政府市长，宋志恒当选金华市政协主席；吴国升当选衢州市人大常委会主任，徐张艳当选衢州市人民政府市长，方健忠当选衢州市政协主席；张明超当选舟山市人大常委会主任，徐仁标当选舟山市人民政府市长，王伟当选舟山市政协主席；吴海平当选台州市人大常委会主任，吴晓东当选台州市人民政府市长，叶海燕当选台州市政协主席；李锋当选丽水市人大常委会主任，吴舜泽当选丽水市人民政府市长，任淑女当选丽水市政协主席。
+在这次设区市人大、政府、政协换届中，省委和各设区市党委强化政治把关，压紧压实责任，牢牢把握换届工作领导权和主动权，确保党的领导贯穿始终。强化组织领导，坚持条件标准，规范程序流程，细化会议方案，确保严格依法依章办事和充分发扬民主有机统一。强化风气监督，把纪律规矩挺在前面，把严肃换届纪律贯穿全程，确保换届全过程清正清朗清净。强化统筹谋划，坚持“干中换、换中干”，做到思想不散、劲头不减、工作不断，确保换届工作和疫情防控、经济社会发展“两不误、两促进”。
+看浙江新闻，关注浙江在线微信
+守好“红色根脉” 奋力打造新时代党建高地 2021年浙江推进组织工作纪事
+筑牢坚强堡垒 筑基红色根脉
+锤炼硬本事 上任即奔跑
+换届要为共同富裕示范区建设赋能
+(function(){document.write(unescape(&#x27;%3Cdiv id=&quot;bdcsFrameBox&quot;%3E%3C/div%3E&#x27;));var bdcs = document.createElement(&quot;script&quot;);bdcs.type = &quot;text/javascript&quot;;bdcs.async = true;bdcs.src = &quot;//znsv.baidu.com/customer_search/api/rs?sid=6048247431686495421&quot; + &quot;&amp;plate_url=&quot; + encodeURIComponent(window.location.href) + &quot;&amp;t=&quot; + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName(&quot;script&quot;)[0];s.parentNode.insertBefore(bdcs, s);})();
+&amp;style=-1&quot;&gt;
+质量好污染少成本低 2020年宁波三成以上新建建筑将是装配式
+马云：实体经济缺开拓精神
+清凉峰山中精灵
+版权和免责申明
+凡注有&quot;浙江在线&quot;或电头为&quot;浙江在线&quot;的稿件，均为浙江在线独家版权所有，未经许可不得转载或镜像；授权转载必须注明来源为&quot;浙江在线&quot;，并保留&quot;浙江在线&quot;的电头。
+.rimgt {
+position: relative;
+height: 195px;
+margin-top: 15px;
+.rimgt img {
+width: 100%;
+height: 100%;
+.rimgt h3 {
+position: absolute;
+left: 0;
+bottom: 0;
+width: 310px;
+height: 38px;
+line-height: 38px;
+font-size: 14px;
+color: #fff;
+padding: 0 10px;
+background-color: rgba(0, 0, 0, 0.5);
+overflow: hidden;
+有专科医院年接诊量同比涨超20% 专家建议心理治疗费用纳入医保
+河道边园林道路微改造 居民告别“走土坡”
+“凉了个凉”！浙江多地最低气温将跌到“1”字头
+江苏无锡排查出7名阳性感染者！浙江两地发布紧急通知，相关人员请立即报备
+送你一朵“七色花” 杭州南站上线七彩指路便签服务旅客出行
+#亚运C位#“手”护听障群体观赛体验！她将亚运动态传至无声世界
+2023年浙江医疗保障情况如何？一图速览！
+【闻绘报】秋风起，螃蟹肥！如何在秋天做一个最会吃螃蟹的人？
+对话程晓陶：防汛决不能掉以轻心 浙江需提防&quot;三碰头&quot;
+【政百科】第六十九期：成为中国首个脱贫省份 浙江凭的是什么？
+“我和我的祖国”——庆祝中华人民共和国成立70周年
+孩子被困车内危险
+扶梯不再“左行右立”
+一“桥”架中美，相知无远近——温州肯恩大学设校十年记
+快检快放，新鲜杨梅甜到海外
+价值100万元！杭州两所特殊教育学校收到爱心运动装备
+宁波杨梅坐飞机 全国200多个城市次（隔）日达
+浙南新一轮强降水发展，浙北闷热维持，直到这天大反转
+个头仅有拳头大！平湖西瓜新增“迷你成员”
+Copyright © 1999-2017 Zjol. All Rights Reserved
+浙江在线版权所有
+GetuiDataSDK.track(&#x27;newsInfoPv&#x27;, {
+NewsArticleID: &#x27;24164837&#x27;,
+NewsArticleTitle: &#x27;浙江11市人大、政府、政协换届工作圆满完成&#x27;,
+NewsEditionNumber: &#x27;4044&#x27;,
+NewsEditionName: &#x27;浙江新闻&#x27;,
+NewsArticleType:&#x27;新闻&#x27;,
+NewsArticleSource:&#x27;浙江在线-浙江日报&#x27;,
+NewsArticleAuthor:&#x27;记者 沈吟&#x27;,
+NewsArticlePubtime:&#x27;2022-04-30 07:12:29&#x27;
+24164837
+浙江11市人大、政府、政协换届工作圆满完成
+浙江在线-浙江日报
+2022-04-30 07:12:29
+浙江11市人大、政府、政协换届工作圆满完成</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E7%94%B3%E8%81%94%E5%BD%AC/5528461" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%94%B3%E8%81%94%E5%BD%AC/5528461</a><br>
+  存档日期：2026-07-11 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E7%94%B3%E8%81%94%E5%BD%AC/5528461" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">申联彬
+原山西省委常委
+申联彬，曾任山西省委常委、秘书长，山西省副省长等职，山西省人大常委会副主任、党组书记。
+中文名：申联彬
+国籍：中国
+民族：汉族
+出生日期：1950年3月
+毕业院校：中共中央党校
+出生地：山西省黎城县
+学历：中央党校在职研究生学历
+性别：男
+
+人物介绍
+申联彬，男，汉族，1950年3月生，山西省黎城县人，1969年10月参加工作，1970年4月加入中国共产党，中央党校在职研究生学历。现任山西省人大常委会党组书记、常务副主任。
+1969-1977，黎城县程家山公社邮电所、县半导体材料厂工作；黎城县西仵公社党委委员、团委书记；黎城县西仵公社党委第二书记；黎城县勇进渠工程总指挥；
+1977-1987，晋东南团地委副书记、书记；晋东南地直机关党委副书记；长治市市直机关党委副书记；
+1987-1990，襄垣县委副书记、县长；
+1990-1992，襄垣县委书记；
+1992-1995，长治市委常委、秘书长；
+1995-1996，长治市委副书记；
+1996-1998，长治市委副书记、市长；
+1998-2000.01，晋城市委书记；
+2000.01-2001.05，山西省副省长、省政府党组成员；
+2001.05-2001.06，山西省委常委、秘书长、办公厅主任、副省长；
+2001.06，山西省委常委、秘书长、办公厅主任。
+2002年，山西省委常委、秘书长、
+2008年05月，任山西省委常委、副省长。
+2010年1月20日山西省十一届人大常委会第十四次会议决定免去申联彬的山西省副省长职务。
+2010年1月30日山西省十一届人大三次会议举行第四次全体会议，补选申联彬为省人大常委会副主任。
+2010年2月申联彬兼任省人大常委会党组书记
+2011年1月至2013年1月任山西省人大常委会党组书记、常务副主任。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

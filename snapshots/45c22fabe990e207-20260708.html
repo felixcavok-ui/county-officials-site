@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 西藏任免马升昌、王峻、许成仓、梁建平、云丹等职务</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：西藏任免马升昌、王峻、许成仓、梁建平、云丹等职务<br>
+  原页：<a href="http://district.ce.cn/newarea/sddy/201607/29/t20160729_14299848.shtml" target="_blank" rel="noopener">http://district.ce.cn/newarea/sddy/201607/29/t20160729_14299848.shtml</a><br>
+  存档日期：2026-07-08 · 信源分级：B · <a href="https://web.archive.org/web/*/http://district.ce.cn/newarea/sddy/201607/29/t20160729_14299848.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">西藏自治区人大常委会任免名单 2016年7月28日西藏自治区第十届人民代表大会常务委员会第二十五次会议通过 决定免去： 马升昌的西藏自治区教育厅厅长职务； 王峻的西藏自治区国土资源厅厅长职务。 决定任命： 许成仓为西藏自治区教育厅厅长； 梁建平为西藏自治区国土资源厅厅长； 云丹为西藏自治区林业厅厅长。 赵世军 马升昌 另据中国西藏林芝网消息，6月30日下午,林芝市召开干部大会,传达区党委关于市委主要领导同志职务调整的决定。会上，王奉朝宣读了《区党委关于林芝市委书记调整的决定》, 免去赵世军同志的林芝市委委员、常委、书记职务，任区工商局党委书记、副局长，马升昌同志任林芝市委委员、常委、书记，免去其自治区教工委副书记、区教育厅党组副书记、厅长职务。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.lpx.gov.cn</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.lpx.gov.cn<br>
+  原页：<a href="http://www.lpx.gov.cn/art/2026/1/30/art_3304_972307.html" target="_blank" rel="noopener">http://www.lpx.gov.cn/art/2026/1/30/art_3304_972307.html</a><br>
+  存档日期：2026-08-22 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.lpx.gov.cn/art/2026/1/30/art_3304_972307.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">县长郭耀东同志简介
+滦平县人民政府 领导信息（栏目路径：首页&gt;机构概况&gt;领导信息）
+发布时间：2026-01-30 17时42分（页面 Maketime：2026-02-06 09:50:48）
+来源：滦平县人民政府 www.lpx.gov.cn（SiteIDCode：1308240004）
+URL：http://www.lpx.gov.cn/art/2026/1/30/art_3304_972307.html
+栏目：领导信息（col3304）；ArticleTitle：县长郭耀东同志简介；contentSource：滦平县人民政府
+
+【页面正文】
+
+县长郭耀东同志简介
+
+郭耀东，男，满族，1979年9月生，大学学历，公共管理硕士。
+
+主持县政府全面工作。
+
+分管县审计局。
+
+【备注】页面顶部含县长照片一张（/picture/0/3aa06579ada94019a31ecb851a16b793.png）；页面除上述简介外无更多履历条目。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

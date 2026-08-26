@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 陈君文 - 搜狗百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：陈君文 - 搜狗百科<br>
+  原页：<a href="https://baike.sogou.com/v701432.htm" target="_blank" rel="noopener">https://baike.sogou.com/v701432.htm</a><br>
+  存档日期：2026-06-21 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v701432.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">URL: https://baike.sogou.com/v701432.htm?ch=frombaikevr&amp;fromTitle=%E9%99%88%E5%90%9B%E6%96%87
+Title: 陈君文 - 搜狗百科
+Access Date: 2026-06-21
+
+陈君文 _ 百科登录1.摘要2.基本信息3.人物履历4.任免信息5.参考资料陈君文陈君文，男，汉族，1954年7月生，常德鼎城人，1979年4月加入中国共产党，1970年4月参加工作，中南大学商学院管理科学与工程专业毕业，研究生学历，管理学博士，高级会计师。曾任湖南省人大常委会副主任。基本信息中文名陈君文国籍中国民族汉族出生日期1954年7月出生地湖南常德毕业院校中南大学人物履历1970.04—1979.03常德县水泥厂工人、会计、财供股副股长1979.03—1983.06常德县工业局、煤炭公司会计1983.06—1984.09常德县无线电元件厂副厂长、厂长1984.09—1985.01常德县无线电元件厂厂长、党总支书记1985.01—1988.09常德县副县长陈君文1988.09—1988.12常德市鼎城区副区长1988.12—1990.01津市市(县级)副市长1990.01—1990.09津市市(县级)委常委、副市长1990.09—1993.02常德市财政局副局长(1988.09—1991.07华中师范大学政治系思想政治教育专业在职学习)1993.02—1994.10常德市财政局局长1994.10—1995.06常德市财政局局长、地税局局长1995.06—1997.11常德市副市长1997.11—2001.04常德市委常委、副市长(1996.09—1999.09湖南财经学院财会系会计学专业同等学力学习，获管理学硕士学位；1999.03—1999.07中央党校地厅级干部进修班学习)2001.04—2002.01常德市委副书记、代市长2002.01—2007.03常德市委副书记、市长2007.03—2008.03株洲市委副书记、代市长、市长2008.03—2008.06株洲市委书记、市长(2003.09—2008.06中南大学商学院管理科学与工程专业在职研究生学习，获管理学博士学位)</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

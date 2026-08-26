@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%8F%B6%E5%AE%B6%E6%9D%BE/55162" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%8F%B6%E5%AE%B6%E6%9D%BE/55162</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%8F%B6%E5%AE%B6%E6%9D%BE/55162" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">叶家松，男，1948年9月生，福建闽侯人，1972年11月加入中国共产党，1973年8月参加工作，中央党校研究生学历。曾任中共莆田市委书记，省政协副主席兼秘书长，福建省慈善总会会长。 [2]
+
+现任福建省慈善总会专委会主任。 [3]
+
+人物履历
+
+1973年毕业于厦门大学生物系，2003年中央党校科学社会主义专业在职研究生。 [4]
+
+曾任福建省直属机关工委常务副书记（正厅级）；
+
+1997年6月- 2003年1月，中共福建莆田市委书记；
+
+2003年1月- 2012年1月，福建省政协副主席兼秘书长；
+
+2013年5月起，福建省慈善总会会长。 [2]
+
+担任职务
+
+福建省委委员。
+
+福建省第十、十一届政协委员。 [6-7]
+
+职务任免
+
+2012年1月9日下午，十届省政协常委会第十八次会议同意叶家松同志因年龄原因，辞去政协第十届福建省委员会副主席、秘书长职务。 [5]
+
+出版著作
+
+20世纪60年代开始陆续在《福建日报》等报刊发表多篇文章，出版散文随笔集《草堂物语》等。 [4]</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

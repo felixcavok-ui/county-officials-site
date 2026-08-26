@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 方小方同志简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：方小方同志简历<br>
+  原页：<a href="https://news.sina.cn/sa/2011-01-21/detail-ikftssap3534692.d.html" target="_blank" rel="noopener">https://news.sina.cn/sa/2011-01-21/detail-ikftssap3534692.d.html</a><br>
+  存档日期：2026-07-16 · 信源分级：B · <a href="https://web.archive.org/web/*/https://news.sina.cn/sa/2011-01-21/detail-ikftssap3534692.d.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">方小方男汉族1951年12月生四川成都人1984年8月加入中国共产党1969年1月参加工作四川师范学院现四川师范大学数学系毕业大学学历。
+1969年1月以后曾下乡当知青和在广汉县教育系统工作。1985年4月任广汉县政府办公室副主任1987年4月任广汉县政府办公室主任其间1989年1月兼任广汉涤纶总厂厂长、党委书记。1990年3月任广汉市副市长兼广华化纤股份有限公司董事长、党委书记、总经理。1994年8月任四川省嘉陵国际实业有限公司常务副总经理、代总经理。1995年12月任德阳市政府副秘书长。1996年2月任什邡市委副书记、市长1997年12月任什邡市委书记。2000年8月任德阳市委常委、什邡市委书记。2002年2月任德阳市委副书记、副市长、代市长兼什邡市委书记。2002年3月任德阳市委副书记、市
+长。2006年6月任德阳市委书记、市长。2006年11月任德阳市委书记。2007年1月任德阳市委书记、市人大常委会主任。2011年1月当选为省政协副主席。中共十七大代表十届全国人大代表九届省委委员省十一届人大代表十届省政协委员。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

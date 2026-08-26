@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 李文卿履历（消歧简历页）</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：李文卿履历（消歧简历页）<br>
+  原页：<a href="http://2008.sohu.com/20080611/n257423322.shtml" target="_blank" rel="noopener">http://2008.sohu.com/20080611/n257423322.shtml</a><br>
+  存档日期：2026-07-06 · 信源分级：B · <a href="https://web.archive.org/web/*/http://2008.sohu.com/20080611/n257423322.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">标题：甘肃省天水市市长李文卿简历
+来源：人民网（搜狐2008奥运转载）
+URL：http://2008.sohu.com/20080611/n257423322.shtml
+发布日期：2008-06-11
+
+【简历正文】
+李文卿，男，汉族，1960年6月出生，甘肃庄浪人，大学学历，中共党员。
+1978.03－1982.01 甘肃农业大学兽医系 学习
+1982.01－1988.10 甘肃省畜牧厅（农牧厅） 干事
+1988.10－1992.03 甘肃省计划委员会农村经济处 干事
+1992.03－1994.08 甘肃省计划委员会农村经济处 副处长
+1994.08－2000.09 甘肃省计划委员会以工代赈处、固定资产投资处 处长
+2000.09－2001.09 武威地区行署 副专员
+2001.09－2003.05 武威市 副市长
+2003.05－2004.03 甘肃省计划委员会副主任、党组成员（期间：2003.09－2006.12在甘肃农业大学草业科学专业学习，获得博士研究生学历）
+2004.03－2007.03 甘肃省发展和改革委员会副主任、党组成员
+2007.03－2008.03 甘肃省旅游局党组书记、局长
+2008.03－ 中共天水市委副书记、代市长
+2008.04－ 中共天水市委副书记、市长</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

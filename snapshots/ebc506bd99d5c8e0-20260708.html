@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 王儒林任吉林省代省长</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：王儒林任吉林省代省长<br>
+  原页：<a href="https://news.sina.com.cn/c/2009-12-03/070016708964s.shtml" target="_blank" rel="noopener">https://news.sina.com.cn/c/2009-12-03/070016708964s.shtml</a><br>
+  存档日期：2026-07-08 · 信源分级：B · <a href="https://web.archive.org/web/*/https://news.sina.com.cn/c/2009-12-03/070016708964s.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">新华社长春12月2日电 吉林 省第十一届人民代表大会常务委员会第十六次会议12月1日决定，任命王儒林为吉林省副省长，代理省长。 吉林省第十一届人民代表大会常务委员会第十六次会议还决定，接受王珉辞去吉林省人民代表大会常务委员会主任职务、韩长赋辞去吉林省省长职务的请求。 王儒林简历 1953年4月生，汉族，河南濮阳人。1970年参加工作，1973年加入中国共产党，吉林大学研究生毕业，经济学硕士学位。 历任：吉林省委农工部干事；前郭县八郎乡党委副书记、书记，前郭县副县长；共青团吉林省委副书记、1987年8月任团省委书记；1991年4月任四平市委副书记；通化市委副书记、市长，通化市委书记兼人大常委会主任；1998年1月任延边州委书记;1998年4月任省委常委、延边州委书记；2001年1月任省委常委、政法委书记；2001年11月任省委常委，常务副省长。2004年12月任吉林省委常委、长春市委书记；2007年2月10日在中共长春市第十一届委员会第一次全体会议上当选为中共长春市委书记。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

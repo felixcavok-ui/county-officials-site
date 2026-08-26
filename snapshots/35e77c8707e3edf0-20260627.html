@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · zh.wikipedia.org</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：zh.wikipedia.org<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/王登喜" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/王登喜</a><br>
+  存档日期：2026-06-27 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/王登喜" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body"># 王登喜 - 维基百科，自由的百科全书
+
+URL: https://zh.wikipedia.org/wiki/王登喜
+
+王登喜（1963年6月—），男，河南汤阴人，中华人民共和国政治人物。河南省委党校研究生学历。曾任新乡市市长。
+
+1980年9月至1982年8月，在郑州水利学校水工建筑专业学习；1982年参加工作。1984年12月加入中国共产党。
+
+1993年1月，任汤阴县伏道乡乡长；1993年9月任伏道乡党委书记。1997年12月，任安阳市计划委员会副主任；2002年2月，任安阳市发展计划委员会副主任；2002年3月，担任中共安阳县委副书记。2003年10月，任河南省安全生产监督管理局副局长、河南省安全文化促进会理事长[1]。2006年12月，任许昌市人民政府副市长[2][3]。2009年7月，任中共许昌市委常委、宣传部部长。2014年7月，任河南省人民政府副秘书长[4]。
+
+2016年5月，任新乡市代市长，6月任新乡市长。[5]2018年2月24日，当选为第十三届全国人大代表[6]。2021年7月，不再担任新乡市市长，9月14日[註 1]，被聘为河南省政府参事。[7]
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

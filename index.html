@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国县级主政官员数据库 CCLD · 试点版</title>
+<meta name="description" content="开源、透明、持续更新的中国县级党政一把手任职档案（试点版：真实公开来源数据，字段级可溯源）">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ 访问门(内部演示,凭访问码进入;仅防普通访客,非加密保护) ============ -->
+<div id="site-gate" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:#1a1d23;">
+  <div style="background:#fff;border-radius:12px;padding:40px 44px;max-width:360px;width:88%;box-shadow:0 12px 40px rgba(0,0,0,.35);text-align:center;font-family:'Noto Sans SC',sans-serif;">
+    <div style="font-size:15px;font-weight:700;color:#1a1d23;margin-bottom:6px;">中国县级主政官员数据库</div>
+    <div style="font-size:12px;color:#888;margin-bottom:22px;">内部演示站 · 请输入访问码</div>
+    <input id="site-gate-input" type="password" inputmode="numeric" autocomplete="off"
+           style="width:100%;box-sizing:border-box;padding:10px 12px;font-size:16px;border:1px solid #ccc;border-radius:8px;text-align:center;letter-spacing:6px;outline:none;">
+    <button id="site-gate-btn"
+            style="width:100%;margin-top:14px;padding:10px 0;font-size:14px;font-weight:600;color:#fff;background:#b03a2e;border:none;border-radius:8px;cursor:pointer;">进入</button>
+    <div id="site-gate-err" style="font-size:12px;color:#b03a2e;margin-top:10px;visibility:hidden;">访问码不正确</div>
+  </div>
+</div>
+<script>
+(function () {
+  var KEY = 'ccld_gate_ok', HASH = 2088324431;
+  function djb2(s) {
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) { h = (h * 33 + s.charCodeAt(i)) >>> 0; }
+    return h;
+  }
+  var gate = document.getElementById('site-gate');
+  try { if (sessionStorage.getItem(KEY) === '1') { gate.remove(); return; } } catch (e) {}
+  var input = document.getElementById('site-gate-input');
+  var err = document.getElementById('site-gate-err');
+  function attempt() {
+    if (djb2(input.value.trim()) === HASH) {
+      try { sessionStorage.setItem(KEY, '1'); } catch (e) {}
+      gate.remove();
+    } else {
+      err.style.visibility = 'visible';
+      input.value = '';
+      input.focus();
+    }
+  }
+  document.getElementById('site-gate-btn').addEventListener('click', attempt);
+  input.addEventListener('keydown', function (e) { if (e.key === 'Enter') attempt(); });
+  input.focus();
+})();
+</script>
+
+<header class="topbar">
+  <a class="brand" href="#/home">
+    <span class="brand-seal" aria-hidden="true">县档</span>
+    <span class="brand-text">
+      <strong>中国县级主政官员数据库</strong>
+      <small>CHINA COUNTY LEADERS DATABASE</small>
+    </span>
+  </a>
+  <nav class="topnav" aria-label="主导航">
+    <a href="#/home" data-nav="home" class="is-active">首页</a>
+    <a href="#/browse" data-nav="browse">数据浏览</a>
+    <a href="#/reviews" data-nav="reviews">审核与裁决</a>
+    <a href="#/download" data-nav="download">数据下载</a>
+    <a href="#/registry" data-nav="registry">研究注册</a>
+  </nav>
+  <div class="topbar-meta">
+    <span class="chip chip-version">v0.1.0-pilot</span>
+    <a class="chip chip-link" href="#" onclick="return demoNote()">GitHub ↗</a>
+  </div>
+</header>
+
+<main id="app">
+
+  <!-- ============ 首页 ============ -->
+  <section class="view is-active" id="view-home" aria-label="首页">
+    <div class="container hero">
+      <div class="hero-main">
+        <p class="kicker reveal">开源 · 透明 · 持续更新 — OPEN DATA INFRASTRUCTURE</p>
+        <h1 class="reveal d1">两千八百个县，<br><em>谁在主政</em>。</h1>
+        <p class="lede reveal d2">
+          中国县级党政一把手——县委书记与县长（区长、县级市市长）——的任职档案。
+          多源史料拼接，AI 双模型交叉抽取，人工仲裁复核；已挂接证据的字段可回溯原文。
+          免费开放，仅限学术研究使用。
+        </p>
+        <div class="hero-cta reveal d3">
+          <a class="btn btn-primary" href="#/browse">浏览数据</a>
+          <a class="btn" href="#/download">下载 v0.1.0</a>
+        </div>
+      </div>
+      <aside class="hero-side reveal d2" aria-label="数据规模">
+        <div class="seal-block" aria-hidden="true"><span>开源<br>数据</span></div>
+        <dl class="stat-ledger">
+          <div class="ledger-row"><dt>已采集县级单位</dt><dd id="stat-units">—</dd></div>
+          <div class="ledger-row"><dt>任职记录（spell）</dt><dd id="stat-spells">—</dd></div>
+          <div class="ledger-row"><dt>收录官员</dt><dd id="stat-persons">—</dd></div>
+          <div class="ledger-row"><dt>时间跨度</dt><dd id="stat-span">—</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <span class="sec-no">01</span><h2>覆盖透明度</h2><span class="sec-rule"></span>
+      </div>
+      <p class="section-note">
+        完备性本身是数据质量的一部分。下图按 <strong>单位 × 年</strong> 展示已采集单位两条任职序列的
+        <strong>月度覆盖率</strong>（由 spell 起止月真实计算，不做合成）——我们宁可展示空白，也不用猜测填补。
+        按 <strong>省 / 市 / 区县</strong> 分层，点省、市行可展开折叠；省、市行的逐年值为其下属单位覆盖率的均值（聚合，非填补）。
+        当前已覆盖多个省级行政区的部分单位，具体范围以本页实时覆盖图为准，并持续扩展。
+      </p>
+      <div class="heatmap-wrap">
+        <div class="heatmap" id="heatmap" aria-label="各省/市/区县历年数据覆盖率层级图（可展开折叠）"></div>
+        <div class="heatmap-legend">
+          <span>0%</span><span class="hm-scale" aria-hidden="true"></span><span>100%</span>
+          <span class="hm-pilot">▣ 已采集单位</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <span class="sec-no">02</span><h2>方法与制度</h2><span class="sec-rule"></span>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <span class="feature-no">甲</span>
+          <h3>按官职采集，多源拼接</h3>
+          <p>以「县 × 职位 × 时间」面板为骨架：政府工作报告锚定县长序列，人大任免精确化日期，
+          年鉴与网站快照锚定书记序列，新闻与百科补洞。缺口显式标注，不做插补。</p>
+        </article>
+        <article class="feature">
+          <span class="feature-no">乙</span>
+          <h3>AI 双查 + 人工仲裁</h3>
+          <p>两个模型家族独立抽取同一份简历，字段级比对，分歧进入人工仲裁队列。
+          每个字段强制保留原文引用片段，程序校验其确为原文子串。</p>
+        </article>
+        <article class="feature">
+          <span class="feature-no">丙</span>
+          <h3>字段级溯源 + 社区报错</h3>
+          <p>已挂接证据的记录附来源 URL 与抓取当日快照索引；证据缺口和冲突由发布闸门及审核台账显式报告。
+          修订进入版本日志。Spell 级原始数据全部公开，面板由开源脚本生成。</p>
+        </article>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <span class="sec-no">03</span><h2>引用本数据库</h2><span class="sec-rule"></span>
+      </div>
+      <div class="cite-box">
+        <code id="cite-text">CCLD 项目组 (2026). 中国县级主政官员数据库 (CCLD) v0.1.0-pilot [数据集].
+DOI: 待申请 · CC-BY-4.0 · 仅限学术研究使用</code>
+        <button class="btn btn-ghost" onclick="copyCite()">复制引用</button>
+      </div>
+      <p class="section-note">
+        使用本数据库发表的研究可参加 <a href="#/registry">Post-analysis Registration</a>——
+        注册你的结果，数据库每次更新后我们替你复跑，年度报告向学术共同体汇报结果的时间稳健性。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 数据浏览（筛选工具栏置顶，时间轴区域全宽） ============ -->
+  <section class="view" id="view-browse" aria-label="数据浏览">
+    <div class="container">
+      <div class="browse-top">
+        <nav id="crumb" class="crumb" aria-label="层级导航"></nav>
+        <div class="unit-search">🔍
+          <input id="unit-search-input" type="search" placeholder="搜单位名 / 代码 直达" aria-label="搜索单位" autocomplete="off">
+          <div id="search-results" class="search-results" hidden></div>
+        </div>
+      </div>
+      <div id="level-officials"><!-- 本级两正职面板 / 叶子主内容，renderUnitOfficials 注入 --></div>
+      <div id="child-grid"><!-- 下辖单位卡片网格，renderUnitGrid 注入 --></div>
+    </div>
+  </section>
+
+  <!-- ============ 人物页 ============ -->
+  <section class="view" id="view-person" aria-label="人物档案">
+    <div class="container" id="person-panel"><!-- JS 渲染 --></div>
+  </section>
+
+  <!-- ============ 审核与裁决 ============ -->
+  <section class="view" id="view-reviews" aria-label="审核与裁决">
+    <div class="container section">
+      <p class="kicker">ADJUDICATION LEDGER</p>
+      <h2 class="page-title">审核与裁决</h2>
+      <p class="lede-sm">这里不是让你判断“哪个 AI 更可信”，而是逐条回答一个具体事实问题：
+        某人何时到任、何时离任、是否代理，或某条证据是否应该采用。每张卡先把问题说清楚，
+        再把本人直接证据、前后任交接锚点和证据异常分开列出；所有可用的原文与采集快照都可直接打开。</p>
+      <div class="rv-guide" aria-label="裁决阅读指南">
+        <div>
+          <h3>三步看懂一张裁决卡</h3>
+          <p><strong>A/B 路</strong>是两个独立组装结果；证据卡上的 <strong>A/B/C 级</strong>才是信源等级，两者不要混淆。</p>
+        </div>
+        <ol>
+          <li><b>先看唯一问题</b><br>明确本条到底在裁日期、代理属性，还是证据去留。</li>
+          <li><b>再核逐字引文</b><br>优先本人直接证据；前后任记录只能作为交接锚点。</li>
+          <li><b>最后选动作</b><br>可采某一路、两路皆误、保持未决，或挂账等待补证。</li>
+        </ol>
+      </div>
+      <div class="rv-flow" id="rv-flow"><!-- JS 渲染流程条（采集→codex复核→规则自动→人工确认→落地） --></div>
+      <div class="rv-session">
+        <label for="rv-adjudicator">
+          <span>本次裁决人 <b>必填</b></span>
+          <input id="rv-adjudicator" type="text" maxlength="80" autocomplete="name"
+            placeholder="填写真实姓名或约定署名" aria-describedby="rv-adjudicator-help">
+        </label>
+        <p id="rv-adjudicator-help">只保存在本机浏览器，导出时写入 JSON；执行落档脚本后会永久记入裁决文书，并展示在已裁决条目上。</p>
+      </div>
+      <div class="rv-filters">
+        <select id="rv-f-status" aria-label="按状态筛选">
+          <option value="">全部状态</option>
+          <option value="todo" selected>⚑ 待办（未决+待确认）</option>
+          <option value="pending">◻ 未决</option>
+          <option value="suggested">◈ 待确认（裁决卡）</option>
+          <option value="auto">⚙ 规则自动</option>
+          <option value="human">✓ 人工裁定</option>
+          <option value="backlog">◔ 挂账</option>
+        </select>
+        <select id="rv-f-type" aria-label="按争议类型筛选"><option value="">全部类型</option></select>
+        <select id="rv-f-run" aria-label="按采集批次筛选"><option value="">全部批次</option></select>
+        <input id="rv-f-q" type="search" placeholder="搜索单位 / 人名 / runId / 编号…" aria-label="关键词搜索">
+        <button class="rv-export" id="rv-export" title="把全部已选择的裁决卡确认结果打包下载为 JSON（供 suggest_truncations.py --apply-confirmed 消费）">⬇ 导出确认结果</button>
+        <button class="rv-export" id="rv-export-judge" title="把全部已填动作的未决项打包下载为 JSON（供 scripts/apply_adjudications.py 消费，落地为 resolutions 文书）">⬇ 导出人工裁决</button>
+        <span class="rv-progress" id="rv-judge-progress"></span>
+      </div>
+      <details class="rv-next">
+        <summary>点完并导出后，还要做什么？</summary>
+        <div>
+          <ol>
+            <li><b>先 dry-run 检查</b>：人工裁决运行 <code>py scripts/apply_adjudications.py &lt;JSON&gt;</code>。</li>
+            <li><b>确认后落档</b>：追加 <code>--apply</code>，把结论和裁决人写入 <code>resolutions.csv</code>。</li>
+            <li><b>让事实生效</b>：按脚本列出的各个 <code>runId</code> 重跑 merge；仅导出 JSON 不会修改任期数据。</li>
+            <li><b>刷新页面与面板</b>：重建 demo data 和 panel，抽查后再提交 Git。</li>
+          </ol>
+          <p>「待确认」机器裁决卡使用另一条命令：<code>py scripts/suggest_truncations.py --date YYYY-MM-DD --apply-confirmed &lt;JSON&gt; --apply</code>。</p>
+        </div>
+      </details>
+      <div id="rv-list"><!-- JS 渲染列表（分页，每页 50） --></div>
+      <div class="rv-pager" id="rv-pager"><!-- JS 渲染分页 --></div>
+    </div>
+  </section>
+
+  <!-- ============ 下载 ============ -->
+  <section class="view" id="view-download" aria-label="数据下载">
+    <div class="container section">
+      <div class="dl-head">
+        <div>
+          <p class="kicker">RELEASE</p>
+          <h2 class="page-title"><span id="dl-version">v0.1.0-pilot</span> <span class="dl-date" id="dl-date">—</span></h2>
+          <p class="section-note">下载清单随数据库版本自动更新，覆盖当前已发布的单位、任职、人物、履历与证据文件。
+          权威格式为 UTF-8 CSV；已填写 evidence_ids 的结论可回溯证据池的逐字引文与页面快照。单文件条目提供 MD5；聚合条目按实际文件数汇总展示。</p>
+          <p class="section-note" id="dl-quality-note">本页为试点预览；生成器会保守隐藏无法确定选边的冲突履历，具体数量随本版数据加载。</p>
+        </div>
+        <div class="dl-doi">
+          <span class="chip">DOI 待申请</span>
+          <span class="chip">许可 CC-BY-4.0</span>
+          <span class="chip">CHANGELOG ↗</span>
+        </div>
+      </div>
+      <table class="data-table dl-table">
+        <thead><tr><th>文件</th><th>内容</th><th>行数</th><th>大小</th><th>MD5</th><th>格式</th></tr></thead>
+        <tbody id="dl-files"></tbody>
+      </table>
+      <div class="dl-note">
+        <h3>三层数据结构</h3>
+        <p><strong>证据层</strong>（evidence，逐字引文+快照索引）是一切结论的依据；
+        <strong>结论层</strong>（counties / county_changes / office_spells / persons / career_spells）每行经 evidence_ids 回溯证据；
+        <strong>生成层</strong>（县×年面板，由仓库内 <code>scripts/build_panel.py</code> 确定性生成）——
+        任何晋升口径的争议都可以回到 spell 级数据重新编码。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 研究注册 ============ -->
+  <section class="view" id="view-registry" aria-label="研究注册">
+    <div class="container section">
+      <p class="kicker">POST-ANALYSIS REGISTRATION</p>
+      <h2 class="page-title">研究结果注册</h2>
+      <p class="lede-sm">
+        实验经济学有 pre-analysis registration；我们提出 <strong>post-analysis registration</strong>：
+        使用本数据库发表（或工作论文阶段）的研究，可自愿提交 replication file。
+        我们<em>不改动你的代码与模型设定</em>，仅在数据库每次年度更新后重新运行，
+        检查结论是否随数据时间范围扩展而变化，并以年度报告形式向学术共同体汇报。
+        这不是打假——有些结果本就是特定时期的产物，知道这一点本身就是知识。
+      </p>
+      <ol class="reg-steps">
+        <li><strong>提交</strong> — replication file（代码 + 环境说明）与论文引用信息</li>
+        <li><strong>封存</strong> — 我们登记哈希，不修改、不评判你的设定</li>
+        <li><strong>复跑</strong> — 每次数据 release 后自动重跑，记录系数与显著性轨迹</li>
+        <li><strong>年报</strong> — 汇总所有注册研究的稳健性，公开发布</li>
+      </ol>
+      <table class="data-table">
+        <thead><tr><th>注册号</th><th>研究</th><th>注册版本</th><th>状态</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">REG-2026-001</td><td>经济绩效与县级官员晋升：panel 证据（示例条目）</td><td class="mono">v0.1.0</td><td><span class="chip chip-ok">已注册 · 待首次复现</span></td></tr>
+          <tr><td class="mono">REG-2026-002</td><td>土地出让与主政者任期（示例条目）</td><td class="mono">v0.1.0</td><td><span class="chip chip-ok">已注册 · 待首次复现</span></td></tr>
+        </tbody>
+      </table>
+      <p class="section-note">首期年度报告预计随 v1.0 正式版发布。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container foot-grid">
+    <div>
+      <p class="foot-brand">中国县级主政官员数据库 <small>CCLD</small></p>
+      <p>开源学术数据基础设施 · 数据 CC-BY-4.0 · 代码 MIT<br>仅限学术研究使用 · 试点版数据来自公开来源采集；证据挂接状态与缺口以下载表、审核台账及发布闸门为准</p>
+    </div>
+    <div>
+      <p class="foot-h">资源</p>
+      <a href="#/download">数据下载</a><a href="#" onclick="return demoNote()">Codebook</a><a href="#" onclick="return demoNote()">GitHub</a>
+    </div>
+    <div>
+      <p class="foot-h">参与</p>
+      <a href="#" onclick="return demoNote()">报告数据错误</a><a href="#/registry">注册研究</a><a href="#" onclick="return demoNote()">联系项目组</a>
+    </div>
+  </div>
+</footer>
+
+<span class="demo-badge" aria-hidden="true">PILOT · 试点真实数据 · 可溯源</span>
+
+<!-- 报错弹窗 -->
+<div class="modal-overlay" id="modal-report" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h3 id="modal-title">报告数据错误</h3>
+    <p class="modal-sub">将以 GitHub Issue 形式提交（预填模板，可编辑）：</p>
+    <textarea id="report-body" rows="9" spellcheck="false"></textarea>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" onclick="closeReport()">取消</button>
+      <button class="btn" onclick="copyReport()">复制模板</button>
+      <button class="btn btn-primary" onclick="demoNote()">前往 GitHub 提交 ↗</button>
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip" hidden></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

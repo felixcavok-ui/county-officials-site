@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.baike.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.baike.com<br>
+  原页：<a href="https://www.baike.com/wiki/钮兴辉" target="_blank" rel="noopener">https://www.baike.com/wiki/钮兴辉</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.baike.com/wiki/钮兴辉" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">钮兴辉-快懂百科
+钮兴辉
+河北省衡水市政协主席
+钮兴辉，男，汉族，1964年8月生，定州人，1988年12月入党，1981年10月参加工作，省委党校在职研究生班经济管理专业毕业，党校研究生学历。现任河北省衡水市政协主席。
+人物履历
+1981.10-1982.10，北京电子专科学校机要专业（河北省委机要干部训练大队）学习
+1982.10-1987.06，沧州地委办公室机要科干事（1983.11转干）
+1987.06-1991.10，衡水地区劳动人事局编委办科员（其间：1988.09-1991.07在北京经济学院劳动人事管理专业学习）
+1991.10-1993.03，衡水地委办公室干事
+1993.03-1995.02，衡水地委办公室综合科副科长
+1995.02-1996.01，衡水地委办公室综合科科长
+1996.01-1996.07，衡水地委办公室副主任
+1996.07-1996.12，衡水市委办公室副主任
+1996.12-1998.04，衡水市委副秘书长、办公室副主任
+1998.04-2001.01，衡水市委副秘书长、研究室主任
+2001.01-2003.04，武邑县委副书记、县长（1999.09-2001.12在省委党校在职研究生班经济管理专业学习）
+2003.04-2007.04，深州市委副书记、市长（其间：2005.06-2005.09在中国人民大学中青年干部“执政能力建设”培训班学习）
+2007.04-2011.11，衡水市委组织部常务副部长
+2011.11-2012.05，衡水市委常委、组织部常务副部长，新疆生产建设兵团第二师党委常委、副师长
+2012.05-2012.10，衡水市委常委，新疆生产建设兵团第二师党委常委、副师长
+2012.10-2015.03，衡水市委常委，新疆生产建设兵团第二师党委常委、副师长，铁门关市委常委
+2015.03-2015.04，衡水市委常委
+2015.04-2016.10，衡水市委常委、秘书长
+2016.10-2017.02，衡水市委常委、秘书长、政法委书记
+2017.02，衡水市委常委、政法委书记
+2021.08，衡水市政协主席
+任免信息
+2017年3月16日，中国共产党衡水市第四届委员会举行第一次全体会议，钮兴辉当选为中国共产党衡水市第四届委员会常务委员会委员。
+2021年8月25日，政协衡水市第七届委员会第一次会议选举钮兴辉为政协衡水市第七届委员会主席。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

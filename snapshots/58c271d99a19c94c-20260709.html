@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="http://district.ce.cn/newarea/sddy/201205/31/t20120531_23369997.shtml" target="_blank" rel="noopener">http://district.ce.cn/newarea/sddy/201205/31/t20120531_23369997.shtml</a><br>
+  存档日期：2026-07-08 · 信源分级：B · <a href="https://web.archive.org/web/*/http://district.ce.cn/newarea/sddy/201205/31/t20120531_23369997.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源：西藏日报 [ 推荐朋友 ] [ 打印本稿 ] [字号 大 中 小 ] (2012年5月30日西藏自治区第九届人民代表大会常务委员会第二十八次会议通过) 免去： 扎西成培的自治区人大常委会昌都地区工作委员会主任职务； 松吉扎西的自治区人大常委会昌都地区工作委员会副主任职务； 任命： 贡秋江村为自治区人大常委会昌都地区工作委员会主任； 贡嘎泽仁为自治区人大常委会昌都地区工作委员会副主任。 决定免去： 马相村的自治区商务厅厅长职务； 白玛旺堆的自治区水利厅厅长职务； 张永泽的自治区环境保护厅厅长职务。 决定任命： 谭永寿为自治区商务厅厅长； 达娃扎西为自治区水利厅厅长。 决定免去： 马玉魁的昌都地区中级人民法院院长、审判委员会委员职务。 免去： 刘虎山的自治区高级人民法院副院长、审判委员会委员职务； 扎拉的那曲地区中级人民法院副院长、审判委员会委员职务。 决定任命： 琪美加布为日喀则地区中级人民法院院长、审判委员会委员。 决定免去： 多洛的自治区人民检察院日喀则分院检察长职务。 免去： 拉巴仓决的自治区人民检察院日喀则分院检察员职务； 普琼的自治区人民检察院日喀则分院检察员职务。 任命： 加永仁青为自治区人民检察院副检察长、检察委员会委员； 多洛为自治区人民检察院检察委员会委员。 批准任命： 尼琼为谢通门县人民检察院检察长； 张军为措美县人民检察院检察长。 谭永寿，男，汉族，1961年生，安徽旌德人，1980年进藏。 1997年任西藏自治区文化厅办公室主任； 2000年任那曲地区行署副专员，那曲地委委员、宣传部部长；那曲地委委员、行署副专员； 2007年4月任那曲地委副书记、行署常务副专员； 2008年2月任中共西藏自治区那曲地委副书记、行署专员； 2012年5月30日西藏商务厅厅长; 西藏自治区第九届人民代表大会代表。 资料图：达娃扎西 资料图：白玛旺堆 2012年4月26日上午， 阿里 地区召开干部大会，宣布自治区党委干部任免决定。达娃扎西同志调自治区水利厅任党组副书记、厅长，白玛旺堆同志任阿里地委副书记、行署专员。 达娃扎西历任西藏自治区改则县委书记，阿里地委副书记、行署专员。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

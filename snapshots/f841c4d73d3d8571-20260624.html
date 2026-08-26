@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="https://zh.wikipedia.org/zh-cn/%E8%89%BE%E6%96%87%E7%A4%BC" target="_blank" rel="noopener">https://zh.wikipedia.org/zh-cn/%E8%89%BE%E6%96%87%E7%A4%BC</a><br>
+  存档日期：2026-06-24 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/zh-cn/%E8%89%BE%E6%96%87%E7%A4%BC" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">艾文礼（1955年3月—），男，河北唐海人，中华人民共和国政治人物。唐山地区商业学校物价专业毕业，中共河北省委党校经济管理专业在职研究生学历。 生平[编辑] 艾文礼1971年参加工作。1978年加入中国共产党。早年任河北柏各庄农场二分场工人。此后历任中共河北省唐海县委副书记、代县长、县长，唐山市委常委、市委宣传部部长，河北省农垦局局长，中共石家庄市委副书记、市委组织部部长，承德市委副书记、代市长、市长、市委书记。2008年9月三鹿奶粉事件曝光后，原石家庄市人民政府市长冀纯堂被免职，时任承德市委书记艾文礼出任石家庄市委副书记、代市长，后当选为市长[1]。 2011年11月获任中共河北省委常委，12月兼任省委宣传部部长[2]。2015年1月，当选为河北省政协副主席[3]。2015年4月不再担任中共河北省委常委[4]。2015年9月不再担任河北省委宣传部长[5]，2018年1月卸任河北省政协副主席退休[6]。 2018年7月31日，中央纪委国家监委网站宣布，河北省政协原副主席艾文礼涉嫌严重违纪违法，已投案自首，目前正接受中央纪委国家监委纪律审查和监察调查[7]。他是《中华人民共和国监察法》实施后，第一个投案自首的副部级以上干部[8]。10月19日，中央纪委通报艾文礼被开除党籍，移送检察机关审查起诉。经审理查明：2005年至2013年，被告人艾文礼利用担任中共石家庄市委副书记、河北省承德市人民政府市长、中共承德市委书记、河北省石家庄市人民政府市长、中共河北省委常委、宣传部部长等职务上的便利，为有关单位和个人在企业改制、项目开发、安排工作等事项上提供帮助。2006年至2014年，艾文礼直接或者通过特定关系人收受上述单位和个人给予的财物共计折合人民币6478万余元。[9][10]。 2019年4月18日，江苏省苏州市中级人民法院公开宣判，对艾文礼以受贿罪判处有期徒刑8年，并处罚金人民币300万元；对艾文礼受贿所得财物及其孳息予以追缴，上缴国库。艾文礼当庭表示服从判决，不上诉。法院审理认为，艾文礼于案发前携带赃款赃物主动到中央纪委、国家监委投案，并如实供述自己的罪行，构成自首，具有法定、酌定从轻、减轻处罚情节，依法可对其减轻处罚[11]。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 中国共产党临沂市第十四次代表大会隆重开幕 -欢迎您来到临沂市人民政府</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：中国共产党临沂市第十四次代表大会隆重开幕 -欢迎您来到临沂市人民政府<br>
+  原页：<a href="http://www.linyi.gov.cn/info/9318/314229.htm" target="_blank" rel="noopener">http://www.linyi.gov.cn/info/9318/314229.htm</a><br>
+  存档日期：2026-07-03 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.linyi.gov.cn/info/9318/314229.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">
+
+
+
+
+  
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+中国共产党临沂市第十四次代表大会隆重开幕 -欢迎您来到临沂市人民政府
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+_jsq_(9318,&#x27;/zzllms/content.jsp&#x27;,314229,1585729837)
+
+
+
+
+  
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+
+欢迎访问临沂市政府网站
+
+
+
+
+
+
+
+
+
+
+    //阳历
+
+    var c_Calendar222599EnDateString;
+
+    //
+
+    var c_Calendar222599WeekDayString;
+
+    //阴历
+
+    var c_Calendar222599CnDateString;
+
+    //节气
+
+    var c_Calendar222599JQString;
+
+    //年
+
+    var c_Calendar222599YearString;
+
+    //月
+
+    var c_Calendar222599MonthString;
+
+    //日
+
+    var c_Calendar222599DayString;
+
+    //周
+
+    var c_Calendar222599WeekString;
+
+    //显示
+
+    var c_Calendar222599ShowString;
+
+
+
+    function RunGLNL222599() {
+
+        var sc = new Simple_Calendar();
+
+        sc.init();
+
+        c_Calendar222599CnDateString = sc.getCnDateString();
+
+        c_Calendar222599WeekDayString = sc.getCalendarWeekString();
+
+        c_Calendar222599JQString = sc.getJQString();
+
+        c_Calendar222599EnDateString = sc.getEnDateString();
+
+        c_Calendar222599YearString = sc.getYearString();
+
+        c_Calendar222599MonthString = sc.getMonthString();
+
+        c_Calendar222599DayString = sc.getDayString();
+
+        c_Calendar222599ShowString= &quot;&quot;;
+
+    }
+
+
+
+    RunGLNL222599();
+
+
+
+    function update() {
+
+        $.ajax({
+
+            type: &quot;post&quot;,
+
+            data: {
+
+                &quot;sdate&quot;: &quot;2013-02-06&quot;,
+
+                &quot;edate&quot;: &quot;2099-12-31&quot;,
+
+                &quot;showtext&quot;: &quot;第&quot;,
+
+                &quot;isNotStart&quot;: &quot;学期未开始&quot;,
+
+                &quot;isEnd&quot;: &quot;学期已结束&quot;,
+
+            },
+
+            dataType: &quot;json&quot;,
+
+            async: false,
+
+            url: &quot;/system/resource/calendar/getCurrentWeekMap.jsp&quot;,
+
+            success: function (result) {
+
+                if(result.code==200){
+
+                    c_Calendar222599WeekString = result.data;
+
+                }
+
+            },
+
+            error: function () {
+
+                console.log(&quot;出错了&quot;)
+
+            }
+
+        });
+
+    }
+
+    update();
+
+
+
+    c_Calendar222599ShowString+=c_Calendar222599EnDateString;
+
+    c_Calendar222599ShowString+=&quot;&amp;nbsp;&amp;nbsp;&quot;+c_Calendar222599WeekDayString;
+
+    
+
+
+
+
+
+
+
+    document.getElementById(&quot;c_lunar222599&quot;).innerHTML = c_Calendar222599ShowString;
+
+
+
+
+
+
+
+
+
+
+
+function dosuba222600a()
+
+{
+
+    try{
+
+        var ua = navigator.userAgent.toLowerCase();
+
+        if(ua.indexOf(&quot;msie 8&quot;)&gt;-1)
+
+        {
+
+            window.external.AddToFavoritesBar(document.location.href,document.title,&quot;&quot;);//IE8
+
+        }else if(ua.toLowerCase().indexOf(&quot;rv:&quot;)&gt;-1)
+
+        {
+
+            window.external.AddToFavoritesBar(document.location.href,document.title,&quot;&quot;);//IE11+
+
+        }else{
+
+            if (document.all) 
+
+            {
+
+                window.external.addFavorite(document.location.href, document.title);
+
+            }else if(window.sidebar)
+
+            {
+
+                window.sidebar.addPanel( document.title, document.location.href, &quot;&quot;);//firefox
+
+            }
+
+            else
+
+            {
+
+                alert(hotKeysa222600a());
+
+            }
+
+        }
+
+
+
+    }
+
+    catch (e){alert(&quot;无法自动添加到收藏夹，请使用 Ctrl + d 手动添加&quot;);}
+
+}
+
+function hotKeysa222600a() 
+
+{
+
+    var ua = navigator.userAgent.toLowerCase(); 
+
+    var str = &quot;&quot;;    
+
+    var isWebkit = (ua.indexOf(&#x27;webkit&#x27;) != - 1); 
+
+    var isMac = (ua.indexOf(&#x27;mac&#x27;) != - 1);     
+
+    if (ua.indexOf(&#x27;konqueror&#x27;) != - 1) 
+
+    {  
+
+        str = &#x27;CTRL + B&#x27;; // Konqueror   
+
+    } 
+
+    else if (window.home || isWebkit || isMac) 
+
+    {        
+
+        str = (isMac ? &#x27;Command/Cmd&#x27; : &#x27;CTRL&#x27;) + &#x27; + D&#x27;; // Netscape, Safari, iCab, IE5/Mac   
+
+    }
+
+    return ((str) ? &#x27;无法自动添加到收藏夹，请使用&#x27; + str + &#x27;手动添加&#x27; : str);
+
+}
+
+function setHomepagea222600a()
+
+{
+
+    var url = document.location.href;
+
+    if (document.all)
+
+    {
+
+        document.body.style.behavior=&#x27;url(#default#homepage)&#x27;;
+
+        document.body.setHomePage(url);
+
+    }
+
+    else if (window.sidebar)
+
+    {
+
+        if(window.netscape)
+
+        {
+
+             try{
+
+                  netscape.security.PrivilegeManager.enablePrivilege(&quot;UniversalXPConnect&quot;);
+
+             }catch (e){
+
+                   alert(&quot;该操作被浏览器拒绝，如果想启用该功能，请在地址栏内输入 about:config,然后将项 signed.applets.codebase_principal_support 值该为true&quot;);
+
+             }
+
+        }
+
+    var prefs = Components.classes[&#x27;@mozilla.org/preferences-service;1&#x27;].getService(Components. interfaces.nsIPrefBranch);
+
+    prefs.setCharPref(&#x27;browser.startup.homepage&#x27;,url);
+
+    }
+
+    else
+
+    {
+
+        alert(&quot;浏览器不支持自动设为首页，请手动设置&quot;);
+
+    }
+
+}
+
+
+
+
+
+    	
+
+
+        	
+无障碍浏览
+
+
+		
+
+
+        
+ |
+
+	
+返回首页
+ |
+
+        
+设为首页
+ |
+
+        
+加入收藏
+
+
+    
+
+
+    
+退出长者模式
+
+
+
+
+    
+
+
+    
+ 
+
+
+ 长者浏览模式 
+
+
+    
+
+
+    
+
+
+    
+
+
+      
+
+
+        
+
+
+          
+
+
+市长活动
+
+
+          
+
+
+              
+
+
+                
+
+
+        
+
+
+                
+朗读
+
+
+              
+
+
+              
+
+
+          
+
+
+        
+
+
+        
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener(&#x27;load&#x27;, function(){getImages(&#x27;#vsb_content_2&#x27;)})
+
+
+
+
+
+
+    
+
+
+        
+
+
+          中国共产党临沂市第十四次代表大会隆重开幕
+
+        
+
+
+        
+发布日期：2022-02-18
+
+
+    
+
+
+    
+
+
+
+
+ 
+
+
+  
+
+
+  
+任刚代表中共临沂市第十三届委员会向大会作报告。
+
+
+  
+
+
+  
+
+
+  
+中国共产党临沂市第十四次代表大会开幕。
+
+
+  
+
+
+  
+今后五年，要坚持以习近平新时代中国特色社会主义思想为指导，传承践行沂蒙精神，锚定“走在前列、全面开创”“三个走在前”的总遵循、总定位、总航标，落实省委“六个一”发展思路、“六个更加注重”策略方法、“十二个着力”重点任务，围绕深化临沂“由大到强、由美到富、由新到精”转变，实施现代化强市“八大战略”，奋力在全国革命老区现代化进程中走在前、综合实力在全国地级市中进位次、人均占有在全省提水平。
+
+
+  
+
+
+  
+2月17日上午，备受全市人民瞩目和期待的中国共产党临沂市第十四次代表大会在市委党校隆重开幕。任刚代表中共临沂市第十三届委员会，向大会作了题为《践行沂蒙精神 加快三个转变 奋力在全国革命老区现代化进程中走在前》的报告。
+
+
+  
+这次大会的主题是：高举中国特色社会主义伟大旗帜，坚持以习近平新时代中国特色社会主义思想为指导，深入贯彻习近平总书记视察山东、视察临沂重要讲话精神和指示要求，认真落实省委工作部署，动员全市上下践行沂蒙精神、加快三个转变，奋力在全国革命老区现代化进程中走在前。
+
+
+  
+今天上午的市委党校第一报告厅，气氛庄重热烈，主席台帷幕中央悬挂着镰刀锤头组成的党徽，10面鲜艳的红旗分列两侧，交相辉映，“践行沂蒙精神 加快三个转变 奋力在全国革命老区现代化进程中走在前”横幅标语，格外醒目、催人奋进。
+
+
+  
+大会主席团执行主席任刚、侯晓滨、张宝亮、边峰、戚军、赵纪钢、荣红智、王世波等在主席台前排就座。大会主席团其他成员；应邀出席大会的各市级民主党派、工商联主要负责人，不是中共党员的市人大常委会副主任、市政府副市长、市政协副主席在主席台就座。
+
+
+  
+大会应到代表550名，实到529名，符合规定人数。
+
+
+  
+上午9时，侯晓滨宣布大会开幕。全体起立，奏中华人民共和国国歌。
+
+
+  
+在热烈的掌声中，任刚代表中共临沂市第十三届委员会向大会作报告。
+
+
+  
+任刚回顾了过去五年的工作。他说，市第十三次党代会以来的五年，是党和国家事业发展进程中极不平凡的五年，是夺取全面建成小康社会伟大胜利的五年，也是临沂励精图治、实现历史新跨越的五年。五年来，市委把学习贯彻习近平新时代中国特色社会主义思想作为首要政治任务，增强“四个意识”、坚定“四个自信”、拥护“两个确立”、做到“两个维护”，团结带领全市各级党组织和广大党员干部群众，锐意进取、奋力拼搏，锚定全面小康，聚力第一方阵，加快三个转变，“大”临沂建设取得突破性进展，五年位势之变引人注目；“美”临沂形象得到多方位展现，（）五年图景之美渐次铺展；“新”临沂内涵有了深层次拓展，五年新生之力更加充盈；“强”临沂动能正在加速度集聚，五年强市之基日益坚实；“富”临沂家底保持稳定性增长，五年富裕之路越走越宽；“精”临沂品质呈现渐进式提升，五年风气之新影响深远。各项事业迈出坚实步伐、开创崭新局面。
+
+
+  
+任刚指出，五年砥砺奋进，五年跨越赶超。沂蒙老区的每一点进步、每一次蝶变，根本在于以习近平同志为核心的党中央领航定向、根本在于习近平新时代中国特色社会主义思想的科学指引，是省委、省政府坚强领导的结果，是历届市委班子接续奋斗的结果，是全市广大党员干部群众奋力拼搏的结果。回顾五年工作，我们深切体会到：惟有坚持党的领导，才能走在前列；惟有坚持理论引领，才能勇立潮头；惟有坚持人民至上，才能无往不胜；惟有坚持精神立市，才能奋力前行；惟有坚持政贵有恒，才能行稳致远。
+
+
+  
+任刚强调，站在新的起点谋划今天临沂的发展，要放到百年党史中来认识，放到新中国成立和改革开放以来的进程中来思考，尤其要放到新时代现代化建设的壮阔征程中来把握。新时代在全国革命老区现代化进程中走在前，是对习近平总书记厚望期许的忠诚回报，是对百年党史的传承发展，是对先辈先烈的真切告慰，是对人民选择的历史回答，是我们必须担当的历史重任。
+
+
+  
+任刚指出，今后五年，要坚持以习近平新时代中国特色社会主义思想为指导，传承践行沂蒙精神，锚定“走在前列、全面开创”“三个走在前”的总遵循、总定位、总航标，落实省委“六个一”发展思路、“六个更加注重”策略方法、“十二个着力”重点任务，围绕深化临沂“由大到强、由美到富、由新到精”转变，实施现代化强市“八大战略”，奋力在全国革命老区现代化进程中走在前、综合实力在全国地级市中进位次、人均占有在全省提水平。具体目标是，创新自强实现新跨越，协调融合塑成新格局，绿色低碳取得新突破，改革开放增添新动力，共建共享迈上新台阶。
+
+
+  
+任刚强调，推动临沂“走在前、进位次、提水平”，其时已至、其势已成。我们有百万级市场主体、千万级人口规模、万亿级商贸物流，内生动力深厚，发展活力旺盛。我们有全省第一排名的地域面积、第一方阵的经济体量、第一梯队的城市能级，回旋空间广阔、经济韧性强健。我们有贯通南北的区位优势、货行天下的市场优势、山水相亲的生态优势，近悦远来、气聚八方的地位不可替代。我们有沂蒙精神滋养的党员干部、敢闯敢试的企业家队伍、勤劳智慧的老区人民，干事创业、思进求快的热情持续高涨。只要我们铆足干劲、乘势而上，追赶数字化浪潮，拥抱“绿碳能”革命，融入“双循环”格局，就一定能在现代化征程中跃出一大步、迈上新台阶、奋勇走在前。
+
+
+  
+任刚指出，要实施先进工业强市战略，增强企业鼎新能力、行业更新能力、产业育新能力和服务工业能力，让工业成为现代化建设的中流砥柱。要实施商贸物流首善战略，加快建设数字商城、国际商城、绿色商城和链式商城，让临沂商城成为现代化建设的活力之源。要实施乡村振兴先行战略，建设实力的乡村、农民的乡村、活力的乡村、宜居的乡村和奋进的乡村，让“三农”成为现代化建设的深厚基础。要实施城镇扩能提质战略，做精城市、做优基建、做强文旅，让宜居宜业宜游成为现代化建设的鲜明内涵。要实施增量崛起带动战略，加快县域崛起、增创“五极”优势、壮大企业势能，让新动能成为现代化建设的强劲牵引。要实施绿色低碳优能战略，坚持精准降碳、系统减污、绿色增长，让生态成为现代化建设的靓丽底色。要实施共建共享共惠战略，创造高品质生活、推进高效能治理、保障高水平安全，让共同富裕成为现代化建设的重要体现。要实施伟大工程引领战略，筑牢政治忠诚、强化理论武装、发展民主政治、锻造过硬队伍、建强战斗堡垒、正风肃纪反腐，让党的领导成为现代化建设的根本保证。
+
+
+  
+任刚强调，革命老区是我们党践行初心使命的最早承载地，绝不是贫穷落后的代名词。新时代的革命老区，不仅是红色的，更是多姿多彩的；不仅是传统的，更是时尚繁荣的；不仅是致敬历史的，更是意气风发的、走向未来的。只要我们踏踏实实地践行习近平总书记的教导，扑下身子为人民服务，用让人民满意来修正自己，再塑“水乳交融、生死与共”的党群干群关系，就一定能把全市人民团结到沂蒙振兴的伟大事业中，凝聚起无往不胜的磅礴伟力，在新时代现代化进程中书写革命老区新的辉煌。
+
+
+  
+任刚最后强调，殷切嘱托激励我们感恩奋进，崇高使命召唤我们阔步前行。站在新的历史起点上，我们要更加紧密地团结在以习近平同志为核心的党中央周围，在省委坚强领导下，埋头苦干、勇毅前行，事争一流、唯旗是夺，奋力在全国革命老区现代化进程中走在前，为全面建成社会主义现代化强国、实现中华民族伟大复兴的中国梦贡献沂蒙力量。
+
+
+  
+会上，中共临沂市第十三届纪律检查委员会向大会作书面工作报告。
+
+
+  
+列席大会的还有：不是代表的十三届市委委员、候补委员，市纪委委员；不是代表的担任过市（地）级领导职务的党内老同志和退出班子未办理退休手续的市级党内老同志；不是代表的市直部门、单位党员主要负责人；不是代表的非直属正县级事业单位党员主要负责人；不是代表的市管国有企业党组织主要负责人；不是代表的中省直驻临沂县处级以上单位党组织主要负责人；不是代表的市人大、市政协党内专职常委、委室主要负责人；不是代表的省市新闻单位党员负责人。
+
+
+  
+（临沂日报）
+
+
+ 
+
+
+
+
+
+
+
+
+        
+
+
+        上一条：
+市第十四次党代会主席团举行第三次会议 
+
+
+        下一条：
+侯晓滨参加郯城代表团分组讨论
+
+
+    
+
+
+    
+【
+关闭
+】
+
+
+
+
+
+
+
+
+        
+
+
+      
+
+
+    
+
+
+    
+
+
+        
+
+
+        
+
+
+        
+
+
+        
+
+
+中央政府
+
+
+山东省政府
+
+
+
+
+        
+省内地市
+
+
+        
+县区开发区
+
+
+        
+政府部门（单位）
+
+
+        
+党群系统
+
+
+        
+本市其他网站
+
+
+        
+
+
+        
+
+
+        
+
+
+
+
+
+
+ 
+· 济南市政府
+
+
+ 
+· 青岛市政府
+
+
+ 
+· 淄博市政府
+
+
+ 
+· 枣庄市政府
+
+
+ 
+· 东营市政府
+
+
+ 
+· 烟台市政府
+
+
+ 
+· 潍坊市政府
+
+
+ 
+· 济宁市政府
+
+
+ 
+· 泰安市政府
+
+
+ 
+· 威海市政府
+
+
+ 
+· 日照市政府
+
+
+ 
+· 德州市政府
+
+
+ 
+· 聊城市政府
+
+
+ 
+· 滨州市政府
+
+
+ 
+· 菏泽市政府
+
+
+
+
+
+
+
+
+ 兰山区
+
+
+ 罗庄区
+
+
+ 河东区
+
+
+ 郯城县
+
+
+ 兰陵县
+
+
+ 沂水县
+
+
+ 沂南县
+
+
+ 平邑县
+
+
+ 费　县
+
+
+ 蒙阴县
+
+
+ 莒南县
+
+
+ 临沭县
+
+
+ 高新区
+
+
+ 沂河新区
+
+
+ 临港区
+
+
+
+
+
+
+
+
+ 
+· 市发展和改革委员会
+
+
+ 
+· 市教育局
+
+
+ 
+· 市科学技术局
+
+
+ 
+· 市工业和信息化局
+
+
+ 
+· 市公安局
+
+
+ 
+· 市民政局
+
+
+ 
+· 市司法局
+
+
+ 
+· 市财政局
+
+
+ 
+· 市人力资源和社会保障局
+
+
+ 
+· 市自然资源和规划局
+
+
+ 
+· 市生态环境局
+
+
+ 
+· 市住房和城乡建设局
+
+
+ 
+· 市城市管理局
+
+
+ 
+· 市交通运输局
+
+
+ 
+· 市水利局
+
+
+ 
+· 市农业农村局
+
+
+ 
+· 市商务局
+
+
+ 
+· 市文化和旅游局
+
+
+ 
+· 市卫生健康委员会
+
+
+ 
+· 市退役军人事务局
+
+
+ 
+· 市应急管理局
+
+
+ 
+· 市审计局
+
+
+ 
+· 市外事办公室
+
+
+ 
+· 市国有资产监督管理委员会
+
+
+ 
+· 市行政审批服务局
+
+
+ 
+· 市市场监督管理局
+
+
+ 
+· 市体育局
+
+
+ 
+· 市统计局
+
+
+ 
+· 市国防动员办公室
+
+
+ 
+· 市医疗保障局
+
+
+ 
+· 市大数据局
+
+
+ 
+· 市信访局
+
+
+ 
+· 市粮食和物资储备局
+
+
+ 
+· 市林业局
+
+
+ 
+· 临沂沂蒙山世界地质公园管理局
+
+
+ 
+· 市住房公积金中心
+
+
+ 
+· 市供销合作社
+
+
+ 
+· 临沂商城管理委员会
+
+
+ 
+· 市公路事业发展中心
+
+
+ 
+· 市铁路民航事业发展中心
+
+
+ 
+· 市投资促进服务中心
+
+
+ 
+· 市检验检测中心
+
+
+
+
+
+
+
+
+ 
+· 市纪委监委
+
+
+ 
+· 市委组织部
+
+
+ 
+· 市委统战部
+
+
+ 
+· 市委政法委
+
+
+ 
+· 市委编办
+
+
+ 
+· 市委金融办
+
+
+ 
+· 市委台港澳工作办公室
+
+
+ 
+· 市委老干部局
+
+
+ 
+· 市关心下一代工作委员会
+
+
+ 
+· 市委党校
+
+
+ 
+· 市国家保密局
+
+
+ 
+· 市委党史研究院
+
+
+ 
+· 市档案馆
+
+
+ 
+· 市委人才发展服务中心
+
+
+ 
+· 市机关事务服务中心
+
+
+ 
+· 市共青团
+
+
+ 
+· 市贸促会
+
+
+ 
+· 市妇女联合会
+
+
+ 
+· 市科学技术协会
+
+
+ 
+· 市社科联
+
+
+ 
+· 市工商联
+
+
+ 
+· 市残疾人联合会
+
+
+ 
+· 市总工会
+
+
+ 
+· 市红十字会
+
+
+ 
+· 市文明办
+
+
+
+
+
+
+
+
+ 
+· 市人大
+
+
+ 
+· 市政协
+
+
+ 
+· 市法院
+
+
+ 
+· 市检察院
+
+
+ 
+· 琅琊新闻网
+
+
+ 
+· 爱临沂网
+
+
+ 
+· 临沂大学
+
+
+ 
+· 市公共资源交易中心
+
+
+ 
+· 信用临沂
+
+
+ 
+· 临沂公共数据开放网
+
+
+ 
+· 12345政务服务热线
+
+
+ 
+· 2024山东省文旅产业高质量发展大会
+
+
+
+
+
+
+$(&#x27;.lyfzdh&#x27;).hide()
+
+
+
+
+
+        
+
+
+        
+
+
+        
+
+
+
+
+
+
+关于我们
+/
+
+联系方式
+/
+
+网站地图
+/
+
+常见问题
+
+
+
+
+临沂市人民政府主办 临沂市人民政府办公室承办
+政府网站标识码：3713000037
+鲁ICP备05026973号
+ &amp;nbsp;
+鲁公网安备37130202371811号
+document.write(unescape(&quot;%3Cspan id=&#x27;cnzz_stat_icon_1278633603&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D1278633603&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));
+
+
+--&gt;
+
+
+
+        
+
+
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+移动版网站
+
+
+
+
+
+
+    
+
+
+    
+
+
+    
+微信公众号
+
+
+
+
+
+
+    
+
+
+    
+
+
+    
+12345·临沂首发
+
+
+
+
+
+
+    
+
+
+    
+
+
+临沂市人民政府主办 临沂市人民政府办公室承办
+政府网站标识码：3713000037
+鲁ICP备05026973号
+ &amp;nbsp;
+鲁公网安备37130202371811号
+document.write(unescape(&quot;%3Cspan id=&#x27;cnzz_stat_icon_1278633603&#x27;%3E%3C/span%3E%3Cscript src=&#x27;https://v1.cnzz.com/z_stat.php%3Fid%3D1278633603&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));
+
+
+--&gt;
+
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+
+
+    
+
+
+    
+
+
+    
+
+
+        $(function() {
+
+          var that = this
+
+          var $obj = $(&#x27;.section-name .right .default&#x27;)
+
+          console.log($obj)
+
+          var content = $(&#x27;.artical-wrap .title-wrap .title&#x27;).text() +&#x27;。&#x27; + $(&#x27;.artical-wrap .content&#x27;).text();
+
+          // timeObj获取的是按钮旁边显示时间的元素
+
+          var timeObj = $obj.siblings(&#x27;em&#x27;)[0];  
+
+          //这个是调用朗读的方法 第一个参数是显示时间的元素 第二个是文本内容
+
+          $obj.click(function(event) {
+
+                
+
+              $(that).addClass(&#x27;initRead&#x27;)
+
+              $(that).siblings(&#x27;em&#x27;).html(&#x27;&#x27;)
+
+              $(that).removeClass(&#x27;pause&#x27;)
+
+              if($obj.hasClass(&#x27;pause&#x27;)) {
+
+                  EsdToolbar.contentRead.esdAudio.pause()
+
+                  console.log(&quot;pause&quot;, $obj)
+
+                  $obj.removeClass(&#x27;pause&#x27;)
+
+                  $obj.find(&quot;span&quot;).html(&#x27;朗读&#x27;)
+
+              }else {
+
+                  if($obj.hasClass(&#x27;initRead&#x27;)) {
+
+                      console.log(11111,$obj)
+
+                      EsdToolbar.contentRead.read(timeObj,content);
+
+                      console.log(1333, $obj)
+
+        </pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

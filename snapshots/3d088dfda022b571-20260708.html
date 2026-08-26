@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="https://baike.baidu.com/item/%E8%BE%BE%E5%A8%83%E6%AC%A1%E4%BB%81/19835354" target="_blank" rel="noopener">https://baike.baidu.com/item/%E8%BE%BE%E5%A8%83%E6%AC%A1%E4%BB%81/19835354</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E8%BE%BE%E5%A8%83%E6%AC%A1%E4%BB%81/19835354" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">网页新闻贴吧知道网盘图片视频地图文库资讯采购百科
+百度首页
+不破_小子
+消息
+商城
+设置
+进入词条
+全站搜索
+国际版帮助
+
+进入词条
+播报
+编辑
+讨论 1
+收藏
+赞
+
+达娃次仁
+播报
+锁定
+讨论
+1
+上传视频
+创建人物关系
+
+西藏自治区党委常委、拉萨市委书记展开17个同名词条
+
+达娃次仁，男，藏族，1972年6月生，西藏日喀则萨嘎人，大学学历，中共党员。
+现任西藏自治区党委常委、拉萨市委书记。 [17] [19]
+
+中文名
+达娃次仁
+性    别
+男
+国    籍
+中国
+民    族
+藏族
+籍    贯
+西藏日喀则
+出生日期
+1972年6月
+政治面貌
+中共党员
+
+目录
+1人物履历
+2担任职务
+
+人物履历
+播报
+历任共青团中央统战部副部长、全国青联副秘书长，共青团中央统战部巡视员，共青团中央统战部部长，西藏自治区自然资源厅党组副书记、厅长。 [3] [5] [8-9]
+2021年11月，西藏自治区党委常委。 [1-2]
+2021年12月，西藏自治区党委常委、秘书长，自治区直机关工委书记。 [4]
+2024年07月，西藏自治区党委常委、日喀则市委书记。 [6-7] [10-12] [14-15]
+2026年03月，西藏自治区党委常委、拉萨市委书记。 [17-18]
+
+担任职务
+播报
+中国共产党西藏自治区第十届委员会委员 [13]，西藏自治区第十一届人民代表大会代表（2021.12补选） [16]。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

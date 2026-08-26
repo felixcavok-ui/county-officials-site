@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/焦文序" target="_blank" rel="noopener">https://baike.baidu.com/item/焦文序</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/焦文序" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源: https://baike.baidu.com/item/焦文序 （百度百科词条；正文经 r.jina.ai 渲染中转抓取，百度直连 requests 返回403安全验证页）
+存取日期: 2026-08-23 | run_id: lthblf20260821a
+
+焦文序
+定义句：河北省廊坊市永清县委书记
+焦文序，男，现任河北省廊坊市永清县委书记。
+
+中文名 焦文序
+国 籍 中国
+
+目录
+1 人物履历
+2 职务任免
+
+人物履历
+2021年6月-2022年8月，任廊坊市商务局局长。
+现任河北省廊坊市永清县委书记。
+
+职务任免
+2022年8月23日，廊坊市八届人大常委会第十次会议通过，决定免去：焦文序的廊坊市商务局局长职务。
+
+参考资料
+1. 廊坊市人大常委会任免职人员名单．廊坊人大 [引用日期2022-08-24]
+2. 永清县人民政府．永清县人民政府 [引用日期2022-08-24]
+3. 县委常委会召开（扩大）会议．永清县人民政府 [引用日期2023-01-05]
+
+最近更新：您悠悠您（2025-05-03）
+词条统计：浏览次数：44952次 编辑次数：8次
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

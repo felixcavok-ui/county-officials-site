@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E7%8E%8B%E7%B4%A0%E8%8A%9D/1543291" target="_blank" rel="noopener">https://baike.baidu.com/item/%E7%8E%8B%E7%B4%A0%E8%8A%9D/1543291</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E7%8E%8B%E7%B4%A0%E8%8A%9D/1543291" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">王素芝（承德市人民代表大会民族侨务外事委员会原主任委员）_百度百科
+来源：https://baike.baidu.com/item/%E7%8E%8B%E7%B4%A0%E8%8A%9D/1543291
+抓取时间：2026-08-22（无头 Edge 渲染 dump-dom 提取正文）
+
+王素芝，女，满族，1962年6月生，河北青龙人，1984年6月入党，1984年7月参加工作，河北师范大学数学系数学专业毕业，大学学历，理学学士。 曾任承德市人民代表大会民族侨务外事委员会主任委员。 [1] 中文名 王素芝 国 籍 中国 民 族 满族 籍 贯 河北青龙 出生日期 1962年6月 毕业院校 河北师范大学 相关视频 查看全部 目录 1 人物履历 2 职务任免 人物履历 播报 编辑 1980.09——1984.07 河北师范大学数学系数学专业学生 1984.07——1986.01 承德市试验机厂电大班教师 1986.01——1986.04 共青团承德市委组织部干事 1986.04——1990.04 共青团承德市委组织部副部长 1990.04——1992.04 共青团承德市委组织部部长 1992.04——1997.08 共青团承德市委副书记、党组成员 1997.08——2002.02 共青团承德市委书记、党组书记 2002.02——2003.03 承德市教育局副局长、党委副书记(正处级) 2003.03——2006.05 宽城满族自治县县委副书记(正县级) 2006.05——2006.09 承德市鹰手营子矿区委副书记、代区长 2006.09——2010.04 承德市鹰手营子矿区委副书记、区长 2010.04——2013.04 承德市鹰手营子矿区委书记 2013.04——2017.04 承德市人大常委会副主任、党组成员 2017.04——2019.01 承德市人大常委会副主任、党组副书记 2019.01——2020.03，任承德市第十四届人民代表大会民族侨务外事委员会主任委员。 [1] 职务任免 播报 编辑 2020年3月25日，承德市第十四届人民代表大会常务委员会第二十四次会议决定，接受王素芝辞去承德市第十四届人民代表大会常务委员会副主任和承德市第十四届人民代表大会民族侨务外事委员会主任委员职务的请求，报承德市第十四届人民代表大会第六次会议备案。 [1] 词条图册 更多图册 1 概述图册 参考资料 1 承德市人大常委会关于接受王素芝辞去职务请求的决定 ．承德新闻网 ．2020-03-25 [引用日期2020-03-26] 王素芝的概述图（1张）
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 丹东市人民代表大会公告（第一号）</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：丹东市人民代表大会公告（第一号）<br>
+  原页：<a href="http://ddsrd.gov.cn/page/news.asp?id=704" target="_blank" rel="noopener">http://ddsrd.gov.cn/page/news.asp?id=704</a><br>
+  存档日期：2026-07-10 · 信源分级：A · <a href="https://web.archive.org/web/*/http://ddsrd.gov.cn/page/news.asp?id=704" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">丹东市人大常委会 首页 人大简介 机构设置 人大会议 立法工作 监督工作 代表工作 人事任免 重要发布 机关动态 县区人大 人事任免 当前位置： 首页 &gt; 人事任免 丹东市人民代表大会公告（第一号） 发布时间：2018/1/2 来源： 丹东市人民代表大会公告（第一号）2012年2月1日丹东市人民代表大会公告 (第一号) 2012年1月8日，丹东市第十四届人民代表大会第五次会议第三次全体会议选举： 石光为丹东市人民政府市长 现予公告。 市十四届人大五次会议主席团 2012牟1月8日 红色文本。 --&gt; 机关动态 于兵赴东港督导消防安全集中整治工作 于兵持续开展消防安全集中整治工作专题督导 于兵专题督导消防安全集中整治工作 市人大常委会举办全市经济形势专题辅导讲座 市人大常委会机关讲堂开讲 “丹东人大”微信公众号正式上线 市人大机关党的建设工作暨深化质量提升年活动会议召开 抓学习促落实提能力促发展 版权所有：丹东市人民代表大会常务委员会 辽ICP备05026187号-2 辽公网安备 21060302000186号</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

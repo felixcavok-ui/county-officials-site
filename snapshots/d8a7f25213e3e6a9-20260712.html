@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 接受沈铭权辞去台州市市长职务</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：接受沈铭权辞去台州市市长职务<br>
+  原页：<a href="http://paper.taizhou.com.cn/taizhou/tzrb/pc/content/202501/28/content_220539.html" target="_blank" rel="noopener">http://paper.taizhou.com.cn/taizhou/tzrb/pc/content/202501/28/content_220539.html</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/http://paper.taizhou.com.cn/taizhou/tzrb/pc/content/202501/28/content_220539.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">2025年01月28日
+· 以感恩之心忠诚之志奋进之力 谱写中国式现代化和共同富裕示范先行台州新篇章
+· 中共中央国务院举行春节团拜会
+· 牢记嘱托接续奋斗实干争先 推动台州高质量发展开创新局面再上新台阶
+· 奋勇争先创一流 敢作善为抓落实 全力开创台州高质量发展新局面
+· 接受沈铭权辞去台州市市长职务
+· 台州市人民代表大会常务委员会决定
+· 挂灯笼 迎新春
+var url = &#x27;https://srv2.taizhou.com.cn/qmbb/get_lists/&#x27;;
+$.get(url, function(result){
+var jsonobj = (typeof result === &quot;string&quot;) ? JSON.parse(result) : result;
+var articles = jsonobj.data.articles;
+var randomIndex = Math.floor(Math.random() * articles.length);
+var aTag = articles[randomIndex];
+// 2. 用正则提取 id
+var match = aTag.match(/id=(\d+)/);
+if (match) {
+var id = match[1];
+// 3. 替换 iframe 的 src
+var iframe = document.querySelector(&#x27;iframe[src*=&quot;webDetails/news?id=&quot;]&#x27;);
+if (iframe) {
+// 用正则替换src中的id参数
+iframe.src = iframe.src.replace(/id=\d+/, &#x27;id=&#x27; + id);
+市六届人大常委会第二十次会议决定
+接受沈铭权辞去台州市市长职务
+任命王健为台州市副市长、代理市长
+（记者何 赛）1月27日下午，市六届人大常委会举行第二十次会议。市人大常委会主任吴海平，副主任蒋冰风、管文新、陈美萍、颜邦林、王荣千、彭永军，秘书长陈刚敏出席会议。
+市委常委、市政府常务副市长林先华，市人民检察院代检察长周晓杨，市人大常委会党组成员陈春，市监察委员会、市中级人民法院有关负责人列席会议。
+会议决定接受沈铭权辞去台州市人民政府市长职务的请求，决定任命王健为台州市人民政府副市长、代理市长；决定接受梅式苗辞去台州市人大常委会副主任职务的请求；决定接受周庆辞去台州市中级人民法院院长职务的请求，决定任命翟寅生为台州市中级人民法院副院长、代理院长。会议还表决通过了其他人事任免事项。
+会议审议通过了市人大常委会代表资格审查委员会关于个别代表的代表资格审查情况的报告。
+在圆满完成各项议程后，新任命的台州市人民政府代市长王健和其他新任命的国家工作人员分别进行了宪法宣誓。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%BE%90%E8%B0%A6/11027943" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%BE%90%E8%B0%A6/11027943</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%BE%90%E8%B0%A6/11027943" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">徐谦（福建省人大常委会原党组书记、副主任）
+
+徐谦，男，1954年2月出生，祖籍福建晋江，出生浙江温州，1973年3月参加工作，1974年11月入党，大学本科学历。
+曾任福建省人大常委会党组书记、副主任。
+
+中文名：徐谦
+民族：汉族
+出生地：浙江温州
+出生日期：1954年2月
+
+人物履历：
+1973年03月，福建省三明市陈大公社砂蕉大队知识青年，三明市重型机器厂电工。
+1979年09月，厦门大学经济系财政金融专业学生。毕业后历任福建省人民政府办公厅财贸农业处干部，福建省人民政府办公厅五处副处长、处长，福建省人民政府办公厅财经贸易处处长。
+1992年10月，福建省人民政府办公厅党组成员、副主任（期间挂职任宁德地区行署副专员）。
+1996年10月，福建省人民政府办公厅党组成员、省人民政府副秘书长。
+2000年04月，福建省南平市委副书记，市政府党组书记、代市长。
+2001年12月，福建省南平市委副书记、市政府党组书记、市长。
+2003年07月，福建省南平市委书记、南平军分区党委第一书记。
+2006年11月，福建省委委员、南平市委书记、南平军分区党委第一书记。
+2007年06月，福建省委委员、南平市委书记、市人大常委会主任、南平军分区党委第一书记。
+2008年01月，福建省委委员、省人大常委会党组成员、副主任、南平市委书记、市人大常委会主任、南平军分区党委第一书记。
+2008年04月，福建省委委员、省人大常委会党组成员、副主任。
+2008年12月，福建省委常委、省人大常委会党组成员、副主任。
+2009年01月，福建省委常委、省委政法委书记。
+2011年11月，福建省人大常委会党组书记。
+2012年01月，福建省人大常委会党组书记、副主任。
+
+任免信息：
+2018年1月31日上午，福建省第十三届人民代表大会第一次会议，徐谦不再担任福建省人大常委会党组书记、副主任。
+
+参考文献：
+1. 于伟国当选福建人大常委会主任 唐登杰当选省长．新浪新闻 [引用日期2018-02-04]
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.sohu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.sohu.com<br>
+  原页：<a href="https://www.sohu.com/a/469777431_120702" target="_blank" rel="noopener">https://www.sohu.com/a/469777431_120702</a><br>
+  存档日期：2026-08-15 · 信源分级：B · <a href="https://web.archive.org/web/*/https://www.sohu.com/a/469777431_120702" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">马洪海当选中卫市市长(图|简历)_宁夏
+
+中国经济网中卫6月1日综合报道 据宁夏《中卫日报》消息，5月31日，中卫市第四届人民代表大会第六次会议闭幕。马洪海当选中卫市人民政府市长。
+马洪海简历
+马洪海，男，回族，1969年6月出生，宁夏吴忠人，1991年7月参加工作，1994年11月加入中国共产党，宁夏党校研究生学历。
+1987.09——1991.07 兰州商学院商业经济系商业经济专业学习
+1991.07——1998.03 银南行署计划建设处干部
+1998.03——1999.11 银南地区计划建设统计局信息中心副主任
+1999.11——2000.05 吴忠市发展计划委员会办公室副主任
+2000.05——2004.07 吴忠市发展计划委员会办公室主任（其间：2002.09——2004.06中央民族大学企业管理专业研究生课程进修班学习）
+2004.07——2004.09 吴忠市人民政府办公室正科级秘书
+2004.09——2006.04 吴忠市人民政府办公室副主任、党组成员
+2006.04——2008.02 吴忠市人民政府副秘书长
+2008.02——2008.08 吴忠市人民政府副秘书长，市建设局党委副书记、局长
+2008.08——2009.11 吴忠市建设局党委副书记、局长（2006.09——2009.07宁夏党校在职研究生班公共管理专业学习）
+2009.11——2010.06 吴忠市建设局党委副书记、局长，市人防办主任
+2010.06——2011.01 同心县代县长
+2011.01——2012.09 同心县县长
+2012.09——2015.03 同心县县长（副厅级）
+2015.03——2020.07 吴忠市委常委、同心县委书记
+2020.07——2021.04 吴忠市委常委、同心县委书记，吴忠市一级巡视员
+2021.04——2021.05 中卫市委副书记，提名为中卫市人民政府市长候选人
+2021.05—— 中卫市委副书记，市人民政府党组书记、市长返回搜狐，查看更多</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

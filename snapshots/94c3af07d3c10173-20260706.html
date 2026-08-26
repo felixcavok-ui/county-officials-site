@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 张玉舜简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：张玉舜简历<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%8E%89%E8%88%9C" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%8E%89%E8%88%9C</a><br>
+  存档日期：2026-07-06 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/%E5%BC%A0%E7%8E%89%E8%88%9C" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">维基百科，自由的百科全书
+张玉舜
+兰州市人民政府市长
+任期
+2000年3月—2002年3月
+前任
+朱作勇
+继任
+张志银
+个人资料
+出生
+(1943-03-11) 1943年3月11日（83岁）
+中华民国甘肃省
+国籍
+中华民国（1942年-1949年）
+中华人民共和国（1949年-）
+政党
+中国共产党（1971年-2005年）
+母校
+厦门大学
+张玉舜（1943年3月11日—），男性，甘肃省白银市人，中华人民共和国政治人物。
+生平
+[编辑]
+曾任兰州市商业局局长[1]、兰州市人民政府副市长、中共兰州市委副书记、市人民政府市长。甘肃省人大常委会副秘书长、秘书长等职务。2004年10月因严重违法违纪而被中共甘肃省纪委调查[2]。2005年，张氏被开除党籍和公职，并因受贿罪于同年11月被定西市中级人民法院判囚10年[3]。
+参考资料
+[编辑]
+^ 原兰州市市长张玉舜因受贿罪被判12年. 北方网. 2005-09-15  [2024-01-03]. （原始内容存档于2024-01-03）.
+^ 原兰州市市长张玉舜涉嫌受贿案25日开庭审理. 北方网. 2005-08-24  [2024-01-03]. （原始内容存档于2024-01-03）.
+^ 甘肃省地方志编纂委员会. 《甘肃省志, 监察志 : 1950-2007》 (PDF). 甘肃省兰州市: 甘肃文化出版社. 2012年: 245–246  [2024-01-03]. ISBN 9787807147664. （原始内容存档 (PDF)于2024-01-03）.
+检索自“https://zh.wikipedia.org/w/index.php?title=张玉舜&amp;oldid=91749097”</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

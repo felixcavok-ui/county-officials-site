@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 王建太履历段</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：王建太履历段<br>
+  原页：<a href="http://gs.people.com.cn/n2/2020/0114/c362603-33714634.html" target="_blank" rel="noopener">http://gs.people.com.cn/n2/2020/0114/c362603-33714634.html</a><br>
+  存档日期：2026-07-06 · 信源分级：B · <a href="https://web.archive.org/web/*/http://gs.people.com.cn/n2/2020/0114/c362603-33714634.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">王建太同志简历
+
+来源：人民网甘肃频道 http://gs.people.com.cn/n2/2020/0114/c362603-33714634.html
+
+原标题：王建太同志简历
+王建太，男，汉族，1963年4月出生，甘肃静宁人，1983年6月加入中国共产党，1981年3月参加工作，中央党校函授学院经济管理专业毕业，中央党校大学学历。
+现任省政协秘书长、党组成员，机关党组书记。
+1981.03－1983.09 静宁县阳坡公社干事
+1983.09－1985.07 庆阳师范专科学校历史系历史专业学习
+1985.07－1986.09 静宁县委组织部干事
+1986.09－1987.09 静宁县团委副书记
+1987.09－1989.12 静宁县团委书记
+1989.12－1990.06 静宁县委办公室副主任
+1990.06－1993.08 平凉地区团委副书记
+1993.08－1994.03 平凉地区团委书记
+1994.03－1995.11 平凉地委副秘书长（正处级）（1992.08－1994.12中央党校函授学院经济管理专业学习）
+1995.11－1996.09 泾川县委副书记（正处级）
+1996.09－2001.06 泾川县委书记
+2001.06－2003.12 定西地区行署副专员
+2003.12－2007.05 定西市副市长
+2007.05－2010.06 定西市委常委、纪委书记
+2010.06－2012.06 省纪委副书记
+2012.06－2013.05 省纪委副书记、省监察厅厅长
+2013.05－2014.08 省纪委副书记、省监察厅厅长，省公共资源交易委员会办公室主任（兼）
+2014.08－2018.02 省纪委副书记、省监察厅厅长
+2018.02－2019.12 中共金昌市委书记
+2019.12－2020.01 省政协党组成员、机关党组书记、秘书长候选人
+2020.01－ 省政协秘书长、党组成员，机关党组书记
+(责编：周婉婷、焦隆)
+picbig();//小图恢复原有宽度
+function picbig(){
+if($(window).width()
+0) {
+//console.log( $(&quot;.box_con p&quot;).index(this))
+$(&quot;.box_con p&quot;).eq($(&quot;.box_con p&quot;).index(this)).css(&quot;text-align&quot;,&quot;center&quot;);
+}
+});
+$(&quot;.box_con p img&quot;).each(function(index, element) {
+var img = new Image();
+img.src=$(this).attr(&quot;src&quot;);
+$(this).load(function(){//图片加载完成
+if(img.width
+0 ){
+$(this).css(&quot;width&quot;,&quot;auto&quot;)
+}
+});
+});
+}
+}
+人民日报
+人民网+
+手机人民网
+领导留言板
+人民视频
+人民智云
+人民智作</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

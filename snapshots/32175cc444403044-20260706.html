@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 李希人物资料</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：李希人物资料<br>
+  原页：<a href="http://politics.people.com.cn/n/2014/0611/c351134-25136035.html" target="_blank" rel="noopener">http://politics.people.com.cn/n/2014/0611/c351134-25136035.html</a><br>
+  存档日期：2026-07-06 · 信源分级：C · <a href="https://web.archive.org/web/*/http://politics.people.com.cn/n/2014/0611/c351134-25136035.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源: http://politics.people.com.cn/n/2014/0611/c351134-25136035.html
+标题: 李希同志简历--时政--人民网
+抓取日期: 2026-07-06
+
+人民网 &gt;&gt; 时政 &gt;&gt; 时政专题 &gt;&gt; 中国机构及领导人资料库 李希同志简历 李希，男，1956年10月生，汉族，甘肃两当人，中共党员，1975年7月参加工作，大学，工商管理硕士。现任十八届中央候补委员，辽宁省委副书记、省长。 曾任甘肃省委组织部正处级组织员、省委知识分子工作办公室副主任、省委组织部党政干部处处长，兰州市西固区委书记、兰州市委常委、组织部部长、市委副书记，张掖地委书记、市委书记，省委秘书长兼省直机关工委书记，陕西省委常委、秘书长、延安市委书记、市人大常委会主任、中国延安干部学院理事会理事，上海市委常委、组织部部长、市委党校校长，上海市委副书记、中国浦东干部学院第一副院长、学院理事会副理事长等职。 李希同志是十七届、十八届中央候补委员。 (人民网资料，2014年10月) 人 民 网 版 权 所 有 , 未 经 书 面 授 权 禁 止 使 用 Copyright (c) 1997-2014 by www.people.com.cn all rights reserved
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

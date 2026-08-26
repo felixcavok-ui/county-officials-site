@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 张璞同志简历 - 山西新闻网</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：张璞同志简历 - 山西新闻网<br>
+  原页：<a href="http://news.sxrb.com/GB/314084/5920765.html" target="_blank" rel="noopener">http://news.sxrb.com/GB/314084/5920765.html</a><br>
+  存档日期：2026-07-11 · 信源分级：B · <a href="https://web.archive.org/web/*/http://news.sxrb.com/GB/314084/5920765.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">标题：张璞同志简历
+来源：山西新闻网--山西经济日报
+URL：http://news.sxrb.com/GB/314084/5920765.html
+发布时间：2016年01月31日06:40
+
+张璞，男，汉族，1956年9月生，山西临汾人，1976年6月加入中国共产党，1974年7月参加工作，中央党校研究生学历，工学学士学位。
+    1974.07-1978.03 太原市北郊区小井峪公社后北屯大队知青
+    1978.03-1982.01 太原重型机械学院机械二系起重输送机械专业学习
+    1982.01-1984.08 山西机器厂设计科技术员，团委副书记、书记
+    1984.08-1990.01 共青团太原市委副书记（其间：1986.09-1989.07中央党校培训部八六级培训班学习）
+    1990.01-1993.01 阳曲县委副书记
+    1993.01-1993.03 阳曲县委副书记、代县长
+    1993.03-1995.06 阳曲县委副书记、县长（1992.03-1995.06山西省农业广播电视学校农学专业学习）
+    1995.06-1995.11 清徐县委副书记、代县长
+    1995.11-2000.09 清徐县委书记
+    2000.09-2003.03 太原市副市长
+    2003.03-2007.05 太原市委常委、副市长
+    2007.05-2007.06 晋中市委副书记、代市长
+    2007.06-2011.03 晋中市委副书记、市长
+    2011.03-2016.01 晋中市委书记
+    2016.01- 山西省政协副主席，晋中市委书记
+    中共十八大代表，十一届全国人大代表，十届省委委员</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

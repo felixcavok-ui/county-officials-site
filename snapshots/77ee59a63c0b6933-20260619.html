@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 凌云 - 维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：凌云 - 维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/凌云_(1964年)" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/凌云_(1964年)</a><br>
+  存档日期：2026-06-19 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/凌云_(1964年)" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">凌云（1964年7月—），安徽肥东人，中华人民共和国政治人物。安徽大学经济系国民经济计划及管理专业本科毕业，厦门大学财政金融系财政学专业研究生学历，经济学硕士。曾任合肥市市长、中共黄山市委书记等职务，現任第十三届安徽省政协港澳台侨和外事委员会主任。
+
+1986年7月，毕业于安徽大学经济系国民经济计划及管理专业。1988年5月加入中国共产党。1988年7月，毕业于厦门大学财政金融系财政学专业，获经济学硕士[1]。
+
+毕业后即参加工作，先后担任安徽省财政厅预算处科员、副主任科员、主任科员、副处长，国库处处长，亳州市财政局局长、党组书记。2003年11月，任亳州市副市长，市财政局局长、党组书记。2005年12月，任中共亳州市委常委、市政府副市长。2006年11月，任中共亳州市委常委、市政府副市长、市委宣传部长[2]。
+
+2008年5月，任中共合肥市委常委、组织部长。2013年6月，任中共合肥市委副书记。2016年8月，任中共合肥市委副书记、市委党校校长（兼），市人民政府副市长、代理市长、党组书记（2016年10月，当选市长[3])。2018年2月24日，当选为第十三届全国人大代表[4]。2021年4月，任中共黄山市委书记[5]，2024年12月，卸任中共黄山市委书记[6]。
+
+2025年1月17日，增补为安徽省政协委员，同时担任安徽省政协港澳台侨和外事委员会主任[7]。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

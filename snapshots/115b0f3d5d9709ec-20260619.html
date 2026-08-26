@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 黄山市 - 维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：黄山市 - 维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/黄山市" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/黄山市</a><br>
+  存档日期：2026-06-19 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/黄山市" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">id=&quot;历任领导&quot;&gt; 历任领导 [ 编辑 ] @media all and (max-width:720px){.mw-parser-output table.multicol&gt;tr&gt;td,.mw-parser-output table.multicol&gt;tbody&gt;tr&gt;td{display:block!important;width:100%!important;padding:0!important}}.mw-parser-output table.multicol{border:0;border-collapse:collapse;background-color:transparent;color:inherit;padding:0}.mw-parser-output table.multicol&gt;tr&gt;td,.mw-parser-output table.multicol&gt;tbody&gt;tr&gt;td{vertical-align:top!important} &amp;#32; 市委书记 胡云龙 （1988年6月－1990年7月） 季家宏 （1990年7月－1993年4月） 赵正永 （1993年4月－1998年4月） 臧世凯 （1998年9月－2003年6月） 王启敏 （2003年6月－2008年6月） 王福宏 （2008年6月－2015年2月） 任泽锋 （2015年2月－2021年3月） 凌云 （2021年4月－2024年12月） 丁纯 （2024年12月－） &amp;#32; 市长 季家宏 （1988年3月－1991年3月） 吴存心 （1991年3月－1993年7月） 桂建平 （1993年7月－1997年1月） 臧世凯 （1997年1月－1999年10月） 饶益刚 （1999年10月－2002年5月） 王启敏 （2002年5月－2003年7月） 李宏鸣 （2003年9月－2008年2月） 陈强 （2008年4月－2009年8月） 宋国权 （2009年8月－2013年3月） 任泽锋 （2013年3月－2015年3月） 孔晓宏 （2015年4月－2019年8月） 孙勇 （2019年9月－2023年7月） 何毅 （2023年7月－） &amp;#32; &lt;h3</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

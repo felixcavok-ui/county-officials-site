@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 张力 简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：张力 简历<br>
+  原页：<a href="http://www.ccdi.gov.cn/special/jctxlbd/nmg/ldjg_nmg/sj_nmg/201401/t20140126_17821.html" target="_blank" rel="noopener">http://www.ccdi.gov.cn/special/jctxlbd/nmg/ldjg_nmg/sj_nmg/201401/t20140126_17821.html</a><br>
+  存档日期：2026-06-24 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.ccdi.gov.cn/special/jctxlbd/nmg/ldjg_nmg/sj_nmg/201401/t20140126_17821.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">张力同志简历
+ 来源：内蒙古自治区纪委 
+ 发布时间：2014-02-05 19:15 
+ 张力，男，汉族，1955年9月生，河北隆尧人，在职研究生学历，哲学硕士，1976年6月入党，1972年12月参加工作。 
+     现任内蒙古自治区党委常委、纪律检查委员会书记。 
+ 1972.12--1979.10 河北省抚宁县文教局干事，大旺庄中学教师，姚周寨公社团委书记、党委副书记 
+ 1979.10--1981.10 河北省唐山师范专科学校中文系中文专业学习 
+ 1981.10--1983.09 河北省抚宁县委宣传部干事，共青团秦皇岛市委员会干事 
+ 1983.09--1984.04 共青团秦皇岛市委员会副书记 
+ 1984.04--1985.10 中共秦皇岛市委农村工作部副部长、部长 
+ 1985.10--1987.08 中共河北省抚宁县委书记 
+ 1987.08--1991.01 共青团河北省委员会副书记（其间：1988.09--1989.07在中央党校中青年干部培训班学习） 
+ 1991.01--1995.03 共青团河北省委员会书记（其间：1992.08--1994.12在中央党校函授学院本科班经济专业学习；1993.09--1993.12在中央党校地厅级干部轮训班学习） 
+ 1995.03--1998.09 河北省科学技术委员会副主任、党组成员、党组副书记（正厅级）（1994.09--1997.01在中央党校研究生部政治经济学专业研究生在读） 
+ 1998.09--2001.03 河北省保定市委副书记（正厅级）（1997.06--1999.10在武汉交通科技大学人文学院科学技术哲学专业研究生在读） 
+ 2001.03--2002.02 河北省政府开放办公室主任、党组书记兼省招商局局长 
+ 2002.02--2003.03 河北省邯郸市委副书记、代市长、市长 
+ 2003.03--2004.03 河北省邯郸市委书记 
+ 2004.03--2008.05 河北省委常委、秘书长兼省直机关工委书记 
+ 2008.05--             内蒙古自治区党委常委、纪律检查委员会书记（其间：2009.03--2009.05在中央党校省部级金融危机应对专题研究班学习；2010.10--2010.12在国防大学国家安全战略研究班学习） 
+ 中国共产党第十四、十七、十八大代表，第十届全国人大代表，第八届全国政协委员，第十八届中央纪律检查委员会委员。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

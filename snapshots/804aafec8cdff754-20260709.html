@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E8%B5%B5%E5%AE%AA%E5%BF%A0/74222" target="_blank" rel="noopener">https://baike.baidu.com/item/%E8%B5%B5%E5%AE%AA%E5%BF%A0/74222</a><br>
+  存档日期：2026-07-09 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E8%B5%B5%E5%AE%AA%E5%BF%A0/74222" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">赵宪忠（西藏自治区原山南地委副书记、行署专员）_百度百科
+
+赵宪忠，男，汉族，1955年9月生，山西榆社人，1979年4月参加工作，中共党员。曾任西藏自治区山南地委副书记、行署专员。
+2024年5月，赵宪忠涉嫌严重违纪违法，接受西藏自治区纪委监委纪律审查和监察调查。 [1]
+
+人物履历
+播报
+编辑
+1976.10-1978.07 山西省晋中地区农业学校水利专业学习
+1978.07-1979.04 原籍务农
+1979.04-1984.09 西藏自治区察雅县农牧科水利队干部
+1984.09-1987.04 西藏自治区察雅县水电局副局长
+1987.04-1993.01 西藏自治区八宿县副县长
+1993.01-1998.05 西藏自治区洛隆县委书记
+1998.05-2000.03 西藏自治区农牧开发建设办公室党组成员、副主任（其间：1998.03-1998.07在中央党校培训部第九期西藏班学习）
+2000.03-2004.02 西藏自治区农牧开发建设办公室党组书记、主任（其间：2001.09-2003.07在四川省工商管理学院硕士研究生班学习）
+2004.02-2008.01 西藏自治区扶贫开发领导小组办公室党组书记
+2008.01-2012.04 西藏自治区山南地委副书记、行署专员
+西藏自治区十届政协社会法制外事委员会主任（至2016.01） [3]
+人物事件
+播报
+编辑
+违纪被查
+2024年5月，西藏自治区原山南地委副书记、行署专员赵宪忠涉嫌严重违纪违法，接受西藏自治区纪委监委纪律审查和监察调查。 [1-2]
+
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 履历-曹学成</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：履历-曹学成<br>
+  原页：<a href="https://m.bjnews.com.cn/detail/1700220561129208.html" target="_blank" rel="noopener">https://m.bjnews.com.cn/detail/1700220561129208.html</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://m.bjnews.com.cn/detail/1700220561129208.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">标题：曹学成同志逝世
+来源：新京报（转载自大众日报微信公众号消息）
+URL：https://m.bjnews.com.cn/detail/1700220561129208.html
+访问日期：2026-07-03
+
+正文：
+
+中央有关领导同志通过各种形式对曹学成同志的逝世表示沉痛哀悼，并向其亲属表示慰问。
+
+据大众日报微信公众号消息，中国共产党的优秀党员、忠诚的共产主义战士，山东省人大常委会原副主任曹学成同志，因病医治无效，于2023年11月15日9时29分在济南逝世，享年77岁。11月17日下午，曹学成同志遗体告别仪式在济南殡仪馆举行。
+
+中共中央组织部、全国人大常委会办公厅、国家体育总局，山东省委、省人大常委会、省政府、省政协等以各种形式表达对曹学成同志逝世的悼念和对其亲属的慰问。
+
+林武、周乃翔、葛慧君和杨东奇等省领导，全国政协常委、提案委员会主任刘家义，全国政协教科卫体委员会副主任刘伟，中央有关部门和外省（区、市）领导同志及老同志，省里的老同志赵志浩、姜异康、李春亭、韩寓群、陈光林等，前往送别或以其他方式表示哀悼。
+
+曹学成同志是山东新泰人，1945年12月生，1970年12月参加工作，1966年1月加入中国共产党。历任新汶一中教员、团委副书记，新汶县公安局办事员，新汶县孙村公社党委副书记，新汶县委常委、办公室主任，新汶县（市）委副书记，平阴县委书记，济南市委副秘书长兼办公厅主任，山东省委办公厅副主任，山东省体委主任，潍坊市委书记、市人大常委会主任，山东省税费改革领导小组副组长，山东省人大常委会副主任等职务。2009年7月退休。
+
+曹学成同志具有崇高的革命理想，坚定的革命信仰。曹学成同志的一生，是革命的一生、光辉的一生，是全心全意为人民服务的一生。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

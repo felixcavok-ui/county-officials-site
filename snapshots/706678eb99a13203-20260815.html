@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.hndt.gov.cn/content/column/6787587?liId=113" target="_blank" rel="noopener">https://www.hndt.gov.cn/content/column/6787587?liId=113</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.hndt.gov.cn/content/column/6787587?liId=113" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_淮南市大通区人民政府 简体 繁体 导航 首页 首 页 领导 之窗 魅力 大通 政务 要闻 信息 公开 皖事 通办 政民 互动 数据 发布 通网 搜 您的位置： 首页 &gt; 领导之窗 区委领导 人大领导 政府领导 政协领导 区委书记： 荣耀 区委副书记、区长，区政府党组书记： 李雪梅 区委副书记： 王道红 区委常委、人武部政委： 胡玉强 区委常委、区政府副区长： 刘福岩 区委常委、常务副区长，区政府党组副书记： 黄新 区委常委、组织部长： 茆永生 区委常委： 刘磊 区委常委、纪委书记，区监委副主任、代理主任： 赵坤 区委常委、政法委书记： 胡传兵 区委常委、宣传部长、统战部长： 王慧 区人大常委会主任、党组书记： 段传民 区人大常委会副主任、党组副书记： 顾为民 区人大常委会副主任： 陈光煚 区人大常委会副主任： 孙春来 区委副书记、区长，区政府党组书记： 李雪梅 区委常委、常务副区长，区政府党组副书记： 黄新 区委常委、区政府副区长： 刘福岩 副区长： 田振兴 副区长： 张倩茹 副区长： 李祥全 副区长： 栾正军 副区长： 杨布政 党组书记、主席： 刘成军 政协副主席： 常勇 政协副主席： 郑文年 党组成员、副主席、区工会主席： 何伟 网址导航 市级政府 市直部门 区县政府 其他网站 主办单位：淮南市大通区人民政府办公室 地址：淮南市大通区民主东路5号 邮编：232000 皖ICP备05002065号-1 皖公网安备 34040202000120号 网站标识码：3404020001 本站已支持IPV6访问
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.fanchang.gov.cn/xxgk/ldzc/index.html" target="_blank" rel="noopener">https://www.fanchang.gov.cn/xxgk/ldzc/index.html</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.fanchang.gov.cn/xxgk/ldzc/index.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_芜湖市繁昌区人民政府 加入收藏 繁體 首 页 首 页 魅力繁昌 新闻中心 政府信息公开 网上办事 互动交流 数据繁昌 您的位置： 首页 &gt; 信息公开 &gt; 领导之窗 区政府领导 周伟 王铭华 桂仁章 王安源 薛军政 梁仁远 赵大旺 盛翠红 赵青 区政府领导 周伟 王铭华 桂仁章 王安源 薛军政 梁仁远 赵大旺 盛翠红 赵青 周伟 区委副书记、区政府区长 活动报道 我要写信 个人履历 周伟，男，汉族，1982年8月生，大学学历，中共党员，现任繁昌区委副书记、区政府区长。 曾任市辖区街道办事处党工委副书记、副主任、主任，区直部门正职，市辖区区委常委、政法委书记，县委常委、组织部部长，市辖区区委常委、区政府党组副书记、常务副区长，地级市政府部门正职等。 联系方式：0553-7872664 分管工作 领导区政府全面工作，主管繁昌经济开发区、审计工作。 主管繁昌经济开发区管委会（含孙村园区）、区审计局。 国家部委网站 省级政府网站 市级政府网站 县区政府网站 其他友情链接 网站地图 隐私声明 免责声明 联系我们 使用说明 主办：安徽省芜湖市繁昌区人民政府办公室 承办：芜湖市繁昌区政务信息中心 地址：繁昌区政务文化中心十三楼 邮编：241200 电话：政务服务热线12345 网站标识码：3402220001 皖ICP备05005414号-1 皖公网安备 34022202005628号 建议使用1920*1080分辨率/IE9以上浏览器访问达到最佳效果 本站已支持IPV6访问
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

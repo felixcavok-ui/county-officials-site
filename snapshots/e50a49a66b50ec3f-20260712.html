@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/柳锦州/8755163" target="_blank" rel="noopener">https://baike.baidu.com/item/柳锦州/8755163</a><br>
+  存档日期：2026-07-12 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/柳锦州/8755163" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">柳锦州
+
+广东省人大常委会农村农业委员会原主任委员
+
+柳锦州，男，汉族，1948年10月生，广东潮阳人，1966年9月参加工作，1974年11月加入中国共产党，中央党校研究生部政治经济学专业毕业，在职研究生学历。
+曾任广东省人大常委会农村农业委员会主任委员。
+
+中文名 柳锦州
+性    别 男
+国    籍 中国
+民    族 汉族
+籍    贯 广东潮阳
+出生日期 1948年10月
+毕业院校 中央党校
+政治面貌 中共党员
+学    历 在职研究生
+
+人物履历
+1963年09月—1966年09月，广东水产学校学习；
+1966年09月—1982年02月，广东省汕头地区水产公司、副食品公司资料员，商业局、财办干事；
+1982年02月—1983年09月，广东省汕头地区财办调研科副科长；
+1983年09月—1984年06月，广东省汕头市商业局业务科科长；
+1984年06月—1984年10月，广东省汕头市商业贸易中心总经理、党总支书记；
+1984年10月—1987年10月，广东省汕头市财办副主任、党组副书记；
+1987年10月—1990年04月，广东省汕头市财办主任、党组书记；
+1990年04月—1992年03月，广东省揭阳市普宁县委书记；
+1992年03月—1992年09月，广东省揭阳市人民政府负责人；
+1992年09月—1993年10月，广东省揭阳市委常委，市政府副市长；
+1993年10月—1998年07月，广东省揭阳市委副书记，市政府副市长（其间：1994年9月—1995年7月参加中央党校中青年干部培训班学习，1994年9月—1997年1月参加中央党校研究生部政治经济学专业学习并毕业）；
+1998年07月—1998年10月，广东省清远市委副书记，市政府副市长；
+1998年10月—2001年03月，广东省清远市委副书记，市政府市长；
+2001年03月—2001年04月，广东省惠州市委副书记；
+2001年04月—2003年08月，广东省惠州市委副书记，市政府市长；
+2003年08月—2004年04月，广东省惠州市委书记；
+2004年04月—2006年10月，广东省惠州市委书记，市人大常委会主任；
+2006年10月—2008年02月，广东省惠州市人大常委会主任；
+2008年02月—2012年01月，广东省人大常委会农村农业委员会主任委员。
+
+担任职务
+十届全国人大代表，广东省九次党代会代表，广东省九、十届人大代表，七、八、九届广东省惠州市委委员，广东省惠州市八、九次党代会代表，广东省惠州市八、九、十届人大代表，广东省十一届人大常委会委员。
+
+来源：百度百科 柳锦州
+网址：https://baike.baidu.com/item/柳锦州/8755163
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗-白银市人民政府 现页</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗-白银市人民政府 现页<br>
+  原页：<a href="https://www.baiyin.gov.cn/ldzc/index.html" target="_blank" rel="noopener">https://www.baiyin.gov.cn/ldzc/index.html</a><br>
+  存档日期：2026-07-06 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.baiyin.gov.cn/ldzc/index.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗 当前位置： 首页 &gt; 领导之窗 白银市委 白银市人大常委会 白银市政府 白银市政协 刘 凯 市委书记 刘 凯，男，汉族，1983年7月生，研究生，哲学博士，中共党员，现任白银市委书记。 我对书记说 市委副书记 张延保 朱利民 市委常委 王 彬 董兆生 葛永宏 乔振华 丁肃静 胡建伟 潘 新 秘书长 胡建伟 惠 强 主任 惠 强，男，汉族，1970年4月出生，大学学历，法学硕士，中共党员，现任白银市人大常委会主任、党组书记。 副主任 郝平英 任文贵 马世斌 何艳君 秘书长 任辉 张延保 市委副书记、市长 张延保，男，藏族，1966年9月出生，在职研究生学历，法学硕士，中共党员，现任白银市委副书记 ， 市政府市长、党组书记。 我对市长说 政府工作报告 政府会议 政府公报 常务副市长 葛永宏 副市长 潘 新 丁富强 郝 钢 刘湖泉 亓述伟 王 娟 许伟民 秘书长 忽建强 杜健棠 主席 杜健棠，男，汉族，1970年11月出生，在职研究生学历，工商管理硕士，中共党员，现任白银市政协主席、党组书记。 党组副书记 潘 新 杨永强 副主席 杨永强 杨志平 傅学兴 杨永胜 李呈萍 史文娟 秘书长 魏列海</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

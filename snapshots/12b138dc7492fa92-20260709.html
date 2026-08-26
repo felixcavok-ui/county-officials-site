@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="https://zh.wikipedia.org/zh-cn/%E8%91%A3%E6%98%8E%E4%BF%8A" target="_blank" rel="noopener">https://zh.wikipedia.org/zh-cn/%E8%91%A3%E6%98%8E%E4%BF%8A</a><br>
+  存档日期：2026-07-08 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/zh-cn/%E8%91%A3%E6%98%8E%E4%BF%8A" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">董明俊（1962年5月—），男，汉族，山东寿光人，中华人民共和国政治人物。山东矿业学院矿山建筑系矿井建设专业毕业，中共中央党校研究生院在职研究生班经济学专业毕业。
+
+
+== 生平 ==
+1979年9月，在山东矿业学院矿山建筑系矿井建设专业学习。1983年7月加入中国共产党。1983年8月参加工作，任西藏自治区工业厅土门煤矿技术员。1987年9月，任西藏自治区工业电力厅办公室科员。1989年1月，任办公室副主任科员。1991年7月，任办公室主任科员。1992年11月，任规划建设处副处长。1994年7月，任西藏自治区人民政府办公厅秘书二处处长。1996年11月，任西藏自治区政府副秘书长。2001年8月，任中共阿里地委副书记、行署专员（2000年8月-2002年12月，在中共中央党校函授学院领导干部函授本科班经济管理专业学习；2003年3月-2004年1月，在中央党校培训部一年制中青班学习；2004年3月-2006年2月，在中央党校研究生院在职研究生班经济学专业学习）。2006年6月，任中共阿里地委书记、人大地区工委主任。2008年1月，任西藏自治区人大常委会副主任，阿里地委书记、人大地区工委主任。2011年1月，任西藏自治区人民政府副主席。
+2016年7月，任中国五矿集团公司党组副书记、副总经理，西藏自治区政府副主席。2016年11月，不再担任西藏自治区人民政府副主席。
+
+
+== 参考文献 ==
+
+Template:2003届中央党校一年制中青年干部培训班</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

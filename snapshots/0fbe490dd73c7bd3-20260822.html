@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.baike.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.baike.com<br>
+  原页：<a href="https://www.baike.com/wikiid/7428535653312397362" target="_blank" rel="noopener">https://www.baike.com/wikiid/7428535653312397362</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.baike.com/wikiid/7428535653312397362" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">张成（宽城满族自治县委书记）— 快懂百科
+来源: https://www.baike.com/wikiid/7428535653312397362
+抓取日期: 2026-08-22
+====
+张成，现任宽城满族自治县委书记。[1]
+2021年5月19日，宽城满族自治县召开领导干部大会，宣布省、市委关于党政主要领导同志调整的决定，经省委市委研究决定：张成同志任宽城满族自治县委书记，不再担任宽城满族自治县委副书记、政府县长职务。[1]同年，5月31日，宽城召开县人武部党委第一书记任职大会上，宣布张成任宽城满族自治县人武部党委第一书记。[2]7月20日，中国共产党宽城满族自治县第七届委员会第一次全体会议 ，张成当选为中国共产党宽城满族自治县第七届委员会常务委员会委员。[3]
+2024年8月9日，张成一行实地到县气象台，通过短临监测系统详细询问了近期天气趋势、降雨落点区域及量级情况分布，并听取了相关负责同志对气象观测、汛期气象服务、预警信息发布等工作情况的汇报。[4]
+2024年10月16日，张成到宽城镇、龙须门镇调研巩固拓展脱贫攻坚成果同乡村振兴有效衔接工作，政府副县长刘景田陪同调研，相关单位和乡镇负责人参加调研。[5]
+
+== 参考文献 ==
+[1] 人民网. 河北48县(市、区)委书记履新. http://he.people.com.cn/n2/2021/0519/c192235-34734654.html. (2024-10-23)
+[2] 宽城满族自治县人民政府. 宽城召开县人武部党委第一书记任职大会. https://www.hbkc.gov.cn/art/2021/6/2/art_3527_756339.html. (2024-10-23)
+[3] 微信公众平台. 中国共产党宽城满族自治县第七届委员会举行第一次全体会议. https://mp.weixin.qq.com/s/_9JEuLdY6WvVaa5kFBumjQ. (2024-10-23)
+[4] 微信公众平台. 张成到县气象局调研. https://mp.weixin.qq.com/s?__biz=MzAxOTYzMjUyMw==&amp;mid=2653020501&amp;idx=1&amp;sn=5bbbd84891c6e1d9cc80118e5470097a&amp;chksm=815a86eed3b265355bc2dd8a1b2c30c96c2d35f46c4a8201f221d0008263e4b42730e97d0765&amp;scene=27. (2024-10-23)
+[5] 微信公众平台. 张成调研巩固拓展脱贫攻坚成果同乡村振兴有效衔接工作. https://mp.weixin.qq.com/s?__biz=MzAxOTYzMjUyMw==&amp;mid=2653022865&amp;idx=1&amp;sn=a3b68a57989d87314700ffeeb9b58813&amp;chksm=813fcbabe005801cf710ca8bda5a76600451f847fb4db16cd8f73deb607695df90b9e2ac80ea&amp;scene=27. (2024-10-23)
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

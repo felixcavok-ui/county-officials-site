@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 市十六届人大四次会议开幕 何晓军主持大会 刘胜作政府工作报告</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：市十六届人大四次会议开幕 何晓军主持大会 刘胜作政府工作报告<br>
+  原页：<a href="http://www.czrd.gd.cn/detail/2894" target="_blank" rel="noopener">http://www.czrd.gd.cn/detail/2894</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.czrd.gd.cn/detail/2894" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">市十六届人大四次会议开幕何晓军主持大会刘胜作政府工作报告林小群作市人大常委会工作报告 - 潮州人大网
+.conDetailTitle
+{
+font:bold 24px &quot;Microsoft Yahei&quot; !important;
+}
+.conDetailMain
+{
+margin: 0 !important;
+padding: 0 !important;
+padding-top: 24px !important;
+}
+.conDetailMain p
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain span
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain section
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+$(function() {
+// 页面加载后执行的代码
+$(&quot;img&quot;).each(function() {
+if ($(&quot;this&quot;).parent().parent().is(&quot;.conDetailMain&quot;)) {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}else {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(this).parent().parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}
+});
+});
+function setDateTime(id){
+var d = new Date();
+var vYear = d.getFullYear();
+var vMon = d.getMonth() + 1;
+var vDay = d.getDate();
+var date = vMon+&quot;/&quot;+vDay+&quot;/&quot;+vYear; //此处也可以写成 17/07/2014 一样识别也可以写成 07-17-2014 但需要正则转
+var day = new Date(Date.parse(date)); //需要正则转换的则此处为 : var day = new Date(Date.parse(date.replace(/-/g, &#x27;/&#x27;)));
+var today = new Array(&#x27;星期日&#x27;,&#x27;星期一&#x27;,&#x27;星期二&#x27;,&#x27;星期三&#x27;,&#x27;星期四&#x27;,&#x27;星期五&#x27;,&#x27;星期六&#x27;);
+var week = today[day.getDay()];
+var thistext = &quot;今天是:&quot; + vYear + &quot;年&quot; + vMon + &quot;月&quot; + vDay + &quot;日&quot; + &quot; &quot; + week;
+$(&quot;#&quot;+id).html(thistext);
+}
+$(function(){
+$(&quot;.first_span&quot;).each(function(index, element) {
+$(this).hover(function(){
+$(&quot;.first_span&quot;).removeClass(&quot;current&quot;);
+$(this).addClass(&quot;current&quot;);
+});
+});
+setDateTime(&quot;headTime&quot;);
+});
+// 设为首页
+function SetHome(obj,url){
+try{
+obj.style.behavior=&#x27;url(#default#homepage)&#x27;;
+obj.setHomePage(url);
+}catch(e){
+if(window.netscape){
+try{
+netscape.security.PrivilegeManager.enablePrivilege(&quot;UniversalXPConnect&quot;);
+}catch(e){
+alert(&quot;抱歉,此操作被浏览器拒绝!\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为&#x27;true&#x27;&quot;);
+}
+}else{
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n您需要手动将【&quot;+url+&quot;】设置为首页。&quot;);
+}
+}
+}
+// 收藏本站
+function AddFavorite(title, url) {
+try {
+window.external.addFavorite(url, title);
+}
+catch (e) {
+try {
+window.sidebar.addPanel(title, url, &quot;&quot;);
+}
+catch (e) {
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n加入收藏失败,请使用Ctrl+D进行添加&quot;);
+}
+}
+}
+function query() {
+if ($.trim($(&quot;#txt_title&quot;).val()) == &quot;&quot;)
+{
+alert(&quot;请输入搜索内容&quot;);
+}else {
+window.open(&quot;/serlist/1?keyword=&quot; + $.trim($(&quot;#txt_title&quot;).val()));
+}
+}
+返回首页|设为首页 |加入收藏
+欢迎访问潮州人大网!
+swfobject.registerObject(&quot;FlashID&quot;);
+网站首页
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大新闻
+图片新闻
+文字新闻
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+立法工作
+法规资料库
+立法动态
+立法规划计划
+立法制度
+立法文件
+征求意见
+地方法规--&gt;
+人事任免
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+民声期刊
+--&gt;
+关键字 :
+全文搜索
+潮州人大网欢迎
+打印
+您当前的位置 :
+首页&gt;&gt;人大会议&gt;&gt;人代会会议&gt;&gt;正文
+市十六届人大四次会议开幕何晓军主持大会刘胜作政府工作报告林小群作市人大常委会工作报告
+来源 : 潮州日报
+作者 : 杨燕芳、陈宏文--&gt;
+发布时间 : 2024-02-03 12:07:52
+点击数 : 6878--&gt;
+市十六届人大四次会议开幕何晓军主持大会刘胜作政府工作报告林小群作市人大常委会工作报告　　2月2日上午，潮州市第十六届人民代表大会第四次会议在市党政机关会堂开幕。来自全市各行各业、各条战线的人大代表肩负人民重托，认真履行宪法和法律赋予的神圣职责，共商全市经济社会发展大计，为谱写现代化潮州新篇章贡献人大力量。　　开幕大会由大会主席团常务主席、大会执行主席何晓军主持。市长刘胜代表市人民政府向大会作政府工作报告。　　大会主席团常务主席、大会执行主席蒋达勇、林小群、陈史青、胡鹏、陈浩松、庄朝惠、邢莫松在主席台前排就座。　　在主席台就座的还有市领导李尧坤、王文森、彭建安、陈跃庆、刘星、梁道彬、庄宋太、刘旭东、佘楚雄、周岳林、朱丹、周茹茵、邱焕华、陈炫秋、柯泓、杜妙拉、伍茸、陈燕芳、雷伟平，潮州军分区、市法院、市检察院负责同志，以及大会主席团其他成员。　　大会应到代表320人，实到代表304人，符合法定人数。　　刘胜说，过去一年，是全面贯彻党的二十大精神的开局之年，是后疫情时期恢复发展的第一年，也是应对严峻形势、开拓发展新局的蓄势突围之年。在省委、省政府和市委的坚强领导下，我们深入学习贯彻习近平新时代中国特色社会主义思想，全面贯彻落实省委“1310”具体部署和市委“一大引领、三大战役、六大提升”工作部署，克服经济下行压力、直面历史遗留问题、加大改革攻坚力度，全力以赴推动经济发展回稳向好，经济社会各项事业加快高质量发展。实现地区生产总值1356.6亿元、增长3%；地方一般公共预算收入增长21.2%，税费、税收收入规模均创历史新高；工业投资、技改投资分别增长19%、25.8%；招商引资签约项目、落地项目的数量和投资额均创历年新高；获评联合国“世界美食之都”、“世界工夫茶文化之乡”、中国十大“秀美之城”。　　刘胜说，一年来，我们主要做了以下工作：纵深推进“百千万工程”，强化市县镇村联动发力，区域协调发展得到有效推进。 实施“六大重点攻坚”，打响经济发展突围战，高质量发展的势能得到有效增强。构建现代化产业体系，打造产业空间、做强产业支柱，制造业当家的底盘得到有效夯实。构建“全员招商”工作格局，建立项目策划生成机制，重大项目拉动效应得到有效彰显。坚持“以贸促工、贸工结合”，多措并举激发贸易活力，内外两个市场得到有效畅通。坚持“服务”与“治乱”并重，大力改革完善制度机制，营商环境得到有效优化。突出文化自信自强，做深做活文化与经济融合发展文章，文化影响力和驱动力得到有效提高。坚持人民至上、以民为本，用心用情办好惠民实事，民生福祉得到有效增进。全面加强作风效能建设，突出问题导向、责任导向、效率导向，政府执行力得到有效提升。　　刘胜在报告中指出，今年政府工作的指导思想是：以习近平新时代中国特色社会主义思想为指导，全面贯彻落实党的二十大、二十届二中全会和中央经济工作会议精神，深入贯彻落实习近平总书记视察广东重要讲话、重要指示精神，全面落实省委“1310”具体部署及省委十三届四次全会暨省委经济工作会议精神，按照市第十五次党代会及市委十五届历次全会的部署要求，深化市委“一大引领、三大战役、六大提升”工作部署，坚持稳中求进工作总基调，完整、准确、全面贯彻新发展理念，服务和融入新发展格局，着力推动高质量发展，坚持稳中求进、以进促稳、先立后破，全面深化改革开放，推动科技自主创新，统筹扩大内需和深化供给侧结构性改革，统筹新型城镇化和乡村全面振兴，统筹高质量发展和高水平安全，增进民生福祉，保持社会稳定，奋力推动综合实力实现新跃升，把潮州建设得更加繁荣美丽，谱写现代化潮州新篇章。　　刘胜说，今年经济社会发展的主要预期目标是：地区生产总值增长5%；固定资产投资增长4%，社会消费品零售总额增长4%，进出口总额增长3%；规上工业增加值增长6%；地方一般公共预算收入增长5%；居民人均可支配收入增长与经济增长同步，居民消费价格指数上涨3%左右；城镇新增就业人数1万人；粮食产量、城市空气质量优良天数比率和地表水水质优良率均完成省下达任务。　　刘胜说，做好今年的工作，必须坚持把“重大项目”作为高质量发展的最强动能；坚持把“优大强”作为制造业当家的核心梁柱；坚持把“有数有税”作为把经济搞上去的鲜明导向；坚持把“开放发展”作为加快突围跨越的关键一招；坚持把“马上就办”作为执行力建设的基本准则。重点抓好十个方面：一是深入推进“百千万工程”，铸强县镇村发展潜力板。二是实施“优大强”重点攻坚，打造“制造业当家”潮州方阵。三是突出项目投资拉动效应，增创高质量发展新势能。四是用好提振动能关键抓手，切实增强经济发展驱动力。五是全面深化开放合作，更好服务和融入新发展格局。六是深化重点制度机制改革，不断增创发展环境新优势。七是推进以人为核心的新型城镇化，打造中小城市美的典范。八是坚定文化自信自强，促进文化事业和文化产业繁荣发展。九是致力提升民生保障水平，推动改革发展成果惠及更多群众。十是加强政府自身建设，打造现代化高效能政府。　　刘胜强调，“干现代化”是我们肩负的时代使命，加快潮州高质量发展是我们义不容辞的历史担当。让我们更加紧密团结在以习近平同志为核心的党中央周围，深入贯彻党的二十大精神和习近平总书记视察广东重要讲话、重要指示精神，在省委、省政府和市委的坚强领导下，笃定信心、勇毅前行，大干快干、真干实干，一步一个脚印把潮州经济搞上去，把高质量发展的新路闯出来，在攻坚克难中加快破局突围，在拼搏奋进中实现跨越发展，努力把潮州建设得更加繁荣美丽，谱写现代化潮州新篇章。　　市人大常委会副主任林小群向大会作市人大常委会工作报告。2023年，市人大常委会紧扣党中央决策部署、省委“1310”具体部署、市委“一大引领、三大战役、六大提升”工作部署，强化政治引领，突出法治主业，践行为民宗旨，忠实履行职责，政治立场更加坚定，促发展惠民生更加有力，人大履职更加高效，为谱写现代化潮州新篇章作出了人大贡献。2024年，市人大常委会将坚持不懈用习近平新时代中国特色社会主义思想统揽人大工作，突出忠诚履职，学深悟透党的创新理论；突出依法履职，着力提高地方立法质量；突出能动履职，不断增强监督实效；突出为民履职，更好发挥人大代表主体作用；突出廉洁履职，全面加强人大自身建设，为把潮州建设得更加繁荣美丽、奋力谱写现代化潮州新篇章提供有力法治保障。　　市中级人民法院代理院长黄必良向大会作市中级人民法院工作报告。报告回顾总结2023年全市法院工作，提出新一年工作安排。2024年全市法院将突出“政治建院”“服务立院”“改革强院”“从严治院”，做深做实为大局服务、为人民司法，以高质量司法保障潮州经济社会高质量发展，以审判工作现代化支撑和服务中国式现代化潮州实践。　　市人民检察院检察长江永良向大会作市人民检察院工作报告。报告回顾总结2023年全市检察工作，提出新一年工作安排。2024年全市检察机关将围绕中心大局，聚焦主责主业，突出“高质效办好每一个案件”工作主线，抓实过硬检察队伍建设，以实干担当和实绩实效推动检察工作高质量发展。　　大会还审查了市2023年国民经济和社会发展计划执行情况与2024年计划草案的报告、市2024年国民经济和社会发展计划草案；审查了市2023年预算执行情况和2024年预算草案的报告、市2024年预算草案；审议了市2024年民生实事候选项目的报告；表决通过了设立市十六届人大财政经济委员会的决定；表决通过了市十六届人大专门委员会组成人员人选的表决办法；表决通过了市十六届人大财政经济委员会组成人员人选和法制委员会主任委员人选名单；表决通过了大会选举办法、民生实事项目票决办法。　　出席市政协十三届三次会议的政协委员和市有关单位负责人等列席大会。
+2024-02-02
+上一篇:
+潮州市第十六届人民代表大会第四次会议关于设立潮州市第十六届人民代表大会财政经济委员会的决定
+2024-02-03
+下一篇:
+市十六届人大四次会议主席团举行第二次会议
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+document.write(unescape(&quot;%3Cspan id=&#x27;_ideConac&#x27; %3E%3C/span%3E%3Cscript src=&#x27;http://dcs.conac.cn/js/20/306/0000/60087298/CA203060000600872980001.js&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));
+主办单位:潮州市人民代表大会常务委员会办公室承建单位:中国电信潮州分公司
+中文域名:潮州市人大常委会办公室.政务邮编:521000 粤ICP备12081286号</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.yuhui.gov.cn/ldzc/index.html" target="_blank" rel="noopener">https://www.yuhui.gov.cn/ldzc/index.html</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.yuhui.gov.cn/ldzc/index.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_蚌埠市禹会区人民政府 欢迎访问蚌埠市禹会区人民政府！ 网站地图 登录 网站首页 首页 走进禹会 政府信息公开 互动交流 办事大厅 数据发布 当前的位置： 首页 &gt; 领导之窗 领导之窗 区委领导 区政府领导 更多&gt;&gt; 区委领导 [2026-07-15] 区委书记张斌 [2026-07-15] 区委副书记、区长张如联 [2026-07-15] 区委副书记王宏洲 [2026-07-15] 区委常委、组织部部长、统战部部长、党校校长牛传付 [2026-07-15] 区委常委、政法委书记王健 更多&gt;&gt; 区政府领导 [2026-07-15] 区委副书记、区长张如联 [2026-06-03] 区委常委、副区长胡海波 [2026-06-03] 区委常委、副区长陈春霆 [2026-06-03] 副区长陈丽娜 [2026-06-03] 副区长、公安分局局长张怀杰 版权所有：蚌埠市禹会区人民政府 主办：蚌埠市禹会区人民政府 承办：禹会区人民政府政务网络信息中心 地址：蚌埠市禹会区涂山路429号 0552-4016129 传真：0552-4034427 邮箱：bbyhqzf@sina.com 备案号： 皖ICP备05002941号-1 皖公网安备 34030002000010号 网站标识码：3403040001 网站地图 智能问答 分享 关闭
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%BC%A0%E4%B8%9C%E5%8D%87/6648363" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%BC%A0%E4%B8%9C%E5%8D%87/6648363</a><br>
+  存档日期：2026-07-16 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%BC%A0%E4%B8%9C%E5%8D%87/6648363" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">张东升
+播报
+锁定
+讨论
+上传视频
+创建人物关系
+四川省人大常委会原副主任、原党组副书记展开66个同名词条
+张东升，男，藏族，1953年12月生，四川炉霍人，1980年6月加入中国共产党，1968年6月参加工作，西南民族学院政史系马列理论专修班毕业，大专学历。
+曾任四川省人大常委会副主任、党组副书记。
+中文名
+张东升
+国籍
+中国
+民族
+藏族
+出生地
+四川炉霍
+出生日期
+1953年12月
+职业
+公务员
+毕业院校
+西南民院团干班
+人物履历
+1968.06-1971.07 四川省炉霍县新都三队知青；
+1971.07-1978.02 四川省炉霍县虾拉沱小学教师、校长；
+1978.02-1980.04 四川省炉霍县文教局办事员；
+1980.04-1980.12 四川省炉霍县委办公室办事员；
+1980.12-1985.08 共青团四川省炉霍县委副书记、书记（其间：1983.09-1985.07 西南民族学院政史系马列理论专修班学习）；
+1985.08-1987.02 四川省理塘县委副书记；
+1987.02-1992.05 四川省理塘县委副书记、县长（其间：1990.04-1990.11 四川省委党校县处级培训班学习）；
+1992.05-1997.04 四川省甘孜州副州长 （其间：1993.05-1993.11 挂职任农业部畜牧兽医司副司长）；
+1997.04-1999.01 四川省甘孜州委常委、副州长（其间：1997.05-1997.11 挂职任国家计委农村经济司副司长）；
+1999.01-2002.11 四川省甘孜州委副书记 （其间：2002.03-2002.07 中央党校第38期进修二班学习）；
+2002.11-2002.12 四川省阿坝州委副书记、代州长；
+2002.12-2008.01 四川省阿坝州委副书记、州长；
+2008.01-2013.02四川省人大常委会副主任、党组成员。
+2013.01-2017.01四川省人大常委会副主任、党组副书记
+第十届全国人大代表，九届四川省委委员，四川省十届、十一届、十二届、十三届人大代表。
+任免信息
+2017年1月20日，四川省十二届人大五次会议第三次全体会议，表决通过了四川省第十二届人民代表大会第五次会议关于接受张东升辞去四川省第十二届人民代表大会常务委员会副主任职务的决定。
+参考资料
+1四川省第十二届人大常委会主任、副主任简历 ．四川日报．2013-01-30
+2眉山市第四届人民代表大会第三次会议公告．眉山日报
+3张东升、曾省权辞去四川省十二届人大常委会副主任职务．澎湃
+4快讯丨张东升辞去四川省人大常委会副主任职务．四川在线
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 孙志洋任广州市副市长、代市长-新华网</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：孙志洋任广州市副市长、代市长-新华网<br>
+  原页：<a href="http://www.news.cn/politics/2023-10/09/c_1129906281.htm" target="_blank" rel="noopener">http://www.news.cn/politics/2023-10/09/c_1129906281.htm</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.news.cn/politics/2023-10/09/c_1129906281.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">12:40:31
+来源：广州日报
+孙志洋任广州市副市长、代市长
+孙志洋任广州市副市长、代市长
+2023-10-09 12:40:31
+10月9日，广州市第十六届人大常委会第十九次会议决定，接受郭永航辞去广州市人民政府市长职务的请求，孙志洋任广州市人民政府副市长、代理市长。（记者 魏丽娜 通讯员 穗仁宣）
+【责任编辑:吴京泽
+阅读下一篇：
+//微信分享图功能
+var wxfxPic = $.trim($(&quot;#wxpic&quot;).html());
+var detaiWxPic = $(&quot;#wxsharepic&quot;).attr(&quot;src&quot;);
+if(wxfxPic==&quot;&quot;){
+wxfxPic = &#x27;//lib.xinhuanet.com/common/sharelogo.jpg&#x27;;
+if(detaiWxPic){
+var curPageSrc = window.location.href;
+//curPageSrc = &quot;http://www.test.com/2021-02/07/c_1127074750.htm&quot;;
+//console.log(&quot;weizhi:&quot;,curPageSrc.lastIndexOf(&#x27;/&#x27;))
+curPageSrc = curPageSrc.substring(0,curPageSrc.lastIndexOf(&#x27;/&#x27;)+1);
+//console.log(&quot;curPageSrc&quot;,curPageSrc);
+wxfxPic = curPageSrc + detaiWxPic;
+//console.log(&quot;wxfxPic&quot;,wxfxPic);
+console.log(&quot;wxfxPic&quot;,wxfxPic);
+var shareTitle = &#x27;孙志洋任广州市副市长、代市长&#x27;;
+shareTitle = shareTitle.replace(&quot;
+&quot;,&quot;&quot;);
+wxConfig({
+title: shareTitle,
+desc: &#x27;新华网，让新闻离你更近！&#x27;,
+link: window.location.href,
+imgUrl: wxfxPic
+010020020110000000000000011107681129906281
+wd_paramtracker(&quot;_wdxid=010020020110000000000000011107681129906281&quot;)</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

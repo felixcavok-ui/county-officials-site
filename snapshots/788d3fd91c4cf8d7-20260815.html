@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 领导之窗</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：领导之窗<br>
+  原页：<a href="https://www.lieshan.gov.cn/ldzc/index.html" target="_blank" rel="noopener">https://www.lieshan.gov.cn/ldzc/index.html</a><br>
+  存档日期：2026-08-15 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.lieshan.gov.cn/ldzc/index.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">领导之窗_烈山区人民政府 长辈版 网站无障碍 智能问答 加入收藏 网站首页 首页 美丽烈山 领导之窗 新闻中心 政务公开 办事服务 互动交流 数据发布 当前位置： 首页 &gt; 领导之窗 给我写信 刘明 区委书记 我的分工： 主持区委全面工作。 我的简历 刘明，男，汉族，1971年10月生，研究生，中共党员。 领导活动 区委领导 区政府领导 刘明 区委书记 孙露露 区委副书记，区政府区长、党组书记 郝朝军 区委副书记，烈山镇党委书记 任强 区委常委、政法委书记 李峰 区委常委、统战部部长 付海鹏 区委常委、区人武部部长 李晓初 区委常委，区政府副区长、党组副书记 张永恒 区委常委、宣传部部长 陈志斌 区委常委、区纪委书记、区监委主任 高鹏展 区委常委，区政府副区长、党组成员，烈山经开区党工委书记（兼） 杨芳 区委常委、组织部部长、区委党校(区行政学校)校长 孙露露 区委副书记，区政府区长、党组书记 李晓初 区委常委，区政府副区长、党组副书记 高鹏展 区委常委，区政府副区长、党组成员，烈山经开区党工委书记（兼） 代城艳 区政府副区长 陈开展 区政府副区长、党组成员 潘海船 区政府副区长、党组成员 友情链接 市级政府网站 县区级政府网站 联系我们 | 版权声明 | 免责声明 | 违法和不良信息举报中心 | 管理制度 | 网站导航 地址：淮北市烈山区宿丁路6号 联系电话：0561-4685111 主办单位：烈山区人民政府 版权所有：淮北市烈山区人民政府 未经书面允许不得转载或建立镜像 皖公网安备 34060402000001号 皖ICP备13009692号 网站标识码：3406040006 本站已支持IPV6访问
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

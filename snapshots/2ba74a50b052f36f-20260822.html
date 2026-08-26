@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.sohu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.sohu.com<br>
+  原页：<a href="https://www.sohu.com/a/155379331_760156" target="_blank" rel="noopener">https://www.sohu.com/a/155379331_760156</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.sohu.com/a/155379331_760156" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">据河北省纪委消息：日前，经批准，省纪委对衡水市政府党组成员李哲民严重违纪问题进行了立案审查。
+经查，李哲民同志身为党员领导干部，违反组织纪律，采取不正当手段谋取职位；违反廉洁纪律，收受礼金，利用职权为亲属谋取私利。依据《中国共产党纪律处分条例》等有关规定，经省纪委常委会会议研究并报省委批准，决定给予李哲民同志撤销党内职务处分，经省监察厅研究，决定给予其行政撤职处分，降为正处级非领导职务；收缴其违纪所得。
+★人物履历：
+李哲民，男，1962年4月出生，河北深州人，1987年4月加入中国共产党员，1982年2月参加工作。曾任衡水市政府党组成员。2017年7月因严重违纪受到撤销党内职务、行政撤职处分。
+1984.01—1988.01，深县乔屯乡文化站科员
+1988.01—1990.12，深县乔屯乡计生委主任
+1990.12—1992.12，深县乔屯乡专职计生副书记，计生委主任
+1992.12—1994.08，深县乔屯乡党委副书记、乡长
+1994.08—1996.01，深州市乔屯乡党委书记
+1996.01—1996.12，深州市辰时乡党委书记
+1996.12—1998.03，冀州市委常委
+1998.03—2000.02，饶阳县委常委、政法委书记
+2000.02—2003.04，饶阳县委副书记
+2003.04—2007.04，故城县委副书记、县长
+2007.04—2010.04，故城县委书记
+2010.04—2011.01，安平县委书记
+2011.01—2014.05，安平县委书记（副厅级）；
+2014.05—2017.07，衡水市政府党组成员。返回搜狐，查看更多</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · zh.wikipedia.org</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：zh.wikipedia.org<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BB%BA%E6%85%A7" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BB%BA%E6%85%A7</a><br>
+  存档日期：2026-06-27 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BB%BA%E6%85%A7" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">URL: https://zh.wikipedia.org/wiki/%E5%BC%A0%E5%BB%BA%E6%85%A7
+Title: 张建慧 - 维基百科，自由的百科全书
+Fetched: 2026-06-27
+
+张建慧 （1964年8月—），男，汉族， 河南 嵩县 人， 中华人民共和国 政治人物。注册城市规划师，在职 管理学 博士。现任 河南省人大常委会 副主任。曾任 商丘市 市长，河南省自然资源厅厅长，中共 周口市 委书记。 生平 [ 编辑 ] 1981年2月参加工作。1993年12月加入 中国共产党 。2009年3月，任 郑州市 副市长；2011年12月，成为中共郑州市委常委。2012年1月，兼任郑州市委建工委书记。 2014年5月，任 郑东新区 管委会主任，市委建工委书记。 2016年5月，担任 商丘市 市长。 &amp;#91; 1 &amp;#93; 2018年2月24日，当选为 第十三届全国人大代表 &amp;#91; 2 &amp;#93; 。 2021年7月，任 河南省自然资源厅 党组书记、厅长。 &amp;#91; 3 &amp;#93; &amp;#91; 4 &amp;#93; 2022年1月，任中共 周口市 委书记。 &amp;#91; 5 &amp;#93; 2023年1月，当选为 河南省人大常委会 副主任。 &amp;#91; 6 &amp;#93; 
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

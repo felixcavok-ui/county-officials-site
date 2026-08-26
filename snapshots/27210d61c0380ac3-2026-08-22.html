@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.sogou.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.sogou.com<br>
+  原页：<a href="https://baike.sogou.com/v148036983.htm" target="_blank" rel="noopener">https://baike.sogou.com/v148036983.htm</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v148036983.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">李建刚 _ 百科（搜狗百科词条：河北省衡水市人大常委会副主任）
+来源: https://baike.sogou.com/v148036983.htm
+
+李建刚，男，汉族，1962年8月生，安平人，1983年12月入党，1982年10月参加工作，中央党校函授学院法律专业毕业，中央党校在职大学学历。现任衡水市人大常委会副主任、党组成员。
+基本信息
+中文名
+李建刚
+国籍
+中国
+人物履历
+1980.07——1982.10 冀县师范学校学习
+1982.10——1984.09 安平县袁营乡团委书记
+1984.09——1988.09 安平县纪委干事
+1988.09——1990.09 北京大学国际政治系政治学专业干部专修科学习（全日制）
+1990.09——1991.10 安平县纪委干事（借调衡水地区纪委帮助工作）
+1991.10——1992.06 衡水地区纪委办公室科员
+1992.06——1993.02 衡水地区纪委办公室副科级检查员
+1993.02——1994.06 衡水地区纪委办公室秘书科副科长
+1994.06——1995.03 衡水地区纪委办公室正科级检查员
+1995.03——1996.07 衡水地区纪委办公室副主任兼秘书科长（正科级）
+1996.07——1998.07 衡水市纪委办公室副主任（正科级）
+1998.07——2000.02 衡水市纪委监察综合室主任
+2000.02——2000.12 衡水市纪委自律办主任
+2000.12——2002.02 景县县委常委、纪委书记
+2002.02——2006.06 景县县委副书记，纪委书记（其间：2002.08——2004.12在中央党校函授学院法律专业学习）
+2006.06——2007.04 景县县委副书记
+2007.04——2007.06 景县县委副书记、代县长
+2007.06——2013.04 景县县委副书记、县长
+2013.04——2016.05 景县县委书记
+2016.05——2016.12 景县县委书记兼开发区党工委书记
+2016.12——2017.02 换届待安排
+2017.02——2017.04 衡水市人大常委会党组成员
+2017.04—— 衡水市人大常委会副主任、党组成员
+任免信息
+2017年4月9日，衡水市第六届人民代表大会第一次会议举行，选举李建刚为衡水市人大常委会副主任。
+1
+参考资料
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

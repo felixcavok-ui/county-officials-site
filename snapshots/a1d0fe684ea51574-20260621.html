@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 何恩广_360百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：何恩广_360百科<br>
+  原页：<a href="https://baike.so.com/doc/30530532-32413263.html" target="_blank" rel="noopener">https://baike.so.com/doc/30530532-32413263.html</a><br>
+  存档日期：2026-06-21 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.so.com/doc/30530532-32413263.html" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">何恩广 - 湖南省株洲市人民政府代理市长
+
+何恩广，男，汉族，1973年5月生于河南睢县，研究生，工学博士，中共党员，此前担任株洲市委副书记、政法委书记。
+
+现任湖南省株洲市人民政府代理市长
+
+人物简介：
+曾任湖南省永州市委常委、市人民政府党组成员、副市长，永州经开区党委第一书记。现任湖南省株洲市委副书记、市委政法委书记。
+
+任免信息：
+2026年3月31日，湖南省株洲市第十六届人民代表大会常务委员会第三十四次会议通过，决定任命：何恩广为株洲市人民政府副市长。决定：何恩广副市长为株洲市人民政府代理市长。
+
+来源：360百科 https://baike.so.com/doc/30530532-32413263.html</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/%E7%94%B3%E6%99%93%E5%BA%86" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E7%94%B3%E6%99%93%E5%BA%86</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/%E7%94%B3%E6%99%93%E5%BA%86" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">URL: https://zh.wikipedia.org/wiki/%E7%94%B3%E6%99%93%E5%BA%86
+TITLE: 申晓庆 - 维基百科 (raw wikitext)
+ACCESS_DATE: 2026-07-03
+---
+&#x27;&#x27;&#x27;申晓庆&#x27;&#x27;&#x27;（{{bd|1956年||}}），河南武陟人，[[汉族]]，[[中华人民共和国]]政治人物、[[第十一届全国人民代表大会]]贵州地区代表&lt;ref&gt;{{cite web|author=新华网|title=第十一届全国人大代表|url=http://news.xinhuanet.com/ziliao/2008-03/03/content_7708230.htm?node=36628|publisher=新华网|accessdate=2014-01-07|archive-date=2014-01-10|archive-url=https://web.archive.org/web/20140110211415/http://news.xinhuanet.com/ziliao/2008-03/03/content_7708230.htm?node=36628|dead-url=no}}&lt;/ref&gt;。
+
+毕业于[[中央党校在职研究生班]]政治经济学专业，是[[中共]]党员。担任贵州省信息产业厅厅长。2008年起担任全国人大代表&lt;ref&gt;{{cite news|title=全国人大代表信息-申晓庆|url=http://210.82.31.1:8084/delegate/viewDelegate.action?dbid=112273|accessdate=2013-04-05|newspaper=全国人大网|archive-date=2020-03-07|archive-url=https://web.archive.org/web/20200307164151/http://210.82.31.1:8084/delegate/viewDelegate.action?dbid=112273|dead-url=no}}&lt;/ref&gt;。
+
+==參考文獻==
+{{reflist}}
+[[Category:第十一届全国人大代表]]</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

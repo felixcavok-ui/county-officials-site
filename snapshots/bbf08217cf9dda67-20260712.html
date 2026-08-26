@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 市十五届人大三次会议开幕</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：市十五届人大三次会议开幕<br>
+  原页：<a href="http://www.czrd.gd.cn/detail/1339" target="_blank" rel="noopener">http://www.czrd.gd.cn/detail/1339</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.czrd.gd.cn/detail/1339" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">市十五届人大三次会议开幕 - 潮州人大网
+.conDetailTitle
+{
+font:bold 24px &quot;Microsoft Yahei&quot; !important;
+}
+.conDetailMain
+{
+margin: 0 !important;
+padding: 0 !important;
+padding-top: 24px !important;
+}
+.conDetailMain p
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain span
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain section
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+$(function() {
+// 页面加载后执行的代码
+$(&quot;img&quot;).each(function() {
+if ($(&quot;this&quot;).parent().parent().is(&quot;.conDetailMain&quot;)) {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}else {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(this).parent().parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}
+});
+});
+function setDateTime(id){
+var d = new Date();
+var vYear = d.getFullYear();
+var vMon = d.getMonth() + 1;
+var vDay = d.getDate();
+var date = vMon+&quot;/&quot;+vDay+&quot;/&quot;+vYear; //此处也可以写成 17/07/2014 一样识别也可以写成 07-17-2014 但需要正则转
+var day = new Date(Date.parse(date)); //需要正则转换的则此处为 : var day = new Date(Date.parse(date.replace(/-/g, &#x27;/&#x27;)));
+var today = new Array(&#x27;星期日&#x27;,&#x27;星期一&#x27;,&#x27;星期二&#x27;,&#x27;星期三&#x27;,&#x27;星期四&#x27;,&#x27;星期五&#x27;,&#x27;星期六&#x27;);
+var week = today[day.getDay()];
+var thistext = &quot;今天是:&quot; + vYear + &quot;年&quot; + vMon + &quot;月&quot; + vDay + &quot;日&quot; + &quot; &quot; + week;
+$(&quot;#&quot;+id).html(thistext);
+}
+$(function(){
+$(&quot;.first_span&quot;).each(function(index, element) {
+$(this).hover(function(){
+$(&quot;.first_span&quot;).removeClass(&quot;current&quot;);
+$(this).addClass(&quot;current&quot;);
+});
+});
+setDateTime(&quot;headTime&quot;);
+});
+// 设为首页
+function SetHome(obj,url){
+try{
+obj.style.behavior=&#x27;url(#default#homepage)&#x27;;
+obj.setHomePage(url);
+}catch(e){
+if(window.netscape){
+try{
+netscape.security.PrivilegeManager.enablePrivilege(&quot;UniversalXPConnect&quot;);
+}catch(e){
+alert(&quot;抱歉,此操作被浏览器拒绝!\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为&#x27;true&#x27;&quot;);
+}
+}else{
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n您需要手动将【&quot;+url+&quot;】设置为首页。&quot;);
+}
+}
+}
+// 收藏本站
+function AddFavorite(title, url) {
+try {
+window.external.addFavorite(url, title);
+}
+catch (e) {
+try {
+window.sidebar.addPanel(title, url, &quot;&quot;);
+}
+catch (e) {
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n加入收藏失败,请使用Ctrl+D进行添加&quot;);
+}
+}
+}
+function query() {
+if ($.trim($(&quot;#txt_title&quot;).val()) == &quot;&quot;)
+{
+alert(&quot;请输入搜索内容&quot;);
+}else {
+window.open(&quot;/serlist/1?keyword=&quot; + $.trim($(&quot;#txt_title&quot;).val()));
+}
+}
+返回首页|设为首页 |加入收藏
+欢迎访问潮州人大网!
+swfobject.registerObject(&quot;FlashID&quot;);
+网站首页
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大新闻
+图片新闻
+文字新闻
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+立法工作
+法规资料库
+立法动态
+立法规划计划
+立法制度
+立法文件
+征求意见
+地方法规--&gt;
+人事任免
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+民声期刊
+--&gt;
+关键字 :
+全文搜索
+潮州人大网欢迎
+打印
+您当前的位置 :
+首页&gt;&gt;人大会议&gt;&gt;人代会会议&gt;&gt;正文
+市十五届人大三次会议开幕
+刘小涛主持大会殷昭举作政府工作报告
+来源 : 潮州日报
+作者 : 袁晓金--&gt;
+发布时间 : 2018-01-18 10:25:00
+点击数 : 10792--&gt;
+昨天上午，潮州市第十五届人民代表大会第三次会议在市党政机关会堂开幕。来自全市各条战线的代表肩负着全市270多万人民群众的重托，满怀豪情、汇聚一堂，共商潮州发展大计。
+　　开幕大会由大会主席团常务主席、大会执行主席刘小涛主持。市长殷昭举向大会作《政府工作报告》。
+　　大会主席团常务主席、大会执行主席刘小涛、林壮森、姚继新、陈少宏、黄洪、黄潮标、林跃、陈史青、杨顺才、陈少鹏出席大会并在主席台前排就座。
+　　出席大会并在主席台就座的还有市领导和港澳知名人士殷昭举、杨志明、陈伟南、徐和、赵红、王少勇、张传胜、赖建华、林小群、余鸿纯、王文森、钟明、洪岳伟、朱卫民、郑锦鹏、陈炫秋、陈耿之、吴启忠、林喜君、柯泓、张如文、汤强华、刘松涛、邓夏思、陈伊拉、张剑峰，主席团其他成员，以及驻我市的十二届全国人大代表、驻潮部队首长和有关单位负责同志。
+　　殷昭举代表市人民政府向大会作《政府工作报告》。报告分为2017年工作回顾、2018年工作安排两大部分。
+　　报告指出，过去一年，是我市凝心聚力抓建设、砥砺奋进促发展、坚定不移惠民生的一年。在省委、省政府和市委的正确领导下，在市人大及其常委会和市政协的监督支持下，市政府坚持以习近平新时代中国特色社会主义思想为指引，深入落实党的十八大、十八届中央历次全会精神，认真贯彻落实党的十九大精神、习近平总书记对广东工作的重要指示批示精神以及省第十二次党代会、市第十四次党代会精神，聚焦实体经济，狠抓重点项目，锐意改革攻坚，深推惠民共享，有力促进经济社会平稳健康发展。据初步测算，全市实现生产总值1075亿元，突破千亿大关，比上年增长7%；人均生产总值4万元左右，增长6.8%；一般公共预算收入44.6亿元，增长1.9%；各项税收总收入95.9亿元，增长6.1%；固定资产投资500亿元，增长10%；城乡居民人均可支配收入1.9万元，增长7%。
+　　在肯定成绩的同时，报告指出，我市经济社会发展不平衡不充分问题仍较突出。主要有：经济总量不大，产业结构不优，规模经济不强，发展质量和效益相对较低；配套设施不完善，城市管理水平不高，环境治理任重而道远，综合竞争力亟待提升；公共服务供给能力不足，普惠民生的力度有待进一步增强；行政体制机制还不够完善，改革攻坚还需深入推进，政府法治意识和作风建设仍需加强。对此，要高度重视，采取强有力措施加以解决。
+　　报告指出，2018年是贯彻落实党的十九大精神的开局之年，是改革开放40周年，是决胜全面建成小康社会、实施“十三五”规划承上启下的关键一年。今年政府工作的总体要求是：高举习近平新时代中国特色社会主义思想伟大旗帜，全面贯彻党的十九大精神和中央经济工作会议、农村工作会议精神以及省委十二届二次、三次全会精神，围绕市第十四次党代会确定的总体思路和市委十四届四次全会的部署要求，坚持稳中求进总基调，坚持新发展理念，按照高质量发展的要求，统筹推进稳增长、促改革、调结构、惠民生各项工作，打好防范化解重大风险、精准脱贫、污染防治三大攻坚战，着力优化政治生态、经济生态、自然生态，促进经济社会持续健康发展，加快建设享誉中外、独具品质、宜业宜居宜游的潮文化精品城市和世界潮人精神家园。
+　　报告指出，综合各方面因素，今年我市经济社会发展的主要预期目标是：生产总值增长7%左右，一般公共预算收入增长6%，固定资产投资增长12%，外贸进出口总额增长3%，全社会消费品零售总额增长10%，居民消费价格指数涨幅控制在3%以内，居民收入增长与经济增长基本同步，城镇登记失业率控制在3.5%以内，大气、水环境质量改善完成国家、省下达目标任务，供给侧结构性改革取得实质性进展，金融财政风险有序高效防控。
+　　报告指出，为实现上述目标，今年将全力以赴抓好六方面工作：一是聚焦创新驱动，振兴实体经济，着力做强创新经济、做优存量经济、做大增量经济、做活做实第三产业；二是聚焦基础设施，完善城市配套，大力推进城镇化建设、交通建设、水利建设和信息化建设；三是聚焦改革攻坚，提升开放水平，深化供给侧结构性改革，推动形成全面开放新格局；四是聚焦综合治理，优化发展环境，全面优化营商、城乡、平安、生态四大环境；五是聚焦共建共享，增进民生福祉，保障和改善民生，积极实施乡村振兴战略，提高基本公共服务水平；六是聚焦党的建设，提高政府效能，进一步健全机制、完善制度、正风肃纪、提高效率，着力建设干净担当、务实高效的服务型政府。
+　　大会印发了《潮州市2017年国民经济和社会发展计划执行情况与2018年计划草案的报告》、《潮州市2017年预算执行情况和2018年预算草案的报告》作为书面报告，交代表审议；通过了《潮州市第十五届人民代表大会第三次会议选举办法》。
+　　驻我市的省十二届人大代表、出席政协潮州市十二届二次会议的委员和市直有关单位负责人列席大会。大会还邀请部分市民旁听。
+2018-01-17
+上一篇:
+潮州市第十五届人民代表大会第三次会议议案审查委员会主任委员、副主任委员、委员名单
+2018-01-18
+下一篇:
+市十五届人大三次会议主席团举行第二次会议
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+document.write(unescape(&quot;%3Cspan id=&#x27;_ideConac&#x27; %3E%3C/span%3E%3Cscript src=&#x27;http://dcs.conac.cn/js/20/306/0000/60087298/CA203060000600872980001.js&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));
+主办单位:潮州市人民代表大会常务委员会办公室承建单位:中国电信潮州分公司
+中文域名:潮州市人大常委会办公室.政务邮编:521000 粤ICP备12081286号</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

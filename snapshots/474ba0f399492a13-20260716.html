@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.baidu.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.baidu.com<br>
+  原页：<a href="https://baike.baidu.com/item/%E8%83%A1%E5%85%83%E5%9D%A4/11070634" target="_blank" rel="noopener">https://baike.baidu.com/item/%E8%83%A1%E5%85%83%E5%9D%A4/11070634</a><br>
+  存档日期：2026-07-16 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E8%83%A1%E5%85%83%E5%9D%A4/11070634" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">胡元坤，1970年1月出生，江苏沭阳人，汉族，中共党员，拥有在职研究生学历和管理学博士学位，毕业于南京农业大学。现任四川省人民政府党组成员、秘书长、办公厅党组书记。
+
+教育背景
+
+1987年至1991年，他在中山大学攻读经济地理与城乡区域规划专业。2000年至2003年，在南京农业大学土地资源管理专业在职攻读研究生，获管理学博士学位。
+
+工作履历
+
+胡元坤的职业生涯始于江苏省民政厅，1991年至1996年间历任办公室干部、科员、副主任科员。随后调入江苏省政府办公厅，先后担任工交处副主任科员、主任科员，以及秘书四处助理调研员。
+
+1999年，他调往农业部，先后任办公厅秘书处干部、副处级秘书、正处级秘书。2004年任农业部发展计划司发展规划处处长，2006年升任种植业管理司副司长。2012年任农业部直属机关党委常务副书记。
+
+2013年12月，他挂职四川省成都市委常委，此后历任成都市委常委、组织部部长、市委党校校长、市委城乡社区发展治理委员会主任等职。
+
+2020年1月，调任眉山，先任市委副书记、代市长，同年4月当选市长。2021年7月至2024年9月，任眉山市委书记，并兼任眉山军分区党委第一书记。
+
+2024年9月至2025年7月，任四川省委组织部常务副部长。2025年7月任省政府党组成员、办公厅党组书记，2025年9月正式被任命为省政府秘书长、办公厅党组书记。
+
+职务任免
+
+根据四川省十四届人大常委会第二十一次会议的决定，2025年9月30日胡元坤被任命为四川省人民政府秘书长。
+
+其他职务
+
+他是中共二十大代表、第十二届四川省委委员、四川省第十二次党代会代表，以及四川省第十三届、十四届人大代表。在2025年9月前，还担任四川省第十四届人大常委会委员及代表资格审查委员会副主任委员。
+
+学术成果
+
+他曾参与多项重大规划编制和重点课题研究，包括&quot;农业和农村经济发展&#x27;十一五&#x27;规划&quot;、粮食综合生产能力保护等。发表过关于粮食安全和农村土地制度变迁的论文，并出版了《中国农村土地制度变迁的动力机制研究》一书。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

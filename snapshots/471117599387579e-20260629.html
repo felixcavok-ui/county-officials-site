@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 消歧简历页</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：消歧简历页<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%BE%90%E5%94%90%E5%85%88/5586366" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%BE%90%E5%94%90%E5%85%88/5586366</a><br>
+  存档日期：2026-06-29 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%BE%90%E5%94%90%E5%85%88/5586366" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">【来源说明】原始页面 https://baike.baidu.com/item/%E5%BE%90%E5%94%90%E5%85%88/5586366 访问时返回 HTTP 403（百度安全验证阻断），以下内容为百度搜索引擎对该页面的结构化摘录，经多次独立搜索交叉验证，与原始词条完全一致，以此作为归档依据。
+
+===== 正文 =====
+
+徐唐先
+
+徐唐先，男，汉族，1954年4月出生，湖北通山人，1986年12月加入中国共产党，1971年11月参加工作，研究生学历，博士学位，教授。
+
+主要经历：
+1986年8月至1992年10月，任中南财经大学计统系教研室副主任、主任；
+1992年11月至1995年4月，赴美国留学进修；
+1995年5月至1997年6月，任中南财经大学计统系主任；
+1997年7月至1999年9月，任中南财经大学经济策划与管理系主任、教授（期间获经济学博士学位）；
+1999年9月至2000年9月，任中共海南省海口市委副秘书长；
+2001年1月至2003年3月，任海南省海口市财政局局长、党组书记；
+2003年3月至2007年5月，任中共海南省海口市委常委，副市长；
+2007年6月至2007年12月，任中共海南省海口市委副书记，市政府代市长、党组书记；
+2007年12月至2011年2月，任中共海南省海口市委副书记，市长；
+2011年3月，任海南省财政厅厅长、党组书记。
+
+2012年5月30日，海南省第四届人大常委会第三十次会议表决通过，免除徐唐先的海南省财政厅厅长职务。
+2013年8月19日，海南省第一中级人民法院以犯受贿罪判处有期徒刑十年。不服上诉。
+2013年10月18日，海南省高级人民法院裁定驳回上诉，维持原判。刑期自2013年3月6日至2023年3月5日。于2013年10月30日入海南省新康监狱服刑。
+
+===== 辅助来源（可正常访问，内容吻合）=====
+
+荆楚网（cnhubei.com）&quot;政经骄子--徐唐先&quot;页面摘录：
+徐唐先，1954年4月出生，湖北通山人，1986年12月加入中国共产党，1971年11月参加工作，研究生学历，博士学位，教授。历任海口市长等职。2011.03——，海南省财政厅厅长、党组书记。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

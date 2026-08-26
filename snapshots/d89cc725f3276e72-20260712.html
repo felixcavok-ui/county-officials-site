@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 市十四届人大六次会议开幕</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：市十四届人大六次会议开幕<br>
+  原页：<a href="http://www.czrd.gd.cn/detail/974" target="_blank" rel="noopener">http://www.czrd.gd.cn/detail/974</a><br>
+  存档日期：2026-07-12 · 信源分级：A · <a href="https://web.archive.org/web/*/http://www.czrd.gd.cn/detail/974" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">市十四届人大六次会议开幕 - 潮州人大网
+.conDetailTitle
+{
+font:bold 24px &quot;Microsoft Yahei&quot; !important;
+}
+.conDetailMain
+{
+margin: 0 !important;
+padding: 0 !important;
+padding-top: 24px !important;
+}
+.conDetailMain p
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain span
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+.conDetailMain section
+{
+font-size: 18px !important;
+line-height: 36px !important;
+font-family: &quot;Microsoft Yahei&quot; !important;
+margin-bottom: 16px !important;
+text-indent:2em !important;
+}
+$(function() {
+// 页面加载后执行的代码
+$(&quot;img&quot;).each(function() {
+if ($(&quot;this&quot;).parent().parent().is(&quot;.conDetailMain&quot;)) {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}else {
+$(this).parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(this).parent().parent().attr(&quot;style&quot;, &quot;text-align: center !important; text-indent:0em !important;&quot;);
+$(&quot;.conDetailMain&quot;).attr(&quot;style&quot;, &quot;&quot;);
+}
+});
+});
+function setDateTime(id){
+var d = new Date();
+var vYear = d.getFullYear();
+var vMon = d.getMonth() + 1;
+var vDay = d.getDate();
+var date = vMon+&quot;/&quot;+vDay+&quot;/&quot;+vYear; //此处也可以写成 17/07/2014 一样识别也可以写成 07-17-2014 但需要正则转
+var day = new Date(Date.parse(date)); //需要正则转换的则此处为 : var day = new Date(Date.parse(date.replace(/-/g, &#x27;/&#x27;)));
+var today = new Array(&#x27;星期日&#x27;,&#x27;星期一&#x27;,&#x27;星期二&#x27;,&#x27;星期三&#x27;,&#x27;星期四&#x27;,&#x27;星期五&#x27;,&#x27;星期六&#x27;);
+var week = today[day.getDay()];
+var thistext = &quot;今天是:&quot; + vYear + &quot;年&quot; + vMon + &quot;月&quot; + vDay + &quot;日&quot; + &quot; &quot; + week;
+$(&quot;#&quot;+id).html(thistext);
+}
+$(function(){
+$(&quot;.first_span&quot;).each(function(index, element) {
+$(this).hover(function(){
+$(&quot;.first_span&quot;).removeClass(&quot;current&quot;);
+$(this).addClass(&quot;current&quot;);
+});
+});
+setDateTime(&quot;headTime&quot;);
+});
+// 设为首页
+function SetHome(obj,url){
+try{
+obj.style.behavior=&#x27;url(#default#homepage)&#x27;;
+obj.setHomePage(url);
+}catch(e){
+if(window.netscape){
+try{
+netscape.security.PrivilegeManager.enablePrivilege(&quot;UniversalXPConnect&quot;);
+}catch(e){
+alert(&quot;抱歉,此操作被浏览器拒绝!\n\n请在浏览器地址栏输入“about:config”并回车然后将[signed.applets.codebase_principal_support]设置为&#x27;true&#x27;&quot;);
+}
+}else{
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n您需要手动将【&quot;+url+&quot;】设置为首页。&quot;);
+}
+}
+}
+// 收藏本站
+function AddFavorite(title, url) {
+try {
+window.external.addFavorite(url, title);
+}
+catch (e) {
+try {
+window.sidebar.addPanel(title, url, &quot;&quot;);
+}
+catch (e) {
+alert(&quot;抱歉,您所使用的浏览器无法完成此操作。\n\n加入收藏失败,请使用Ctrl+D进行添加&quot;);
+}
+}
+}
+function query() {
+if ($.trim($(&quot;#txt_title&quot;).val()) == &quot;&quot;)
+{
+alert(&quot;请输入搜索内容&quot;);
+}else {
+window.open(&quot;/serlist/1?keyword=&quot; + $.trim($(&quot;#txt_title&quot;).val()));
+}
+}
+返回首页|设为首页 |加入收藏
+欢迎访问潮州人大网!
+swfobject.registerObject(&quot;FlashID&quot;);
+网站首页
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大新闻
+图片新闻
+文字新闻
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+立法工作
+法规资料库
+立法动态
+立法规划计划
+立法制度
+立法文件
+征求意见
+地方法规--&gt;
+人事任免
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+民声期刊
+--&gt;
+关键字 :
+全文搜索
+潮州人大网欢迎
+打印
+您当前的位置 :
+首页&gt;&gt;人大会议&gt;&gt;人代会会议&gt;&gt;正文
+市十四届人大六次会议开幕
+来源 : 潮州新闻网
+作者 : 庞磊成--&gt;
+发布时间 : 2016-02-18 14:49:00
+点击数 : 12094--&gt;
+今天上午，潮州市第十四届人民代表大会第六次会议在市党政机关会堂开幕。市人大常委会主任、大会主席团常务主席李水华主持大会。市长卢淳杰向大会作政府工作报告。
+大会主席团常务主席、大会执行主席李水华、谢烈鹏、雷健民、刘爱华、张如文、黄洪、黄潮标、魏清潮在主席台前排就座。
+出席大会并在主席台就座的还有市领导、港澳知名人士、老同志和有关单位负责人卢淳杰、蔡泽辉、陈伟南、陈远睦、黄福永、田映生、蔡和昌、张锡文、陈丽文、林壮森、瞿建波、徐和、张帆、殷昭举、许志晖、黄远通、陈少宏、许典辉、余鸿纯、郑锦鹏、陈声亮、吴振声、沈启绵、郑佳坤、肖裕钦、许实德、苏仰钦、李娜、陈炫秋、邓夏思、陈伊拉、马锦成、王拥和、汤强华、张传胜，主席团其他成员，驻我市的十二届全国人大代表、驻潮部队首长、工商联及上级驻潮有关单位负责同志等。
+卢淳杰代表市人民政府向大会作政府工作报告。报告分为“十二五”时期工作回顾、“十三五”时期目标任务和2016年主要工作三大部分。
+报告指出，“十二五”时期，是我市发展史上很不平凡、综合实力大幅提升、产业结构调整优化、全面深化改革开放、促进城乡协调发展和社会事业明显进步的五年。在省委省政府和市委的正确领导下，在市人大及其常委会和市政协的监督支持下，坚持以党的十八大和十八届三中、四中、五中全会精神为指导，深入学习贯彻习近平总书记系列重要讲话精神，全面落实省振兴粤东西北各项决策部署，谋划推进“一中心三片区”建设，统筹抓好稳增长、调结构、促改革、惠民生、防风险各项工作，“十二五”规划主要目标任务基本完成，为决胜“十三五”、决战2016年打下坚实基础。
+报告指出，回顾“十二五”，我市经济社会发展中还存在不少矛盾和问题。一是经济总量不够大，市场主体不够多，创新能力不够强，发展质量不高。二是农业现代化步伐偏慢，工业集约集聚程度不高，服务业发展相对滞后，产业结构不够优化。三是资源环境约束日益明显，“两违”整治任务艰巨，城乡发展环境仍亟待改善。四是关系群众切身利益的问题仍然较多，人民生活水平提高不够快，公共服务供给能力依然不足。五是政府职能转变不到位，少数政府工作人员存在形式主义、官僚主义、担当不够和消极腐败现象，依法行政能力仍需进一步增强。
+报告强调，“十三五”时期，是我市加快“一中心三片区”建设、实现凤凰展翅腾飞的重要时期。综合考虑我市发展趋势和各种因素，预期发展目标为：生产总值年均增长11%以上，到2020年达到1700亿元以上；人均生产总值年均增长10.5%以上，到2020年达到1万美元；一般公共预算收入年均增长14%以上，力争到2020年达到100亿元；固定资产投资力度加大，年均增长25%左右；城乡发展差距缩小，城镇化水平提高到66%以上。
+报告提出，“十三五”时期，政府工作的指导思想是：全面贯彻党的十八大和十八届三中、四中、五中全会精神，以邓小平理论、“三个代表”重要思想、科学发展观为指导，深入学习贯彻习近平总书记系列重要讲话精神，围绕“五位一体”总体布局和“四个全面”战略布局，围绕省委省政府振兴粤东西北战略部署，围绕“一中心三片区”战略定位，牢固树立“创新、协调、绿色、开放、共享”发展理念，坚持全面深化改革、强化创新驱动引领，推进城乡协调发展，建设绿色生态家园，不断扩大对外开放，切实增进民生福祉，确保全面建成小康社会。将突出重点抓好以下工作：坚持创新发展，激发经济原生动力；坚持协调发展，优化区域空间布局；坚持绿色发展，建设潮人生态家园；坚持开放发展，增强经济发展后劲；坚持共享发展，增创社会民生福祉；坚持依法行政，打造有力有为政府。
+报告指出，2016年是决胜“十三五”、实现全面小康的开局之年，是美好蓝图落实落地之年。根据“十三五”发展规划，并综合考虑各种因素，今年全市经济社会发展预期目标是：生产总值增长10.5%以上，一般公共预算收入增长13.5%以上，固定资产投资增长26%，出口总值增长5%，社会消费品零售总额增长12%，居民消费价格指数涨幅控制在3%以内，城镇登记失业率控制在3.5%以下，城乡居民收入增长与经济增长基本同步，节能减排降碳约束性指标完成省下达的年度计划。
+报告提出，为实现上述目标，今年政府工作的指导思想是：牢固树立创新、协调、绿色、开放、共享的发展理念，围绕中央、省委省政府和市委十三届六次全会的各项部署，以后发赶超为目标导向，以落地落实为重要抓手，以有力有为政府为支撑，大力弘扬创业拼搏的“红头船”精神和追求精致的“一根牛绳”精神，深入践行“三严三实”，适应和引领新常态，突出重点项目带动，建好重大发展平台，扎实推进“三大抓手”，加快实施“八网”建设，切实增进民生福祉，奋力建设“一中心三片区”，全力决战2016年，为决胜“十三五”、实现全面小康开好局、起好步。今年将实施项目攻坚行动，坚持项目为王、动工为先，突出项目带动引领，加强重点项目建设，增强经济发展后劲；加快重大平台建设，围绕打造“一中心三片区”目标，突出韩东新城、高铁新城、闽粤经济合作区和凤泉湖高新区四大发展平台建设，加强土地征收储备和招商引资工作，形成新的经济增长点；推进产业创新发展，围绕主导产业，坚持创新驱动，打造产业集群，完善产业体系，促进实业兴市；全面深化改革，进一步扩大开放，切实用好内外两个市场、两种资源，着力打造转型发展新引擎；构筑绿色生态环境，深入开展“抓三治、清三资、治三乱”工作，切实加强环境保护，全面提升生态文明建设水平，创建粤东最干净城市；建设现代宜居城市，加强城市建设管理，推动城市硬件设施和软实力双提升、人与城市共发展；优化提升公共服务，坚持守住底线、突出重点、完善制度，加大财政投入力度，推动民生工作再上新台阶；建设有力有为政府，认真落实省委巡视组反馈意见整改工作，坚持依法行政，改进行政服务，打造法治廉洁政府，全面提升政府整体工作水平。
+会议审查了潮州市国民经济和社会发展第十三个五年规划纲要草案、潮州市2015年国民经济和社会发展计划执行情况与2016年计划草案的报告及2016年国民经济和社会发展计划草案、潮州市2015年预算执行情况和2016年预算草案的报告及2016年预算草案。
+会议还听取了市人大常委会副主任黄潮标所作《潮州市制定地方性法规条例（草案）》的说明；表决通过《潮州市第十四届人民代表大会第六次会议关于设立潮州市第十四届人民代表大会法制委员会的决定（草案）》，表决通过法制委员会组成人员人选办法草案及主任委员、副主任委员、委员名单草案；表决通过《潮州市第十四届人民代表大会第六次会议选举办法（草案）》。
+出席市政协十一届五次会议的委员和市直有关单位负责人列席大会。大会还邀请部分市民旁听。
+2016-02-17
+上一篇:
+潮州市第十四届人民代表大会第六次会议主席团常务主席名单
+2016-02-18
+下一篇:
+潮州市第十四届人民代表大会法制委员会主任委员、副主任委员、委员名单
+人大概况
+本届市人大常委会领导
+本届市人大常委会组成人员
+本届市人大代表
+我市选出的省人大代表
+驻我市的全国人大代表
+人大机构及职能
+人大会议
+人代会会议
+常委会会议
+主任会议
+决议决定
+人大监督
+监督公开
+执法检查
+视察活动
+调研活动
+代表工作
+代表履职
+代表小组活动
+议案建议
+联系代表
+代表培训
+代表风采
+理论研究
+人大知识
+实践与探讨
+document.write(unescape(&quot;%3Cspan id=&#x27;_ideConac&#x27; %3E%3C/span%3E%3Cscript src=&#x27;http://dcs.conac.cn/js/20/306/0000/60087298/CA203060000600872980001.js&#x27; type=&#x27;text/javascript&#x27;%3E%3C/script%3E&quot;));
+主办单位:潮州市人民代表大会常务委员会办公室承建单位:中国电信潮州分公司
+中文域名:潮州市人大常委会办公室.政务邮编:521000 粤ICP备12081286号</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

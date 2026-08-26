@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E5%90%95%E4%B8%9A%E5%8D%87/8532062" target="_blank" rel="noopener">https://baike.baidu.com/item/%E5%90%95%E4%B8%9A%E5%8D%87/8532062</a><br>
+  存档日期：2026-07-12 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E5%90%95%E4%B8%9A%E5%8D%87/8532062" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源：百度百科 吕业升词条
+URL: https://baike.baidu.com/item/%E5%90%95%E4%B8%9A%E5%8D%87/8532062
+抓取日期：2026-07-12（CDP 渲染）
+========================================
+
+吕业升，男，汉族，1962年9月生，广东鹤山人，1987年6月加入中国共产党，1981年12月参加工作，省委党校经济学专业在职研究生班毕业，省委党校研究生学历。
+现任广东省人大常委会党组成员。 [6-8]
+中文名
+吕业升
+国    籍
+中国
+民    族
+汉族
+籍    贯
+广东鹤山
+出生日期
+1962年9月
+毕业院校
+广东省委党校
+目录
+1人物履历
+2担任职务
+人物履历
+播报
+1981—1985年 广东省云浮县公安局秘书股资料员
+1985—1987年 广东省政法管理干部学院干部专修科公安专业学习
+1987—1991年 广东省云浮县六都镇派出所所长，镇党委委员、副书记
+1991—1994年 广东省云浮县高峰镇党委书记、镇政府镇长
+1994—1996年 广东省云浮市云城区政府副区长、外经贸局局长
+1996—1996年 广东省云安县委常委、县政府副县长
+1996—1997年 广东省云安县委副书记、县政府副县长（1997.04正处级）
+1997—1998年 共青团广东省委副书记、党组成员
+1998—2000年 广东中旅（集团）有限公司董事长、总经理、党委副书记（1995.09—1998.07广东省委党校经济学专业在职研究生班学习）
+2000—2009年 广东中旅（集团）有限公司董事长、党委书记（其间：2007.09—2007.11广东省委党校市厅级领导干部进修班学习）
+2009—2011年 广东省广业资产经营有限公司董事长、党委书记
+2011—2012年 广东省机场管理集团公司董事长、党委书记
+2012—2013年 广东省机场管理集团有限公司董事长、党委书记
+2013—2016年 广东省国资委主任、党委书记
+2016—2017年 广东省东莞市委书记
+2017—2018年 广东省东莞市委书记，市人大常委会主任、党组书记
+2018—2019年 广东省人大常委会副主任、党组成员，省总工会党组书记（2018.04）、主席（2018.05） [1-2] [4]
+2019—2023年 广东省人大常委会副主任、党组成员，省总工会主席 [3] [9-10]
+2023—2025年 广东省人大常委会党组成员，省总工会主席 [7] [11-12]
+2025— 广东省人大常委会党组成员 [8] [13]
+担任职务
+播报
+中共十九大代表，广东省第十四届人大代表。 [1] [5]
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

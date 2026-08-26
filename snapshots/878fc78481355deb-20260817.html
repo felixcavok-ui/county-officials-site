@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 董东明-快懂百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：董东明-快懂百科<br>
+  原页：<a href="http://www.baike.com/wiki/%E8%91%A3%E4%B8%9C%E6%98%8E" target="_blank" rel="noopener">http://www.baike.com/wiki/%E8%91%A3%E4%B8%9C%E6%98%8E</a><br>
+  存档日期：2026-08-17 · 信源分级：C · <a href="https://web.archive.org/web/*/http://www.baike.com/wiki/%E8%91%A3%E4%B8%9C%E6%98%8E" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">1995.12—1999.03 江西省乐安县政府办副主任
+1999.03—2002.03 江西省乐安县政府办主任（其间：1999.09—2001.12
+2005.09—2008.06 江西省崇仁县委常委、常务副县长
+2008.06—2013.09 江西省崇仁县委副书记
+2016.10—2019.09 江西省抚州市临川区委副书记、区政府党组书记、区长
+2020.01 江西省抚州市临川区委书记
+2023年6月20日，江西中医药高等专科学校召开干部大会，宣布省委关于学校党委书记任命的决定：董东明同志任江西中医药高等专科学校党委书记。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

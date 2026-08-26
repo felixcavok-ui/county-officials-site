@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 大连市人民政府·领导信息</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：大连市人民政府·领导信息<br>
+  原页：<a href="https://www.dl.gov.cn/col/col9942/" target="_blank" rel="noopener">https://www.dl.gov.cn/col/col9942/</a><br>
+  存档日期：2026-07-10 · 信源分级：A · <a href="https://web.archive.org/web/*/https://www.dl.gov.cn/col/col9942/" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">大连市人民政府 郁林涛 1政务公开/col/col15/index.html政府领导/col/col46/index.html副市长https://www.dl.gov.cn/col/col46/index.html#lds_2郁林涛/col/col9942/index.html 首页 &gt;政务公开&gt;政府领导&gt;副市长&gt;郁林涛 副市长 郁林涛 给我写信 个人简介 郁林涛，男，汉族，1974年9月出生，中共党员，大学学历，学士学位。现任大连市人民政府副市长、党组成员，市公安局党委书记、局长。 工作分工 负责公安、司法等方面工作，协助负责信访工作。 分管市公安局、市司法局，协助分管市信访局。 联系市法院、市检察院、市法学会，大连海事法院、市国家安全局。 市政府领导同志履行“一岗双责”，负责（监督）分管单位的党风廉政建设，抓好分管领域安全生产、信访维稳、生态环境等方面工作。 市长 李强 副市长 邱宝林 李丹 王少洪 郁林涛 牟傲风 赵东 高云鹏 秘书长 汤易 市政府党组成员 姜斌 刘宝庆</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

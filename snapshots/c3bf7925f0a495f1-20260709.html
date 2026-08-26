@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 人物简历</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：人物简历<br>
+  原页：<a href="http://district.ce.cn/newarea/sddy/201801/30/t20180130_27975606_4.shtml" target="_blank" rel="noopener">http://district.ce.cn/newarea/sddy/201801/30/t20180130_27975606_4.shtml</a><br>
+  存档日期：2026-07-08 · 信源分级：B · <a href="https://web.archive.org/web/*/http://district.ce.cn/newarea/sddy/201801/30/t20180130_27975606_4.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">维色简历 维色，男，藏族，1960年12月生，西藏拉萨人，1987年9月加入中国共产党，1985年7月参加工作，大学学历。 1978.09—1979.09 西藏自治区加查县园艺场知青 1979.09—1980.09 西藏民族学院语文系汉语言文学专业学习 1980.09—1985.07 重庆大学机械工程系机械制造工艺设备及自动化专业学习 1985.07—1987.09 西藏自治区机械修配厂工作 1987.09—1990.01 西藏自治区机械修配厂生产技术科副科长、科长 1990.01—1991.01 西藏自治区机械修配厂制配服务中心主任 1991.01—1992.12 西藏自治区机械修配厂办公室主任 1992.12—1995.02 西藏自治区工业电力厅工业处主任科员 1995.02—1996.12 西藏自治区工业电力厅工业处副处长 1996.12—2000.02 西藏自治区经贸委企业处副处长 2000.02—2001.05 西藏自治区经贸委企业处处长 2001.05—2003.01 西藏自治区经贸委党委委员、副主任 2003.01—2008.02 西藏自治区昌都地委副书记、行署专员（其间：2005.06—2005.09国务院发展研究中心、哈佛大学肯尼迪政府学院、清华大学公共管理学院公共管理高级培训班学习） 2008.02—2013.01 西藏自治区纪委副书记、监察厅厅长 2013.01— 西藏自治区人大常委会副主任 .clear{ clear:both;} .pictit{ float:left; margin-right:20px; width:280px; text-align:center; margin-bottom:20px; display:inline;} #articleText .pictit h3{ font-size:16px; font-weight:bolder; padding:0px; margin:10px 0px; color:#c00;} .pictit img{ border:none;}</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

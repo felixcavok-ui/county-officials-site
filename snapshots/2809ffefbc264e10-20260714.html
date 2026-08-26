@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 何金平当选云南省大理州州长</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：何金平当选云南省大理州州长<br>
+  原页：<a href="https://www.chinanews.com/gn/news/2008/02-25/1173093.shtml" target="_blank" rel="noopener">https://www.chinanews.com/gn/news/2008/02-25/1173093.shtml</a><br>
+  存档日期：2026-07-14 · 信源分级：B · <a href="https://web.archive.org/web/*/https://www.chinanews.com/gn/news/2008/02-25/1173093.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">何金平当选云南省大理州州长
+来源：中国新闻网（云网-春城晚报） 2008年02月25日
+URL: https://www.chinanews.com/gn/news/2008/02-25/1173093.shtml
+
+昨日，经大理白族自治州第十二届人民代表大会第一次会议选举通过，字国顺(彝族)当选大理州第十二届人民代表大会常务委员会主任，何金平(白族)当选大理州人民政府州长。
+
+2月22日，经中国人民政治协商会议大理白族自治州第十一届委员会第一次会议选举通过，袁爱光(回族)当选政协大理州第十一届委员会主席。何金平州长当选感言：
+
+责重于山，行胜于言。在此，我和新一届政府班子成员郑重承诺：我们将忠实履行法律赋予的职责，尽心尽力，尽职尽责，不负历史，不辱使命，决不辜负代表的重托和全州各族人民的期待！
+
+何金平简历：何金平，男，白族，1964年1月生，玉龙纳西族自治县人，1984年7月参加工作，1988年11月入党，研究生学历。历任丽江市委副书记、政法委书记，丽江市委专职副书记，大理州委副书记、代理州长，大理州委副书记、州长。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

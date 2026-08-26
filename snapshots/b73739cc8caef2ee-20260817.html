@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 邓近有 百度百科词条卡</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：邓近有 百度百科词条卡<br>
+  原页：<a href="https://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&amp;format=json&amp;appid=379020&amp;bk_key=邓近有" target="_blank" rel="noopener">https://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&amp;format=json&amp;appid=379020&amp;bk_key=邓近有</a><br>
+  存档日期：2026-08-17 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&amp;format=json&amp;appid=379020&amp;bk_key=邓近有" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">{
+  &quot;id&quot;: 15249140,
+  &quot;subLemmaId&quot;: 15962676,
+  &quot;newLemmaId&quot;: 16027971,
+  &quot;key&quot;: &quot;邓近有&quot;,
+  &quot;desc&quot;: &quot;吉安市人大常委会副主任&quot;,
+  &quot;title&quot;: &quot;邓近有&quot;,
+  &quot;card&quot;: [
+    {
+      &quot;key&quot;: &quot;m67_nameC&quot;,
+      &quot;name&quot;: &quot;中文名&quot;,
+      &quot;value&quot;: [
+        &quot;邓近有&quot;
+      ],
+      &quot;format&quot;: [
+        &quot;邓近有&quot;
+      ]
+    },
+    {
+      &quot;key&quot;: &quot;m67_customDefault&quot;,
+      &quot;name&quot;: &quot;工作单位&quot;,
+      &quot;value&quot;: [
+        &quot;吉安市人大常委会&quot;
+      ],
+      &quot;format&quot;: [
+        &quot;吉安市人大常委会&quot;
+      ]
+    }
+  ],
+  &quot;imageHeight&quot;: null,
+  &quot;imageWidth&quot;: null,
+  &quot;isSummaryPic&quot;: &quot;n&quot;,
+  &quot;abstract&quot;: &quot;邓近有，男，吉安市人大常委会副主任。&quot;,
+  &quot;moduleIds&quot;: [],
+  &quot;url&quot;: &quot;http://baike.baidu.com/item/%E9%82%93%E8%BF%91%E6%9C%89&quot;,
+  &quot;wapUrl&quot;: &quot;http://wapbaike.baidu.com/item/%E9%82%93%E8%BF%91%E6%9C%89&quot;,
+  &quot;hasOther&quot;: 0,
+  &quot;logo&quot;: &quot;https://img.baidu.com/img/baike/logo-baike.gif&quot;,
+  &quot;copyrights&quot;: &quot;以上内容来自百度百科平台，由百度百科网友创作。&quot;,
+  &quot;customImg&quot;: &quot;&quot;,
+  &quot;redirect&quot;: []
+}</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

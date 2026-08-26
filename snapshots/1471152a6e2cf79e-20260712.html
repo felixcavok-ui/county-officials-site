@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%B3%BD%E4%B8%AD" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%B3%BD%E4%B8%AD</a><br>
+  存档日期：2026-07-12 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%B3%BD%E4%B8%AD" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">李泽中出生1970年1月（56歲） 中国安徽省庐江县国籍 中华人民共和国教育程度安徽大学行政管理专业北京大学政治学理论专业职业珠海市市长政党 中国共产党（1996年6月─2018年11月7日）
+李泽中（1970年1月—），安徽庐江人，1990年10月参加工作，1996年6月加入中国共产党，毕业于北京大学政治学与行政管理系政治学理论专业，获得研究生学历，拥有法学硕士学位。中华人民共和国政治人物。
+2006年1月，李泽中来到广东省广晟资产经营有限公司工作，历任总经理助理，总经理助理兼资本运营部部长，副总经理、党委委员，董事、总经理、党委副书记，董事长、党委书记。2017年3月，转任中共广东省珠海市委副书记，市政府党组书记及代市长[1][2]。同年5月17日正式当选珠海市市长。
+但在同年9月2日，广东省纪委宣布李泽中涉嫌严重违纪，接受组织审查[3]。2018年11月7日，李澤中被立案调查與「雙開」[4]；2020年6月24日，中山市中級人民法院公開宣判李澤中受賄、國有公司人員濫用職權案，以受賄罪判處李澤中有期徒刑13年，並處罰金人民幣350萬元；以國有公司人員濫用職權罪，判處有期徒刑7年；決定合併執行有期徒刑17年，並處罰金人民幣350萬元。[5]。
+参考文献[编辑]
+^ 李泽中同志简历 （页面存档备份，存于互联网档案馆），人民网-中国共产党新闻网
+^ 李泽中任广东省珠海代市长 （页面存档备份，存于互联网档案馆），中国共产党新闻网
+^ 广东省珠海市委副书记、市长李泽中涉嫌严重违纪接受组织审查. 南粤清风网. 2017-09-02 [2017-09-02]. （原始内容存档于2018-03-04）.
+^ 珠海市委原副书记、市政府原市长李泽中严重违纪违法被开除党籍和公职. 南粤清风网. 2018-11-07 [2018-11-07] （中文（繁體））. [失效連結]
+^ 珠海市原市长李泽中受贿案一审宣判，获刑17年. 南方日报. 2020-06-24.
+外部链接[编辑]
+中华人民共和国政府职务
+前任：郑人豪
+珠海市人民政府市长2017年3月—2017年9月
+繼任：姚奕生
+查论编珠海市市长珠海市人民政府 珠海市人民政府市长吴健民 → 梁广大 → 黄龙云 → 方旋 → 王顺生 → 钟世坚 → 何宁卡 → 江凌 → 郑人豪 → 李泽中 → 姚奕生 → 黄志豪 → 吴泽桐相關：珠海市市长列表
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

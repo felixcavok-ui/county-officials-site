@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · baike.sogou.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：baike.sogou.com<br>
+  原页：<a href="https://baike.sogou.com/v66616798.htm" target="_blank" rel="noopener">https://baike.sogou.com/v66616798.htm</a><br>
+  存档日期：2026-08-22 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.sogou.com/v66616798.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">王世昆 _ 百科
+编辑词条
+登录
+1.摘要
+2.基本信息
+3.人物履历
+4.任免信息
+5.参考资料
+王世昆
+衡水市副市长
+王世昆，男，汉族，1963年1月出生，河北武邑县人，1983年8月参加工作，1984年12月入党，大学本科学历。
+1/2
+现任衡水市副市长。
+基本信息
+中文名
+王世昆
+国籍
+中国
+出生日期
+1963年1月
+出生地
+河北武邑县
+人物履历
+1979.07——1983.08，在河北师范大学数学系数学专业学习；
+1983.08——1984.05，武邑县审坡中学教师；
+1984.05——1986.12，武邑县审坡中学高中教导处主任；
+1986.12——1990.02，衡水地区教育学院政办室科员；
+1990.02——1991.05，衡水地区教育学院政办室副主任；
+1991.05——1996.01，衡水地区教育学院政办室主任；
+1996.01——2002.02，武强县副县长（其间：1997.10—1999.06在河北工业大学经济管理学院研究生班管理科学与工程专业学习，获管理学硕士学位）；
+2002.02——2005.03，武强县委副书记；
+2005.03——2007.06，武强县委副书记、县长；
+2007.06——2011.01，武强县委书记；
+2011.01——2013.08，衡水市桃城区委书记。
+2013.08——，任衡水市人民政府副市长1
+任免信息
+2017年4月9日，衡水市第六届人民代表大会第一次会议宣布：王世昆任衡水市副市长。2
+参考资料
+1衡水市人民政府副市长
+2王景武当选河北衡水市市长，曾任张家口市委副书记澎湃新闻（引用日期 2017-04-09）</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

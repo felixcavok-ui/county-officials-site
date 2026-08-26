@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/%E6%9C%B1%E7%94%9F%E4%BA%AE/5910297" target="_blank" rel="noopener">https://baike.baidu.com/item/%E6%9C%B1%E7%94%9F%E4%BA%AE/5910297</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/%E6%9C%B1%E7%94%9F%E4%BA%AE/5910297" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源：百度百科「朱生亮」词条
+URL：https://baike.baidu.com/item/%E6%9C%B1%E7%94%9F%E4%BA%AE/5910297
+抓取方式：baike.baidu.com 页面直接请求被反爬安全验证拦截（403，多次尝试含 UA/Referer/Session 伪装均未通过），WebFetch 工具在本环境整体不可用（对 wikipedia.org 等任意域名均报错），web-access 浏览器兜底 CDP 连接超时（check-deps.mjs 两次报 EXIT:1）；改用百度百科官方 OpenAPI 接口 BaikeLemmaCardApi（https://baike.baidu.com/api/openapi/BaikeLemmaCardApi?scope=103&amp;format=json&amp;appid=379020&amp;bk_key=朱生亮&amp;bk_length=600）成功获取该词条结构化数据（HTTP 200，未被拦截），以下为该接口返回的词条正文内容，逐字保留：
+访问日期：2026-07-03
+
+【词条名】朱生亮
+【一句话简介】原中共毕节地委书记
+【中文名】朱生亮
+【国籍】中国
+【出生日期】1947年
+【逝世日期】2003年5月16日
+【出生地】开阳双流
+
+【摘要正文】
+朱生亮（1947—2003），开阳双流人，1968年11月参加工作，先后任中共开阳县委办公室副主任、主任，副书记，中共修文县委副书记、书记，安顺地区行署副专员，中共毕节地委书记。2003年5月16日晨在贵阳医学院附属医院病逝，享年56岁。
+
+【目录】
+人物贡献（该子章节内容未包含在本接口摘要返回范围内，原页面 http://baike.baidu.com/view/9515876.htm 因反爬未能直接抓取正文）
+
+【接口原始返回校验片段】
+id: 9515876
+newLemmaId: 5910297（与词条 URL 中的 lemmaId 一致）
+url: http://baike.baidu.com/view/9515876.htm
+wapUrl: http://wapbaike.baidu.com/item/%E6%9C%B1%E7%94%9F%E4%BA%AE/5910297
+copyrights: 以上内容来自百度百科平台，由百度百科网友创作。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

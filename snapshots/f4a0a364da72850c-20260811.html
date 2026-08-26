@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 吴启标_微信百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：吴启标_微信百科<br>
+  原页：<a href="https://baike.weixin.qq.com/v191799227.htm" target="_blank" rel="noopener">https://baike.weixin.qq.com/v191799227.htm</a><br>
+  存档日期：2026-08-11 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.weixin.qq.com/v191799227.htm" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">吴启标 _ 百科 1 . 摘要 2 . 基本信息 3 . 人物履历 4 . 参考资料 吴启标 江苏省徐州市人民政府副市长、党组成员 吴启标，男，汉族，1975年6月生，江苏响水人，省委党校研究生学历，学士学位，2000年11月加入中国共产党，1997年8月参加工作。 现任江苏省徐州市人民政府副市长 1 、党组成员 2 。 基本信息 中文名 吴启标 国籍 中国 民族 汉族 出生日期 1975年6月 人物履历 1993.09 南京农业大学植物保护学院植物保护专业读书； 1997.08 江苏省响水县种子公司技术员； 1998.07 江苏省响水县农干校办事员（其间：2001.01—2003.04抽调在响水县农业执法大队工作）； 2003.04 江苏省响水县双港镇镇长助理（副乡级）； 2003.12 江苏省共青团响水县委书记； 2006.07 江苏省响水县黄圩镇党委副书记、镇长； 2007.11 江苏省响水县黄圩镇党委副书记、人大主席； 2009.07 江苏省响水县黄圩镇党委书记、镇长； 2011.06 江苏省阜宁县委常委（其间：2008.09—2012.07江苏省委党校科学社会主义专业研究生学习并毕业）； 2014.02 江苏省阜宁县委常委、阜宁港物流集聚园区党工委记； 2017.01 江苏省阜宁县委常委、县政府常务副县长、阜宁港物流集聚园区党工委书记； 2017.02 江苏省阜宁县委常委、县政府常务副县长； 2019.09 江苏省阜宁县委副书记； 2019.10 江苏省阜宁县委副书记、党校校长； 2020.07 江苏省滨海县政府代县长、党组书记； 2020.08 江苏省滨海县委副书记、县政府代县长、党组书记； 2021.01 江苏省滨海县委副书记、县政府县长、党组书记 3 ； 2022.01 江苏省滨海县委书记、县政府县长（2023.10不再担任）、党组书记 4 5 ；</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

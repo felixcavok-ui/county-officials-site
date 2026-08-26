@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.thepaper.cn</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.thepaper.cn<br>
+  原页：<a href="https://www.thepaper.cn/newsDetail_forward_1548742" target="_blank" rel="noopener">https://www.thepaper.cn/newsDetail_forward_1548742</a><br>
+  存档日期：2026-08-23 · 信源分级：B · <a href="https://web.archive.org/web/*/https://www.thepaper.cn/newsDetail_forward_1548742" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">河北廊坊市广阳区区委书记尹广泰涉嫌严重违纪，接受组织调查_打虎记_澎湃新闻-The Paper
+
+河北省纪委监察厅网站10月24日消息，廊坊市广阳区区委书记尹广泰涉嫌严重违纪，目前正在接受组织调查。
+尹广泰简历
+尹广泰，男，汉族
+1980.09-1984.07 河北师范大学中文系学习
+1984.07-1991.06 河北师范大学党委宣传部
+1991.06-1992.05 省委宣传部新闻出版处工作
+1992.05-1994.04 省委宣传部新闻出版处主任科员
+1994.04-1995.03 省政府办公厅正科级秘书
+1995.03-1996.11 省政府办公厅副处级秘书
+1996.11-1997.06 省政协办公厅副处级秘书
+1997.06-1999.07 省政协办公厅正处级秘书
+1999.07-2001.08 香河县委副书记（正处级、挂职）
+2001.08-2003.04 香河县委副书记（正处级）
+2003.04 廊坊市广阳区委副书记、区政府区长、党组书记
+现任 廊坊市广阳区委书记
+（简历来源：人民网）
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

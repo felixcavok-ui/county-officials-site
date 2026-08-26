@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 许显辉_维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：许显辉_维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/许显辉" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/许显辉</a><br>
+  存档日期：2026-06-21 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/许显辉" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">许显辉 - 维基百科，自由的百科全书
+
+许显辉（1966年2月—），男，河南叶县人，中华人民共和国政治人物。内蒙古大学法律专业毕业，大学学历，法学学士。
+
+1986年6月加入中国共产党。1987年7月参加工作。历任内蒙古自治区人民政府法制局经济法规处副处长、处长；中共张家界市武陵源区委副书记、代区长、区长、区委书记等职。2005年8月，任湖南省人民政府法制办公室副主任[1]，2008年7月扶正[2]。2013年5月，当选张家界市长[3][4]。2015年6月，任中共益阳市委副书记、市长[5]。
+
+2016年11月，当选中共湖南省纪委副书记[6]。2016年12月，兼任湖南省监察厅厅长[7]。2017年1月，任省政府党组成员。2017年7月，任湖南省公安厅厅长[8]。2018年1月任湖南省副省长[9][8]。
+
+2022年5月，转任广西壮族自治区人民政府副主席[10]。
+
+2026年2月，任广西壮族自治区政协副主席[11]。同年6月，辞去广西壮族自治区人民政府副主席职务[12]。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

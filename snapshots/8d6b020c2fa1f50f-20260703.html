@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 中文维基百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：中文维基百科<br>
+  原页：<a href="https://zh.wikipedia.org/zh-hans/%E7%8E%8B%E6%9C%AF%E5%90%9B" target="_blank" rel="noopener">https://zh.wikipedia.org/zh-hans/%E7%8E%8B%E6%9C%AF%E5%90%9B</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/zh-hans/%E7%8E%8B%E6%9C%AF%E5%90%9B" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">王术君（1970年—），山东安丘人。汉族。中国人民银行总行金融研究所金融学专业毕业。
+曾任中共贵州省安顺市委副书记，安顺市人民政府市长。
+2013年，当选第十二届全国人民代表大会贵州地区代表[1]。
+2013年7月，贵州省纪委证实其涉嫌违纪接受组织调查[2]。2013年11月30日，贵州省第十二届人大常委会第五次会议决定接受其辞去第十二届全国人民代表大会代表职务[3]。2014年9月23日，遵义市人民检察院依法对其受贿一案向遵义市中级人民法院提起公诉。
+
+参考文献[编辑]
+
+^ 全国人大代表信息-王术君. 全国人大网. [2013-04-05]. [永久失效链接]
+
+^ 盘点十二届全国人大代表：5人去世 7人落马. 腾讯网. [2014-02-27]. （原始内容存档于2014-03-02）.
+
+^ 第十二届全国人民代表大会常务委员会代表资格审查委员会关于个别代表的代表资格的报告（2013年12月28日第十二届全国人民代表大会常务委员会第六次会议通过）. 中国人大网. [2016-07-03]. （原始内容存档于2016-08-28）.
+
+中华人民共和国政府职务
+
+前任：周建琨
+
+安顺市人民政府市长2013年3月－2013年7月
+
+继任：曾永涛
+
+这是一篇与中国政治人物相关的小作品。
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · www.baike.com</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：www.baike.com<br>
+  原页：<a href="https://www.baike.com/wiki/%E9%99%88%E7%99%BB%E6%B3%89" target="_blank" rel="noopener">https://www.baike.com/wiki/%E9%99%88%E7%99%BB%E6%B3%89</a><br>
+  存档日期：2026-08-23 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.baike.com/wiki/%E9%99%88%E7%99%BB%E6%B3%89" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">陈登泉-快懂百科
+
+来源：https://www.baike.com/wiki/%E9%99%88%E7%99%BB%E6%B3%89（快懂百科）
+陈登泉，男，
+汉族
+，1963年3月生，河北冀州人，1985年6月入党，1982年9月参加工作，北京大学成教学院网络教育法学专业毕业，在职大学学历。曾任
+衡水市
+政协党组成员、副主席。
+2016年12月29日，被开除党籍。
+人物履历
+1980.08-1982.09，衡水师专化学专业学习；
+1982.09-1983.05，冀县码头李中学教师；
+1983.05-1986.06，冀县县委办公室干事；
+1986.06-1987.06，冀县政法委干事；
+1987.06-1989.03，冀县千顷洼乡党委副书记；
+1989.03-1990.03，共青团冀县县委副书记、党组副书记；
+1990.03-1992.10，共青团冀县县委书记、党组书记；
+1992.10-1993.10，冀县千顷洼乡党委书记；
+1993.10-1993.12，
+冀州市
+千顷洼乡党委书记；
+1993.12-1995.05，冀州市政府秘书长、党组成员；
+1995.05-1996.02，冀州市政府副市长；
+1996.02-1996.07，衡水地委办公室副主任；
+1996.07-1997.05，衡水市委办公室副主任；
+1997.05-1998.01，冀州市政府副市长(1994.09-1997.06在
+邯郸农业高等专科学校
+函授
+农学
+专业学习)；
+1998.01-2002.02，冀州市委常委、政府常务副市长；
+2002.02-2003.09，冀州市委副书记兼政法委书记；
+2003.09-2007.04，衡水市政府秘书长、党组成员、政府办党组书记(2001.09-2004.07在北京大学成教学院网络教育法学专业学习)；
+2007.04-2007.06，故城县委副书记、政府代县长；
+2007.06-2010.04，故城县委副书记、政府县长；
+2010.04-2011.01，故城县委副书记、政府县长(主持县委全面工作)；
+2011.01-2013.04，故城县委书记；
+2013.04-2016.12，衡水市政协副主席，故城县委书记。
+开除党籍
+2016年12月29日，据
+河北省
+纪委消息：经河北省委批准，河北省纪委对
+政协党组成员、副主席陈登泉严重违纪问题进行了立案审查。
+经查，陈登泉违反组织纪律，不如实报告个人有关事项；违反廉洁纪律，收受礼金、购物卡；违反工作纪律；违反国家法律法规规定，利用职务上的便利在企业经营方面为他人谋取利益并收受财物。
+经省纪委常委会议研究并报省委批准，决定给予陈登泉开除党籍、行政撤职处分，按副主任科员安排工作；收缴其违纪所得。</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

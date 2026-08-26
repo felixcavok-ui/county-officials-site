@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 履历-夏耕</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：履历-夏耕<br>
+  原页：<a href="https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E8%80%95" target="_blank" rel="noopener">https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E8%80%95</a><br>
+  存档日期：2026-07-03 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E8%80%95" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">来源：中文维基百科「夏耕」词条
+URL：https://zh.wikipedia.org/zh-hans/%E5%A4%8F%E8%80%95
+抓取日期：2026-07-03
+
+# 夏耕人物词条信息提取
+
+**基本信息：**
+- 姓名：夏耕
+- 性别：男
+- 民族：汉族
+- 出生日期：1957年1月10日
+- 籍贯：黑龙江黑龙江五常县
+- 身份：中华人民共和国政治人物
+
+**教育背景：**
+- &quot;南京大学经济系经济管理专业本科毕业&quot;
+- &quot;南京师范大学与澳大利亚麦考瑞大学合办研究生班经济学硕士学位&quot;
+- &quot;北京大学经济学院政治经济学专业经济学博士学位&quot;
+- 1975年3月参加工作，1984年12月加入中国共产党
+
+**主要履历：**
+- 1975年3月—1978年12月：江苏省南京市金属轧制厂工人
+- 1978年12月—1981年7月：南京大学经济系学生
+- 1981年7月—1987年3月：江苏省计经委综合处（科员、副科长、科长）
+- 1987年3月—1991年3月：江苏省计经委综合处副处长
+- 1991年3月—1993年1月：江苏省计经委综合处处长
+- 1993年1月—1995年8月：江苏省生产调度办公室副主任
+- 1995年8月—1996年1月：江苏省计经委副主任、党组成员
+- 1996年1月—1996年9月：江苏省人民政府副秘书长
+- 1996年9月—2000年1月：连云港市委副书记、市长
+- 2000年1月—2001年6月：日照市委副书记、市长、市委书记
+- 2002年12月—2003年1月：青岛市委副书记、副市长
+- 2003年1月—2012年1月：青岛市委副书记、市长
+- 2011年11月—2013年2月：山东省副省长
+- 2017年2月：辞去山东省副省长职务，当选山东省人大常委会副主任
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>
