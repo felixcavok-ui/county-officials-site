@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 来源页面（原标题待核）</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：来源页面（原标题待核）<br>
+  原页：<a href="https://zh.wikipedia.org/wiki/颜石生" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/颜石生</a><br>
+  存档日期：2026-06-21 · 信源分级：C · <a href="https://web.archive.org/web/*/https://zh.wikipedia.org/wiki/颜石生" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">颜石生
+
+株洲市人民政府 市长
+任期 2003年2月—2007年2月
+书记 肖雅瑜
+前任 肖雅瑜
+继任 陈君文
+
+个人资料
+性别 男
+出生 1952年2月 中华人民共和国 湖南省 攸县
+逝世 2007年2月24日 （54—55岁） 中华人民共和国 湖南省 株洲市
+国籍 中华人民共和国
+政党 中国共产党
+
+颜石生（1952年2月—2007年2月），男，湖南攸县人，1971年加入中国共产党。中华人民共和国政治人物。
+
+生平
+
+颜石生生于攸县，曾在攸县下辖的网岭公社、莲塘坳公社、新市镇、丫江桥乡任职，1988年出任攸县党委常委、副县长、副书记，1992年12月，升任中共攸县党委副书记、县人民政府县长。1993年9月，颜石生来到邻近的醴陵市，担任该市党委副书记、市人民政府市长。1995年12月，升任中共醴陵市委书记。此后他相继担任中共株洲市委常委、市委组织部长，中共株洲市委副书记等职务。2003年2月，颜石生接替肖雅瑜担任株洲市人民政府市长，2007年2月24日，他因病在株洲市长任上逝世，享年55岁。
+
+参考文献
+
+颜石生. 中共株洲市委党史研究室. 2017-12-16.
+攸县志编纂委员会.《攸县志 (1986-2010)》. 北京市: 方志出版社. 2013年. ISBN 9787514409024.
+醴陵市志编纂委员会.《醴陵市志》1. 湖南省长沙市: 湖南出版社. 1995年: 592. ISBN 9787543809352.
+醴陵市志编纂委员会.《醴陵市志（1991-2002）》1. 湖南省长沙市: 湖南人民出版社. 2005年: 392. ISBN 9787543841185.
+张树忠. 肖雅瑜出任湖南省株洲市市委书记(图及简历). 潇湘晨报. 2003-03-26. 通过搜狐网.
+王兴夏. 湖南株洲市长颜石生任上病逝. 潇湘晨报. 2007-02-26. 通过新浪网.
+
+政党职务
+前任：张伦 中国共产党醴陵市委员会 书记 1995年12月-1997年10月 繼任：伍长春
+
+政府职务
+前任：肖雅瑜 株洲市人民政府 市长 2003年2月-2007年2月 繼任：陈君文
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "id": "cityfix-20260906-a",
+  "publishedOn": "2026-09-06",
+  "dataAsOf": "2026-09-05",
+  "kind": "市级修复研究预览",
+  "stats": {
+    "units": 342,
+    "spells": 7350,
+    "persons": 3776,
+    "careerSpells": 31977,
+    "evidence": 86357
+  },
+  "assets": {
+    "city-review/js/db-000-f05dc82b2b462002df36.js": "f05dc82b2b462002df36294653d56fa753d6dddf81edd8e2a5a717c9c2522ced",
+    "city-review/js/db-001-69782680798d85abd714.js": "69782680798d85abd7140a01ef8ce7e23e78c1c8839be26301da8916f4c7c2aa",
+    "city-review/js/data-d8f989c745a957d69800.js": "d8f989c745a957d69800966e39c931dc4065dbf18b5478c0617af2ae7132ea04",
+    "city-review/js/app-28dc87021a8006ccc02d.js": "28dc87021a8006ccc02d94deb172497f27c39f6c86bb9e0ca0dce2d12e8ef159",
+    "city-review/css/style-1bd31bb157a98f4367e9.css": "1bd31bb157a98f4367e923a78b3d28cff9c0342298d5e8897f34bfed17ddde50",
+    "city-review/index.html": "98100e82d48720fed3591962d01d5a3ba85d7223c6f24a0cb515a2631f30f04d"
+  },
+  "snapshots": 18776,
+  "reusedSnapshots": 17988,
+  "mappedReferences": 90553
+}

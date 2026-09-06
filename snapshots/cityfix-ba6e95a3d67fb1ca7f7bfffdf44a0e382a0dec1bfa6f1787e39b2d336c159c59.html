@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 淮南政府网-市政府领导专页</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：淮南政府网-市政府领导专页<br>
+  原页：<a href="https://web.archive.org/web/20090327084651/http://www.huainan.gov.cn:80/hnzfw/template/hnzfw/leaderspecial.jsp?" target="_blank" rel="noopener">https://web.archive.org/web/20090327084651/http://www.huainan.gov.cn:80/hnzfw/template/hnzfw/leaderspecial.jsp?</a><br>
+  存档日期：2026-08-24 · 信源分级：A · <a href="https://web.archive.org/web/*/https://web.archive.org/web/20090327084651/http://www.huainan.gov.cn:80/hnzfw/template/hnzfw/leaderspecial.jsp?" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">淮南政府网
+首页 走进淮南 公共服务 政务公开 参政监督
+市政府领导专页 市 长：曹 勇 常务副市长：戴启远 副市长：魏耀民 副市长：董众兵 副市长：王　诚 副市长：谌 伟 副市长：孙全玉 副市长：刘有怀 秘书长：戴多斌
+您现在的位置: 首页 &gt;&gt;
+曹 勇 信箱地址: caoyong@huainan.gov.cn 工作分工 主持市政府的全面工作。主管人事编制、监察、审计工作。 曹 勇 简历 无
+相关报道 2009-03-27 曹勇：让民生工程惠及更广大人民群众 2009-03-27 曹勇：让民生工程惠及更广大人民群众 2009-03-26 2008年度党风廉政建设责任制考核和省管干.. 2009-03-26 市政府举行第23次常务会议 2009-03-26 市政府第10次党组扩大会议召开 2009-03-25 淮南长壁煤矿机械有限责任公司新厂区建设工程.. 2009-03-25 国务院举行第二次廉政工作会议 2009-03-25 市双拥工委第二十二次全体（扩大）会议召开 2009-03-24 2008年度党风廉政建设责任制考核和省管干.. 2009-03-23 全市深入学习实践科学发展观活动试点工作总结..
+版权所有：1996-2008　淮南市人民政府</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

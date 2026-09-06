@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 百度百科</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：百度百科<br>
+  原页：<a href="https://baike.baidu.com/item/史大刚" target="_blank" rel="noopener">https://baike.baidu.com/item/史大刚</a><br>
+  存档日期：2026-08-31 · 信源分级：C · <a href="https://web.archive.org/web/*/https://baike.baidu.com/item/史大刚" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">【快照说明】
+source_url: https://baike.baidu.com/item/史大刚
+source_title: 史大刚_百度百科（词条义项：喀什地委书记、曾任第十三届全国人民代表大会民族委员会副主任委员）
+抓取方式: WebFetch（站点对 python requests 返回 403 反爬，按纪律回退 WebFetch 路径；无原字节 HTML 母版）
+access_date: 2026-08-31
+run_id: xjgap20260831a
+【正文】
+史大刚
+
+史大刚，男，汉族，1958年11月生，山西稷山人，1986年8月加入中国共产党，1977年7月参加工作，大学学历（新疆八一农学院农学系植保专业），副研究员。
+
+曾任第十三届全国人民代表大会民族委员会副主任委员。
+
+人物履历：
+1977.07——1978.03，新疆维吾尔自治区轮台县群巴克园艺场知青
+1978.03——1982.02，新疆八一农学院农学系植保专业学习
+1982.02——1988.04，新疆维吾尔自治区农业科学院植保所干部
+1988.04——1992.08，新疆维吾尔自治区农业科学院植保所副所长
+1992.08——1992.10，新疆维吾尔自治区农业科学院植保所代理所长
+1992.10——1994.11，新疆维吾尔自治区农业科学院科研管理处处长（其间：1993.03——1993.05，在新疆维吾尔自治区党委党校县处级干部培训班学习）
+1994.11——1998.10，新疆维吾尔自治区农业科学院副院长
+1998.10——2003.01，新疆维吾尔自治区喀什地委副书记（其间：2001.09——2002.01，在中央党校培训部西部班学习）
+2003.01——2003.04，新疆维吾尔自治区喀什地委书记
+2003.04——2011.07，新疆维吾尔自治区喀什地委书记，新疆生产建设兵团农三师党委第一书记、第一政委（其间：2008.09——2009.01，在中央党校培训班一班学习）
+2011.07——2016.12，新疆维吾尔自治区党委委员、新疆维吾尔自治区政府副主席
+2016.12——2018.03，中央统战部副部长
+2018.03——2018.04，第十三届全国人民代表大会民族委员会副主任委员
+2018.04——2019，第十三届全国人民代表大会民族委员会副主任委员，中央新疆工作协调小组办公室主任
+2019——，第十三届全国人民代表大会民族委员会副主任委员
+（完）
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>

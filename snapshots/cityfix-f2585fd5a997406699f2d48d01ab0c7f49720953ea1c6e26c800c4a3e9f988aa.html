@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>网页快照 · 简历页</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Microsoft YaHei", sans-serif; background: #f6f4ef; color: #2b2822; }
+  .head { background: #2f2b24; color: #f0ece2; padding: 14px 20px; font-size: 14px; line-height: 1.9; }
+  .head b { font-size: 16px; }
+  .head a { color: #ffd76e; word-break: break-all; }
+  .note { color: #b8b0a0; font-size: 12px; }
+  pre { white-space: pre-wrap; word-break: break-word; max-width: 56em; margin: 24px auto;
+        padding: 0 20px 48px; font: 15px/1.9 inherit; }
+  mark { background: #ffd76e; padding: 1px 2px; }
+</style>
+</head>
+<body>
+<div class="head">
+  <b>网页快照</b>（采集当日提取正文，逐字存档）<br>
+  标题：简历页<br>
+  原页：<a href="https://www.chinanews.com.cn/gn/2015/04-22/7224460.shtml" target="_blank" rel="noopener">https://www.chinanews.com.cn/gn/2015/04-22/7224460.shtml</a><br>
+  存档日期：2026-08-31 · 信源分级：C · <a href="https://web.archive.org/web/*/https://www.chinanews.com.cn/gn/2015/04-22/7224460.shtml" target="_blank" rel="noopener">Wayback 第三方存档</a><br>
+  <span class="note">本页为数据库证据溯源快照：正文在采集访问当时从原页提取、逐字保存；原页此后若改动或失效，以本快照为准。</span>
+</div>
+<pre id="snap-body">宋爱荣任中共重庆市委委员、常委(图/简历)-中新网
+经中共中央批准，宋爱荣同志(女)任中共重庆市委委员、常委，徐海荣同志不再担任中共重庆市委常委、委员职务，另有任用。
+ 宋爱荣，女，汉族，1959年9月生，河南扶沟人，1981年1月入党，1977年9月参加工作，中央党校研究生院政治学专业毕业，中央党校研究生学历，经济师。
+ 1977年9月至1978年3月，新疆维吾尔自治区吐鲁番县红旗公社插队知青。
+ 1978年3月至1981年3月，新疆化工学校无机化工专业学习。
+ 1981年3月至1984年6月，新疆化工学校党办组织干事、共青团新疆化工学校委员会书记(其间：1981年9月至1983年7月，在新疆化工学校全日制师资大专班学习)。
+ 1984年6月至1986年9月，共青团新疆维吾尔自治区化工局委员会干事。
+ 1986年9月至1992年4月，共青团新疆维吾尔自治区化工局委员会副书记、书记。
+ 1992年4月至1994年5月，新疆维吾尔自治区氯碱厂党委书记、副厂长(其间：1993年9月至1994年1月，在大连理工学院新疆班企业管理专业学习)。
+ 1994年5月至1996年1月，共青团新疆维吾尔自治区委员会副书记、党组成员。
+ 1996年1月至1999年9月，共青团新疆维吾尔自治区委员会副书记、党组书记(1994年9月至1996年7月，在中央党校函授学院经济管理专业本科班学习；其间：1996年4月至 1998年3月，在中国社会科学院研究生院工业经济系企业管理专业研究生课程班学习；
+ 1997年9月至1998年7月，在中央党校一年制中青年干部培训班学习)。
+ 1999年9月至2005年1月，新疆维吾尔自治区吐鲁番地委书记(1997年9月至2000年7月，中央党校研究生院政治学专业在职研究生)。
+ 2005年1月至2006年10月，新疆维吾尔自治区副主席。
+ 2006年10月至2008年1月，新疆维吾尔自治区党委常委，自治区副主席。
+ 2008年1 月至2011年10月，新疆维吾尔自治区党委常委。
+ 2011年10月至现在，新疆维吾尔自治区党委常委、纪委书记。
+ 十六届、十七届中央候补委员。(图/简历来自中国领导干部资料库)
+</pre>
+<script>
+(function () {
+  var q = new URLSearchParams(location.search).get('q');
+  if (!q) return;
+  var pre = document.getElementById('snap-body');
+  var t = pre.textContent, i = t.indexOf(q);
+  if (i < 0) { var qz = q.replace(/\s+/g, ''); var tz = t.replace(/\s+/g, ''); if (tz.indexOf(qz) < 0) return; }
+  if (i >= 0) {
+    pre.textContent = '';
+    pre.append(t.slice(0, i));
+    var m = document.createElement('mark'); m.textContent = q; pre.append(m);
+    pre.append(t.slice(i + q.length));
+    m.scrollIntoView({ block: 'center' });
+  }
+})();
+</script>
+</body>
+</html>
